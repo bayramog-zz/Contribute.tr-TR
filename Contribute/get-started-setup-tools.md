@@ -8,11 +8,11 @@ ms.date: 01/04/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 62c4b234f23b470ffea33cacdfc469fbd7e526bd
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: 0ca942e557640db1ba36d3f5b1064656ed3dea8d
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="install-content-authoring-tools"></a>İçerik yazma araçlarını yükleme
 
@@ -22,9 +22,9 @@ Bu makalede Git istemci araçlarını ve Visual Studio Code'u etkileşimli olara
 > * [Visual Studio Code](https://code.visualstudio.com/)'u yükleme
 
 >[!IMPORTANT]
-> Bir makalede yalnızca küçük değişiklikler yapıyorsanız bu makaledeki adımları tamamlamanız gerekli *değildir* ve doğrudan [küçük/seyrek görülen değişiklikler iş akışı](light-workflow.md) kısmına gidebilirsiniz.
+> Bir makalede yalnızca küçük değişiklikler yapıyorsanız bu makaledeki adımları tamamlamanız gerekli *değildir* ve doğrudan [hızlı değişiklikler iş akışı](index.md#quick-edits-to-existing-documents) kısmına gidebilirsiniz.
 >
-> Büyük katkılarda bulunanların bu adımı tamamlaması önerilir, bu adımdan sonra [büyük/uzun ömürlü değişiklikler iş akışı](full-workflow.md) kısmına geçebilirler. Ana depoda yazma izinleriniz olsa bile, önerdiğiniz değişiklikleri çatalınızda depolamak üzere okuma/yazma izinlerinizin olacağı *depo çatalını oluşturmanız ve kopyalamanız kesinlikle önerilir (ve bu makalede öyle yaptığınız varsayılır)*.
+> Büyük katkılarda bulunanların bu adımı tamamlaması önerilir, bu adımdan sonra [büyük/uzun ömürlü değişiklikler iş akışı](how-to-write-workflows-major.md) kısmına geçebilirler. Ana depoda yazma izinleriniz olsa bile, önerdiğiniz değişiklikleri çatalınızda depolamak üzere okuma/yazma izinlerinizin olacağı *depo çatalını oluşturmanız ve kopyalamanız kesinlikle önerilir (ve bu makalede öyle yaptığınız varsayılır)*.
 
 ## <a name="install-git-client-tools-on-windows"></a>Windows'da Git istemci araçlarını yükleme
 

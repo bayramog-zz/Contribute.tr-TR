@@ -8,11 +8,11 @@ ms.date: 06/30/2017
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 5ad2ca323b680078c2bfd2fc4cac6fb1883c411f
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: 5f7f90b69953e23833906202c739d2168b139d7e
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Docs belgeleri için Git ve GitHub temel özellikleri
 
@@ -80,7 +80,7 @@ Kolaylık sağlamak için her deponun kök dizini genellikle `template.md` adlı
 
 Bir *çekme isteği*, katkıda bulunan kişinin varsayılan dala uygulanacak bir grup değişikliği sunması için kolay bir yol sağlar. Bu değişiklikler (*işlemeler* olarak da bilinir), katkıda bulunan kişinin dalında depolanır ve GitHub varsayılan dalda *birleştirme* etkisinin modelini oluşturabilir. Çekme isteği ayrıca katkıda bulunan kişiye, çekme isteğini gözden geçiren kişi tarafından yapılan derleme/doğrulama işleminden sonra geri bildirim yollamaya yarar. Böylece katkıda bulunan, değişiklikler varsayılan dalla birleştirilmeden önce olası sorunlar veya soruları çözebilir.
 
-Önermek istediğiniz değişikliklerin boyutuna bağlı olarak çekme isteği ile katkıda bulunmanın iki yolu vardır. Bunu daha sonra, bu kılavuzun [GitHub iş akışı](light-workflow.md) bölümünde ayrıntılı şekilde açıklayacağız.
+Önermek istediğiniz değişikliklerin boyutuna bağlı olarak çekme isteği ile katkıda bulunmanın iki yolu vardır. Bunu daha sonra, bu kılavuzun [GitHub iş akışı](how-to-write-workflows-major.md) bölümünde ayrıntılı şekilde açıklayacağız.
 
 <!---- Reference links for Docs landing pages, associated GitHub repositories, and related Forums matrix. ------------------>
 <!---- PLEASE INSERT URLS IN ASCENDING SORT ORDER, AND REMOVE LOCALE SEGMENT FROM URLS (that is, en-us) FOR LOCALIZED FORUMS! -->

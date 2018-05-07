@@ -1,18 +1,18 @@
 ---
 title: İçerik yazma araçlarını yükleme
 description: Bu makale, Git ve markdown dosyalarını düzenlemek için ihtiyacınız olacak istemci araçları indirip yüklemenize yardımcı olur.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
-ms.date: 01/04/2018
+author: jasonwhowell
+ms.author: jasonh
+manager: kfile
+ms.date: 04/30/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 0ca942e557640db1ba36d3f5b1064656ed3dea8d
-ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
+ms.openlocfilehash: 1011c3fc829202a3df134ddc80eb05b8959b7bf6
+ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-content-authoring-tools"></a>İçerik yazma araçlarını yükleme
 
@@ -20,6 +20,7 @@ Bu makalede Git istemci araçlarını ve Visual Studio Code'u etkileşimli olara
 > [!div class="checklist"]
 > * [Windows için Git](https://git-scm.com/download/win)'i yükleme
 > * [Visual Studio Code](https://code.visualstudio.com/)'u yükleme
+> * [Docs Yazma Paketi](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)’ni yükleme
 
 >[!IMPORTANT]
 > Bir makalede yalnızca küçük değişiklikler yapıyorsanız bu makaledeki adımları tamamlamanız gerekli *değildir* ve doğrudan [hızlı değişiklikler iş akışı](index.md#quick-edits-to-existing-documents) kısmına gidebilirsiniz.
@@ -58,6 +59,16 @@ VS Code olarak da bilinen [Visual Studio Code](https://code.visualstudio.com/), 
 
 > [!TIP]
 > VS Code'u başlatmak ve geçerli klasörü açmak için, komut satırında veya bash kabuğunda `code .` komutunu çalıştırın. Geçerli klasör yerel git deposunun bir parçasıysa, github tümleştirmesi Visual Studio Code'da otomatik olarak gösterilir.
+
+## <a name="docs-authoring-pack"></a>Docs Yazma Paketi
+Visual Studio Code için Docs Yazma Paketi’ni yükleyin. Bu uzantı kümesi, Markdown yazarken yardım için temel yazma desteği ve Markdown’ın docs.microsoft.com sitesinde nasıl görüneceğine bakmanız için önizleme özelliği sağlar.
+
+   Bu [market sayfasını](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) ziyaret edin ve **Yükle**’yi seçin veya VS Code penceresindeki uzantılar listenizde `docsmsft.docs-authoring-pack` için arama yapın. 
+
+   Docs Yazma Paketi’ne VS Code’da Alt+M tuşlarına basarak ulaşabilirsiniz. Araç çubuğu varsayılan olarak gizlidir ancak gösterilebilir. Bunun için VS Code ayarlarını düzenleyin (Control+virgül) ve `"markdown.showToolbar": true` kullanıcı ayarını ekleyin.
+
+   Daha fazla bilgi için [Docs Yazma Paketi](how-to-write-docs-auth-pack.md) sayfasına bakın.
+
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

@@ -8,11 +8,11 @@ ms.date: 01/18/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: d9c7211641fb05aaca8a76e10c7216ff61a5d23c
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: f702d0d29ee7dc9c69cb26b79bf6283d91b6b6bc
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Belgeler için yerel Git deposunu ayarlama
 
@@ -27,7 +27,7 @@ Katkıda bulunmaya başlamak için şu bir kerelik kurulum etkinliklerini çalı
 > * Uzak yukarı akış değerini yapılandırma
 
 > [!IMPORTANT]
-> Bir makalede yalnızca küçük değişiklikler yapıyorsanız, bu makaledeki adımları tamamlamanız *gerekmez*. Doğrudan [küçük/seyrek görülen değişiklikler iş akışına](light-workflow.md) geçebilirsiniz.
+> Bir makalede yalnızca küçük değişiklikler yapıyorsanız, bu makaledeki adımları tamamlamanız *gerekmez*. Doğrudan [hızlı değişiklikler iş akışına](index.md#quick-edits-to-existing-documents) geçebilirsiniz.
 >
 
 ## <a name="overview"></a>Genel Bakış
@@ -46,7 +46,7 @@ GitHub’da yeniyseniz çatal oluşturma ve kopyalama işlemlerine kavramsal bir
 
 1. Hangi depoyu kullanacağınızdan emin değilseniz, web tarayıcınızı kullanarak docs.microsoft.com'daki makaleyi ziyaret edin. Makalenin sağ üst kısmındaki **Düzenle** bağlantısını (kalem simgesi) seçin.
 
-   ![Depo ve dosya konumunu saptamak için Düzenle'ye tıklayın.](media/edit-article.png)
+   ![Depo ve dosya konumunu saptamak için Düzenle'ye tıklayın.](media/index/edit-article.png)
 
 2. O bağlantı sizi uygun deposundaki ilgili Markdown dosyasının github.com konumuna götürür. Deponun adının görüntülendiği URL'yi not alın.
 

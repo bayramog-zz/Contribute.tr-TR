@@ -1,0 +1,7 @@
+- name: Docs
+  href: /
+  homepage: /
+  items:
+    - name: Katkıda Bulunan Kılavuzu
+      href: /contribute/
+      homepage: /contribute/

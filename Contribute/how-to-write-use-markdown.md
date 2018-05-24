@@ -8,17 +8,22 @@ ms.date: 07/13/2017
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 96d00abc052c3b23ca62201dccdbe590a927e72d
-ms.sourcegitcommit: de6e6b6ca641fdd5b30eb46deee9ac3a500089ef
+ms.openlocfilehash: 041398361aef90c44bdf3a0dad4aaa2d40a38289
+ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Docs’ta makale yazmak için Markdown kullanma
 
 Docs.microsoft.com makaleleri [Markdown](https://daringfireball.net/projects/markdown/) adı verilen hafif biçimlendirme dilinde yazılır, bu dilin okunması ve öğrenilmesi kolaydır. O nedenle bu dil kısa sürede endüstri standardı haline gelmiştir.
 
-Docs içerikleri GitHub’da depolandığı için [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) adlı bir Markdown üst kümesi kullanabilir. GFM, yaygın biçimlendirme ihtiyaçları için ilave işlevler sağlar. Ayrıca, Open Publishing Services (OPS) DocFX Flavored Markdown (DFM) uygular. DFM, GitHub Flavored Markdown (GFM) ile yüksek oranda uyumludur ve Docs’a özgü özellikleri etkinleştiren işlevler ekler.
+Docs içerikleri GitHub’da depolandığı için [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) adlı bir Markdown üst kümesi kullanabilir. GFM, yaygın biçimlendirme ihtiyaçları için ilave işlevler sağlar. Ayrıca Open Publishing Services (OPS), Markdig Markdown Ayrıştırıcısı’nı uygular. Markdig, GitHub Flavored Markdown (GFM) ile son derece uyumlu olduğu için Docs’a özgü özellikleri etkinleştirmek için ek işlevsellik sağlar.
+
+* Markdig; .NET için hızlı, güçlü, CommonMark uyumlu, genişletilebilir Markdown işlemcisidir.
+* https://github.com/lunet-io/markdig
+* Daha iyi topluluk desteği
+* Daha iyi standartlar desteği
 
 ## <a name="markdown-basics"></a>Markdown temel bilgileri
 
@@ -145,7 +150,7 @@ Tablolar, temel Markdown belirtiminin parçası değildir, ancak GFM tarafından
 
 Tablo oluşturma hakkında daha fazla bilgi için şunlara bakın:
 
-- Geniş tabloların biçimlendirmesinde yardımcı olabilecek DFM [tablo sarmalama özelliği](#table-wrapping)
+- Geniş tabloların biçimlendirmesinde yardımcı olabilecek Markdig [tablo sarmalama özelliği](#table-wrapping)
 - GitHub’ın [Tablolarla bilgi düzenleme](https://help.github.com/articles/organizing-information-with-tables/) makalesi
 - [Markdown Tablo Oluşturucu](https://www.tablesgenerator.com/markdown_tables) web uygulaması
 - [Adam Pritchard - Markdown Kural Sayfası](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)
@@ -161,7 +166,7 @@ Satır içi bağlantılarda Markdown söz dizimi, köprü bağlantısı eklenece
 Bağlantı verme hakkında daha fazla bilgi için bkz.
 
 - Markdown’ın temel bağlantı desteği konusunda ayrıntılar için [Markdown söz dizimi kılavuzu](https://daringfireball.net/projects/markdown/syntax#link).
-- DFM tarafından sağlanan ilave bağlama söz dizimi hakkında ayrıntılar için bu kılavuzun [Bağlantılar](how-to-write-links.md) bölümü.
+- Markdig tarafından sağlanan ilave bağlayıcı söz dizimi hakkında ayrıntılar için bu kılavuzun [Bağlantılar](how-to-write-links.md) bölümü.
 
 ### <a name="code-snippets"></a>Kod parçacıkları
 
@@ -272,9 +277,9 @@ CREATE TABLE T1 (
 ## <a name="ops-custom-markdown-extensions"></a>OPS özel Markdown uzantıları
 
 > [!NOTE]
-> Open Publishing Services (OPS), GitHub Flavored Markdown (GFM) ile yüksek uyumluluğa sahip olan DocFX Flavored Markdown’ı (DFM) uygular. DFM, Markdown uzantıları aracılığıyla bazı işlevler ekler. Bu nedenle, tam OPS Yazma Kılavuzundan bazı makaleler başvuru için bu kılavuza dahil edilmiştir. (Örneğin, içindekiler bölümündeki "DFM ve Markdown uzantıları" ile "Kod parçacıkları" kısımlarına bakın.)
+> Open Publishing Services (OPS), GitHub Flavored Markdown (GFM) ile yüksek uyumluluğa sahip olan Markdown için Markdig Ayrıştırıcısı’nı uygular. Markdig, Markdown uzantıları aracılığıyla ilave işlevsellik sağlar. Bu nedenle, tam OPS Yazma Kılavuzundan bazı makaleler başvuru için bu kılavuza dahil edilmiştir. (Örneğin, içindekiler bölümünde "Markdig ve Markdown uzantıları" ile "Kod parçacıkları" kısımlarına bakın.)
 
-Docs makaleleri çoğu zaman paragraflar, bağlantılar, listeler ve bölüm başlıkları gibi makale biçimlendirmeleri için GFM’yi kullanır. Makaleler, daha zengin biçimlendirme seçenekleri için aşağıdakiler gibi DFM özelliklerini kullanabilir:
+Docs makaleleri çoğu zaman paragraflar, bağlantılar, listeler ve bölüm başlıkları gibi makale biçimlendirmeleri için GFM’yi kullanır. Makaleler, daha zengin biçimlendirme için aşağıdakiler gibi Markdig özelliklerini kullanabilir:
 
 - Not blokları
 - Eklemeler
@@ -282,7 +287,7 @@ Docs makaleleri çoğu zaman paragraflar, bağlantılar, listeler ve bölüm ba�
 - Ekli videolar
 - Kod parçacıkları/örnekleri
 
-Tam liste için içindekiler tablosunun “DFM ve Markdown uzantıları” ve “Kod parçacıkları” başlıklarına bakın.
+Tam bir liste için içerikler bölümünde “Markdig ve Markdown uzantıları” ve “Kod parçacıkları” kısmına bakın.
 
 ### <a name="note-blocks"></a>Not blokları
 
@@ -297,7 +302,7 @@ Genel olarak not bloklarını fazla kullanmaktan kaçınmalısınız, dikkat da�
 
 ### <a name="includes"></a>Eklemeler
 
-Makale dosyalarına “eklenmesi” gereken yeniden kullanılabilir metin veya görüntüleriniz varsa DFM dosya ekleme özelliği aracılığıyla “ekleme” dosyasına bir başvuru kullanabilirsiniz. Bu özellik, verilen dosyayı makalenize derleme sırasında “eklemesi” için OPS’yi yönlendirir, böylece dosya da yayımlanan makalenizin bir parçası olur. İçerikleri tekrar kullanmanıza imkan veren üç tür ekleme vardır:
+Makale dosyalarına dahil edilmesi gereken yeniden kullanılabilir metin veya görüntü dosyalarınız varsa dosyayı Markdig dosya dahil etme özelliği ile “dahil etmek” için bir başvuru kullanabilirsiniz. Bu özellik, verilen dosyayı makalenize derleme sırasında “eklemesi” için OPS’yi yönlendirir, böylece dosya da yayımlanan makalenizin bir parçası olur. İçerikleri tekrar kullanmanıza imkan veren üç tür ekleme vardır:
 
 - Satır içi: Genel bir metin parçacığını başka bir cümlede satır içinde yeniden kullanın.
 - Blok: Makalenin bir bölümündeki bütün bir Markdown dosyasını yeniden kullanın.
@@ -309,7 +314,7 @@ Eklemelere yönelik gereksinimler ve önemli konular şunlardır:
 
 - Aynı metni birden fazla makalede kullanmanız gerektiği zaman eklemeleri kullanın.
 - Blok eklemeleri bir veya iki paragraf, paylaşılan bir yordam veya paylaşılan bir kısım gibi büyük içeriklerle kullanın. Ancak bir cümleden daha küçük şeyler için kullanmayın.
-- Eklemeler, makalenizin GitHub işlenmiş görüntüsünde işlenmez, çünkü DFM uzantılarıyla çalışır. Bunlar yalnızca yayın sonrasında oluşturulur.
+- Eklenen dosyalar, makalenizin GitHub tarafından işlenmiş görünümünde işlenmez çünkü bunlar, Markdig uzantılarına bağlıdır. Bunlar yalnızca yayın sonrasında oluşturulur.
 - Eklemeye başvuran makaledeki bir eklemede bütün metnin, tam cümlelerden oluşmasına veya öncesinde ya da sonrasındaki metne bağlı olmayan tümcecikler halinde olmasına dikkat edin. Bu kılavuzu dikkate almamak, makalede çevrilemeyen bir satır oluşturur ve yerelleştirme deneyimini bozar.
 - Eklemeleri birbirine eklemeyin. Bu, desteklenmeyen bir durumdur.
 - Medya dosyalarını ekleme alt dizinine özgü bir medya klasörüne yerleştirin, örneğin `<repo>`/eklemeler/medya klasörü. Medya dizini, kökünde hiçbir görüntü barındırmamalıdır. Eklemede görüntü yoksa buna karşılık gelecek bir medya dizini gerekli değildir.
@@ -318,13 +323,13 @@ Eklemelere yönelik gereksinimler ve önemli konular şunlardır:
 
 ### <a name="selectors"></a>Seçiciler
 
-Seçicileri; teknik makalelerde, aynı makalenin farklı bölümlerini yazdığınızda teknolojiler veya platformlar arasındaki uygulama farklılıklarına değinirken kullanın. Bu genellikle geliştiriciler için mobil platform içeriklerimizde kullanılır. DFM’de şu anda iki farklı tür seçici vardır: Tekli seçici ve çoklu seçici.
+Seçicileri; teknik makalelerde, aynı makalenin farklı bölümlerini yazdığınızda teknolojiler veya platformlar arasındaki uygulama farklılıklarına değinirken kullanın. Bu genellikle geliştiriciler için mobil platform içeriklerimizde kullanılır. Markdig’de şu anda iki farklı türde seçici vardır; tekli seçici ve çoklu seçici.
 
 Aynı seçici Markdown, seçimdeki her bir makaleye gittiği için makalenizin seçicisini bir eklemeye yerleştirmeniz önerilir. Daha sonra tüm makalelerinizde aynı seçiciyi kullanan eklemeye başvurabilirsiniz.
 
 ### <a name="code-snippets"></a>Kod parçacıkları
 
-DFM, kod parçacığı uzantısı yoluyla bir makaleye gelişmiş kod eklemeyi destekler. Programlama dili seçimi ve söz dizimi renklendirme gibi GFM özellikleri üzerinde ortaya çıkan gelişmiş işleme seçenekleri sağlar, bunların yanında aşağıdaki gibi kullanışlı özellikler de getirir:
+Markdig, bir makaleye kod parçacığı uzantısı aracılığıyla gelişmiş kod eklemeyi destekler. Programlama dili seçimi ve söz dizimi renklendirme gibi GFM özellikleri üzerinde ortaya çıkan gelişmiş işleme seçenekleri sağlar, bunların yanında aşağıdaki gibi kullanışlı özellikler de getirir:
 
 - Bir dış depodan gelen merkezi kod örnekleri/parçacıklarının eklenmesi.
 - Kod örneklerinin farklı dillerdeki birçok çeşidini gösteren sekmeli kullanıcı arabirimi.

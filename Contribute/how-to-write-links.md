@@ -1,19 +1,13 @@
 ---
 title: Belgelerde bağlantı oluşturma
 description: Bu makale, docs.microsoft.com’daki içeriklerde bağlantı oluşturma konusunda rehber sağlar.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 06/29/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 1699e57ac6a4dc4c5a1ef099ea183b3cbc6307cd
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: a66e2fb4febf1947afe01919b96b1c10873cf57d
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469544"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239738"
 ---
 # <a name="using-links-in-documentation"></a>Belgelerde bağlantı kullanma
 Bu makale, docs.microsoft.com’da barınan sayfalardaki bağlantıların nasıl kullanılacağını açıklar. Bağlantılar, çeşitli birkaç kural ile birlikte Markdown’a eklemesi kolay öğelerdir. Bağlantılar kullanıcıları aynı sayfadaki içeriğe, komşu sayfalardaki içeriğe veya harici site ve URL’lere götürebilir.
@@ -63,7 +57,10 @@ Bir Docs teknik makalesinden aynı belge kümesinde bulunan bir diğer makaleye 
   `[link text](../directory/article-name.md)`
 
 - Belge kümeleri arası (aynı depoda olsa bile) bağlantı veren bir makale: `[link text](./directory/article-name)`
-  
+
+> [!IMPORTANT]
+> Yukarıdaki örneklerin hiçbiri `~/` öğesini bağlantının bir bölümü olarak kullanmaz. Deponun kökündeki bir yola bağlanıyorsanız `/` ile başlayın. `~/` dahil olmak üzere GitHub'daki kaynak depolarında gezinirken geçersiz bağlantılar oluşturur. Yolu `/` ile başlatmak doğru bir şekilde çözer.
+
 ## <a name="links-to-anchors"></a>Yer işaretlerine giden bağlantılar
 
 Yer işaretleri oluşturmanız gerekmez. Yer işaretleri, yayımlanma anında tüm H2 bölüm başlıkları için otomatik olarak oluşturulur. Yapmanız gereken tek şey, H2 bölümlerine bağlantı oluşturmaktır.

@@ -1,19 +1,13 @@
 ---
 title: Docs Stil kılavuzu - Hızlı başlangıç
 description: Bu makale stil hakkında, yalnızca docs.microsoft.com’a başlangıç için gereken temel konuları içeren kısa bir kılavuzdur.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 07/25/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 74f78b72f61cfebddb0cb03b73a3a806f4fe4a10
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: 34cd0dc1760f2a569f8bfec782f04b2691a74470
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469406"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239615"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs stil ve üslup hızlı başlangıcı
 
@@ -56,5 +50,6 @@ Teknik makalelerimiz pek çok dile çevrilir, bazıları ise belirli pazarlar ve
 ## <a name="localized-documentation"></a>Yerelleştirilmiş belgeler
 
 - Yerelleştirilmiş bir belgeye katkıda bulunuyorsanız [Microsoft Language Portal](https://www.microsoft.com/Language/Default.aspx)’a başvurun.
-- Yerelleştirilmiş kılavuzlar, dil stili hakkında bilgi, teknik yayınlarda dil kullanımı ve pazara özgü veri biçimleri hakkında bilgi için kendi dilinizde [stil kılavuzunu](https://www.microsoft.com/Language/StyleGuides.aspx) indirin.
-- Microsoft yerelleştirilmiş terminoloji için [ürüne özgü onaylı terminolojiyi](https://www.microsoft.com/Language/Search.aspx) arayın veya kendi dilinizde [Microsoft Terminoloji Koleksiyonu](https://www.microsoft.com/Language/Terminology.aspx)’nu indirin.
+- Yerelleştirilmiş kılavuzlar, dil stili hakkında bilgi, teknik yayınlarda dil kullanımı ve pazara özgü veri biçimleri hakkında bilgi için kendi dilinizde [stil kılavuzunu](https://www.microsoft.com/Language/StyleGuides) indirin.
+- Microsoft yerelleştirilmiş terminoloji için [ürüne özgü onaylı terminolojiyi](https://www.microsoft.com/Language/Default.aspx) arayın veya kendi dilinizde [Microsoft Terminoloji Koleksiyonu](https://www.microsoft.com/Language/Terminology.aspx)’nu indirin.
+- Microsoft stil kılavuzunun [yerelleştirme bölümünde](https://docs.microsoft.com/style-guide/global-communications/) daha fazla bilgi öğrenebilirsiniz.

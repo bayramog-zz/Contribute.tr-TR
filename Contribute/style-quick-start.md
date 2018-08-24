@@ -2,22 +2,22 @@
 title: Docs Stil kılavuzu - Hızlı başlangıç
 description: Bu makale stil hakkında, yalnızca docs.microsoft.com’a başlangıç için gereken temel konuları içeren kısa bir kılavuzdur.
 ms.date: 07/25/2017
-ms.openlocfilehash: 34cd0dc1760f2a569f8bfec782f04b2691a74470
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239615"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40243035"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs stil ve üslup hızlı başlangıcı
 
-Bu hızlı başlangıç, mümkün olduğunca az zamanda size docs.microsoft.com için makale yazarken geçerli olan en önemli Docs stil kavramlarını nasıl uygulayacağınız hakkında fikir verecektir. Bu kılavuz, yeni bir belge oluştururken de mevcut belgeyi düzenlerken de geçerlidir.
+Bu hızlı başlangıç kılavuzu, docs.microsoft.com’da yayınlanmak üzere teknik içerik yazmaya yönelik kısa bir kılavuzdur. Bu kılavuz, yeni bir belge oluştururken de mevcut belgeyi düzenlerken de geçerlidir.
 
-Lütfen en azından aşağıdakilere özen gösterin:
+En iyi uygulamalar:
 
 - Word’e kopyalayıp yapıştırmanız gerekse bile makalelerinizin yazım ve dil bilgisi denetimini yapın.
 - Günlük ve samimi bir dil kullanın--bire bir muhabbet ediyormuş gibi.
-- Basit cümleler kullanın. Daha kolay anlaşılır ve insan/makine çevirmenler tarafından çevrilmeleri daha rahat olur.
+- Basit cümleler kullanın. Kolay okunabilen cümleler, okuyucuların paylaştığınız kılavuzu hızlı bir şekilde kullanabilmelerini sağlar.
 
 ## <a name="use-the-microsoft-voice-principles"></a>Microsoft üslup ilkelerini kullanma
 

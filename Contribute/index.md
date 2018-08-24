@@ -5,18 +5,18 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: a0c52fea8f3a57cdfe89c2cd7a24ef7b511ada7c
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239781"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251472"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs katkıda bulunan kılavuzuna genel bakış
 
 [docs.microsoft.com ](https://docs.microsoft.com) (Docs) Stil Kılavuzu’na hoş geldiniz!
 
-Belge kümelerimizden birkaçı açık kaynaktır ve GitHub’da barınır. Daha fazla ekip bu modeli benimsemektedir. Tamamen açık kaynak olmayan belge kümelerinde bile çekme istekleri yapabileceğiniz genel kullanıma yönelik depolar vardır. Böylece mühendisler, içerik ekipleri ve müşterilerimiz arasındaki iletişim kolaylaşır ve iyileşir. Açık çalışmanın bazı avantajları vardır:
+Belge kümelerimizden birkaçı açık kaynaktır ve GitHub’da barınır. Microsoft’ta sürekli olarak daha fazla ekip bu modeli benimsemektedir. Tamamen açık kaynak olmayan belge kümelerinde bile çekme istekleri yapabileceğiniz genel kullanıma yönelik depolar vardır. Böylece mühendisler, içerik ekipleri ve müşterilerimiz arasındaki iletişim kolaylaşır ve iyileşir. Açık çalışmanın bazı avantajları vardır:
 
 - Açık kaynak depolar, hangi belgelere en çok ihtiyaç olduğuna dair geri bildirim almak için açık olarak planlanır.
 - Açık kaynak depolar, ilk sürümde en faydalı içeriği yayımlamak için açık olarak gözden geçirilir.

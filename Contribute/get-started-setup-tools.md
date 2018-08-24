@@ -5,18 +5,18 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 00631485f1f4eed9e0de2f6df98d973a819dfe4d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 9f22a416810711c076645a9483f022112a3a7642
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238932"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251427"
 ---
 # <a name="install-content-authoring-tools"></a>İçerik yazma araçlarını yükleme
 
 Bu makalede Git istemci araçlarını ve Visual Studio Code'u etkileşimli olarak yükleme adımları açıklanır.
 > [!div class="checklist"]
-> * [Windows için Git](https://git-scm.com/download/win)'i yükleme
+> * [GIT](https://git-scm.com/)’i yükleme
 > * [Visual Studio Code](https://code.visualstudio.com/)'u yükleme
 > * [Docs Yazma Paketi](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)’ni yükleme
 
@@ -25,9 +25,13 @@ Bu makalede Git istemci araçlarını ve Visual Studio Code'u etkileşimli olara
 >
 > Büyük katkılarda bulunanların bu adımı tamamlaması önerilir, bu adımdan sonra [büyük/uzun ömürlü değişiklikler iş akışı](how-to-write-workflows-major.md) kısmına geçebilirler. Ana depoda yazma izinleriniz olsa bile, önerdiğiniz değişiklikleri çatalınızda depolamak üzere okuma/yazma izinlerinizin olacağı *depo çatalını oluşturmanız ve kopyalamanız kesinlikle önerilir (ve bu makalede öyle yaptığınız varsayılır)*.
 
-## <a name="install-git-client-tools-on-windows"></a>Windows'da Git istemci araçlarını yükleme
+## <a name="install-git-client-tools"></a>Git istemci araçları indirme 
 
- [Software Freedom Conservancy’nin Git istemci araçlarının](https://git-scm.com/download/) son sürümünü yükleyin. Yükleme, Git sürüm denetim sistemini ve yerel Git deponuzla etkileşim için kullandığınız komut satırı uygulaması olan Git Bash'i içerir.
+ Platformunuz için [Software Freedom Conservancy’nin Git istemci araçlarının](https://git-scm.com/download/) son sürümünü yükleyin. 
+
+* [Windows için Git](https://git-scm.com/download/win). Bu yükleme, Git sürüm denetim sistemini ve yerel Git deponuzla etkileşim için kullandığınız komut satırı uygulaması olan Git Bash’i içerir.
+* Mac için Git, Xcode Komut Satırı Araçlarının bir parçası olarak sunulur. Komut satırından `git` öğesini çalıştırmanız yeterli. Gerekirse komut satırı araçlarını yüklemeniz istenir. [Mac için Git](https://git-scm.com/download/mac)’i ayrıca Software Freedom Conservancy’den indirebilirsiniz.
+* [Linux ve Unix için Git](https://git-scm.com/download/linux)
 
 Komut satırı arabirimi (CLI) yerine bir grafik kullanıcı arabirimi (GUI) tercih ederseniz popüler seçenekler için [Software Freedom Conservancy’nin uygun GUI İstemcileri sayfası](https://git-scm.com/downloads/guis), [GitHub’ın GitHub Masaüstü](https://desktop.github.com/) veya [Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx)’a bakın.
 

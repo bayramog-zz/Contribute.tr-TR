@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 94fad6f4b2faeefff687eb57cd2de8a0fb5bbbf3
+ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251472"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43308905"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs katkıda bulunan kılavuzuna genel bakış
 
@@ -31,7 +31,7 @@ Belge kümelerimizden birkaçı açık kaynaktır ve GitHub’da barınır. Micr
 
 ## <a name="quick-edits-to-existing-documents"></a>Mevcut belgelerde hızlı düzeltmeler
 
-Hızlı düzeltmeler, belgelerdeki küçük hataları ve eksikleri rapor etme ve düzeltme sürecini kolaylaştırır. Tüm çabalara rağmen yayımlanmış belgelerimizde ufak gramer ve yazım hataları oluyor. Bir hatayı rapor etmek için sorun da oluşturabilirsiniz ancak bunun için çekme isteği (PR) oluşturmak, daha hızlı ve kolaydır. Neredeyse tüm makalelerde, aşağıdaki şekilde gösterildiği gibi bir düzenleme düğmesi vardır. **Düzenle** düğmesine tıklayarak GitHub’daki kaynak dosyaya gidersiniz.
+Hızlı düzeltmeler, belgelerdeki küçük hataları ve eksikleri rapor etme ve düzeltme sürecini kolaylaştırır. Tüm çabalara rağmen yayımlanmış belgelerimizde ufak gramer ve yazım hataları oluyor. Bir hatayı rapor etmek için sorun da oluşturabilirsiniz ancak bunun için çekme isteği (PR) oluşturmak, daha hızlı ve kolaydır. Neredeyse tüm makalelerde, aşağıdaki şekilde gösterildiği gibi bir düzenleme düğmesi vardır. **Düzenle** (veya çevirisi) düğmesine tıklayarak GitHub’daki kaynak dosyaya gidersiniz.
 
 ![Düzenle bağlantısının konumu](./media/index/edit-article.png)
 
@@ -46,6 +46,12 @@ Değişikliklerinizi tamamladıktan sonra sayfanın sonuna kaydırın. PR’niz 
 
 ![değişikliğinizi önerme](./media/index/submit-pull-request.png)
 
+Değişikliğinizi önerdiğinizde göre deponun sahiplerinden yaptığınız değişiklikleri depolarına "çekmelerini" istemeniz gerekir. Bunun için "çekme isteği" adı verilen bir işlem kullanılır. Yukarıdaki şekilde **Dosya değişikliği öner**'e tıkladığınızda aşağıdakine benzer bir sayfanın açılması gerekir:
+
+![Çekme isteği oluşturma](media/index/create-pull-request.png)
+
+**Çekme isteği oluştur**'a tıklayın, çekme isteği için bir ad (ve isteğe bağlı olarak bir açıklama) girin ve yeniden **Çekme isteği oluştur**'a tıklayın.
+
 İşte bu kadar! İçerik ekibi üyeleri, PR’nizi gözden geçirip birleştirecekler. Büyük değişiklikler yaptıysanız, değişiklik talep eden geri bildirimler alabilirsiniz.
 
 GitHub düzenleme UI’si depodaki izinlerinizi yanıtlar. Önceki görüntüler, hedef depoda yazma izinleri olmayan katkıda bulunanlar için geçerlidir. GitHub, hesabınızda otomatik olarak hedef depo çatalı oluşturur. Hedef depoda yazma erişiminiz varsa, GitHub hedef depoda yeni bir dal oluşturur. Bu dalın adı **\<GitHubKimliği\>-düzeltmeeki-n** biçimindedir. GitHub kimliğiniz ve düzeltme eki dalı için bir sayısal tanımlayıcı kullanılır.
@@ -53,6 +59,12 @@ GitHub düzenleme UI’si depodaki izinlerinizi yanıtlar. Önceki görüntüler
 Hepimiz değişiklikler için PR’leri kullanıyoruz, yazma erişimi olan katkıda bulunanlar bile. Çoğu depoda, güncelleştirmelerin PR olarak gönderilmesi için `master` dal korumalıdır.
 
 Tarayıcıda düzenleme deneyimi, ufak veya sık görülmeyen değişiklikler için idealdir. BBüyük katkılar yapıyor veya gelişmiş Git özellikleri (dallara ayırma yönetimi veya gelişmiş birleştirme çakışmasını çözümleme gibi) kullanıyorsanız [deponun çatalını oluşturup yerel olarak çalışmanız](how-to-write-workflows-major.md) gerekir.
+
+> [!NOTE]
+> Bu özellik etkinleştirilmişse makaleyi **istediğiniz dilde** düzenleyebilirsiniz ve düzenleme türüne göre aşağıdaki işlemler gerçekleştirilir:
+> 1. onaylanan dilbilimsel değişiklikler, Makine Çevirisi altyapımızın geliştirilmesine de yardımcı olur
+> 2. makalenin içeriğini önemli ölçüde değiştiren düzenlemeler şirket içinde değerlendirilerek İngilizce makale için değişiklik önerisi oluşturulur ve onaylanması durumunda bu değişikliğin tüm dillere yansıtılması sağlanır.
+> Geliştirme önerileriniz yalnızca kendi dilinizdeki makaleleri olumlu yönde değiştirmekle kalmaz, diğer tüm dillerdeki içeriğe de katkıda bulunur.
 
 ## <a name="review-open-prs"></a>Açık PR’leri gözden geçirme
 

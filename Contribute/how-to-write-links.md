@@ -2,12 +2,12 @@
 title: Belgelerde bağlantı oluşturma
 description: Bu makale, docs.microsoft.com’daki içeriklerde bağlantı oluşturma konusunda rehber sağlar.
 ms.date: 06/29/2017
-ms.openlocfilehash: dad0460cfb36594c17cef1b079c5fc14191f56f7
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 92c23f2b91c67d7a1695c5f1e5dcdc80a8517f6e
+ms.sourcegitcommit: 37cd16636d7dcfc5222ef5a5d60e4ff30f74485c
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251468"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48030945"
 ---
 # <a name="using-links-in-documentation"></a>Belgelerde bağlantı kullanma
 Bu makale, docs.microsoft.com’da barınan sayfalardaki bağlantıların nasıl kullanılacağını açıklar. Bağlantılar, çeşitli birkaç kural ile birlikte Markdown’a eklemesi kolay öğelerdir. Bağlantılar kullanıcıları aynı sayfadaki içeriğe, komşu sayfalardaki içeriğe veya harici site ve URL’lere götürebilir.
@@ -158,7 +158,7 @@ URL yapısı:
 Bu URL’leri kullandığınızda, içeriğin son sürümüne yönlendirilirsiniz. Böylece sürüm bilinen adını belirtmeniz gerekmez. Ayrıca, sürüm değiştiğinde güncelleştirilmesi gereken kavramsal içeriğe bağlantı vermezsiniz.
 
 Doğru bağlantıyı oluşturmak için bağlantı vermek istediğiniz sayfayı tarayıcınızda açın ve URL’yi kopyalayın.
-Ardından "https://docs.microsoft.com" ve yerel ayar bilgilerini kaldırın.
+Ardından ´ "https://docs.microsoft.com" ´ ve yerel ayar bilgilerini kaldırın.
 
 Bir İçindekiler Tablosu’ndan bağlantı verirken, yerel ayar bilgisini çıkararak tam URL’yi kullanmanız gerekir.
 

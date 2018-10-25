@@ -2,12 +2,12 @@
 title: Docs Stil kılavuzu - Hızlı başlangıç
 description: Bu makale stil hakkında, yalnızca docs.microsoft.com’a başlangıç için gereken temel konuları içeren kısa bir kılavuzdur.
 ms.date: 07/25/2017
-ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
-ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.openlocfilehash: f5c32d3fb71ef3513c68b9c506c823997bfe4d8f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084411"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805610"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs stil ve üslup hızlı başlangıcı
 
@@ -51,5 +51,5 @@ Teknik makalelerimiz pek çok dile çevrilir, bazıları ise belirli pazarlar ve
 
 - Yerelleştirilmiş bir belgeye katkıda bulunuyorsanız [Microsoft Language Portal](https://www.microsoft.com/Language/Default.aspx)’a başvurun.
 - Yerelleştirilmiş kılavuzlar, dil stili hakkında bilgi, teknik yayınlarda dil kullanımı ve pazara özgü veri biçimleri hakkında bilgi için kendi dilinizde [stil kılavuzunu](https://www.microsoft.com/Language/StyleGuides) indirin.
-- Microsoft yerelleştirilmiş terminoloji için [ürüne özgü onaylı terminolojiyi](https://www.microsoft.com/Language/Default.aspx) arayın veya kendi dilinizde [Microsoft Terminoloji Koleksiyonu](https://www.microsoft.com/Language/Terminology.aspx)’nu indirin.
+- Microsoft yerelleştirilmiş terminoloji için [ürüne özgü onaylı terminolojiyi](https://www.microsoft.com/Language/Default.aspx) arayın veya kendi dilinizde [Microsoft Terminoloji Koleksiyonu](https://www.microsoft.com/language/Terminology)’nu indirin.
 - Yerelleştirme hakkında daha fazla bilgi edinmek için bkz: [Microsoft Yazma Stili Kılavuzu](https://docs.microsoft.com/style-guide/global-communications)'ndaki "Küresel iletişim."

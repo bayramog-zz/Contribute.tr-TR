@@ -2,18 +2,18 @@
 title: GitHub hesap kurulumu adımları
 description: Bu makale, docs.microsoft.com içeriklerine katkıda bulunmak için gereken GitHub hesaplarını ayarlama işleminde size yol gösterir.
 ms.date: 02/27/2018
-ms.openlocfilehash: 15fa7c11090a5c4faefe38d00d273e92c231329b
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 4bbf110fdbc1a60f77362a36a9c2c5b654d450cf
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238955"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805525"
 ---
 # <a name="github-account-setup"></a>GitHub hesap kurulumu
 
 ## <a name="set-up-your-github-account"></a>GitHub hesabınızı ayarlama
 
-Docs teknik içeriğine katkıda bulunmak için kendi GitHub hesabınızı ayarlamanız gerekir. İşin iyi tarafı ise buradaki pek çok adımı yalnızca bir kere gerçekleştirmeniz yeterlidir.
+Docs teknik içeriğine katkıda bulunmak için kendi GitHub hesabınızı ayarlamanız gerekir. Genellikle bu adımları bir kere tamamlamanız yeterlidir.
 
 ### <a name="1-create-a-github-account-and-set-up-your-profile"></a>1. Bir GitHub hesabı oluşturma ve profilinizi kurma
 

@@ -2,18 +2,18 @@
 title: Docs’ta makale yazmak için Markdown kullanma
 description: Bu makale, docs.microsoft.com makalelerinde kullanılan Markdown dilinin temellerini ve başvuru bilgilerini sağlar.
 ms.date: 07/13/2017
-ms.openlocfilehash: dca1ccba2ae4ebd08b6039f5d780e7a7ac92e79f
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238978"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805747"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Docs’ta makale yazmak için Markdown kullanma
 
-Docs.microsoft.com makaleleri [Markdown](https://daringfireball.net/projects/markdown/) adı verilen hafif biçimlendirme dilinde yazılır, bu dilin okunması ve öğrenilmesi kolaydır. O nedenle bu dil kısa sürede endüstri standardı haline gelmiştir.
+[Docs.microsoft.com](http://docs.microsoft.com) makaleleri, [Markdown](https://daringfireball.net/projects/markdown/) adı verilen hafif biçimlendirme dilinde yazılır. Bu dilin okunması ve öğrenilmesi kolaydır. O nedenle bu dil kısa sürede endüstri standardı haline gelmiştir.
 
-Docs içerikleri GitHub’da depolandığı için [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) adlı bir Markdown üst kümesi kullanabilir. GFM, yaygın biçimlendirme ihtiyaçları için ilave işlevler sağlar. Ayrıca Open Publishing Services (OPS), Markdig Markdown Ayrıştırıcısı’nı uygular. Markdig, GitHub Flavored Markdown (GFM) ile son derece uyumlu olduğu için Docs’a özgü özellikleri etkinleştirmek için ek işlevsellik sağlar.
+Docs içerikleri GitHub’da depolandığı için [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) adlı bir Markdown üst kümesi kullanabilir. GFM, yaygın biçimlendirme ihtiyaçları için ilave işlevler sağlar. Ayrıca Open Publishing Services (OPS), Markdig Markdown Ayrıştırıcısı’nı uygular. Markdig, GFM ile yüksek uyumluluğa sahip olduğu için Docs’a özgü özellikleri etkinleştirmek için ek işlevsellik sağlar.
 
 * Markdig; .NET için hızlı, güçlü, CommonMark uyumlu, genişletilebilir Markdown işlemcisidir.
 * https://github.com/lunet-io/markdig
@@ -27,10 +27,10 @@ Docs içerikleri GitHub’da depolandığı için [GitHub Flavored Markdown (GFM
 Bir bölüm başlığı oluşturmak için karma işaretini (#) aşağıdaki gibi kullanırsınız:
 
 ```markdown
-    # This is heading 1
-    ## This is heading 2
-    ### This is heading 3
-    #### This is heading 4
+# This is heading 1
+## This is heading 2
+### This is heading 3
+#### This is heading 4
 ```
 
 ### <a name="bold-and-italic-text"></a>Kalın ve italik metin
@@ -38,19 +38,19 @@ Bir bölüm başlığı oluşturmak için karma işaretini (#) aşağıdaki gibi
 Bir metni **kalın** olarak biçimlendirmek için iki yıldız işareti arasına alırsınız:
 
 ```markdown
-    This text is **bold**.
+This text is **bold**.
 ```
 
 Bir metni *italik* olarak biçimlendirmek için bir yıldız işareti arasına alırsınız:
 
 ```markdown
-    This text is *italic*.
+This text is *italic*.
 ```
 
 Bir metni ***kalın ve italik*** olarak biçimlendirmek için üç yıldız işareti arasına alırsınız:
 
 ```markdown
-    This is text is both ***bold and italic***.
+This is text is both ***bold and italic***.
 ```
 
 ### <a name="lists"></a>Listeler
@@ -107,16 +107,16 @@ Bir listeyi diğerinin içine yerleştirmek için alt lise öğelerini girintili
 
 ```markdown
 1. First instruction
-    1. Sub-instruction
-    2. Sub-instruction
+   1. Sub-instruction
+   2. Sub-instruction
 2. Second instruction
 ```
 
 şu şekilde oluşturulur:
 
 1. İlk yönerge
-    1. Alt yönerge
-    2. Alt yönerge
+   1. Alt yönerge
+   2. Alt yönerge
 2. İkinci yönerge
 
 ### <a name="tables"></a>eğlence
@@ -145,12 +145,12 @@ Tablolar, temel Markdown belirtiminin parçası değildir, ancak GFM tarafından
 
 Tablo oluşturma hakkında daha fazla bilgi için şunlara bakın:
 
-- Geniş tabloların biçimlendirmesinde yardımcı olabilecek Markdig [tablo sarmalama özelliği](#table-wrapping)
-- GitHub’ın [Tablolarla bilgi düzenleme](https://help.github.com/articles/organizing-information-with-tables/) makalesi
-- [Markdown Tablo Oluşturucu](https://www.tablesgenerator.com/markdown_tables) web uygulaması
-- [Adam Pritchard - Markdown Kural Sayfası](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)
-- [Michel Fortin - Markdown Ekstra](https://michelf.ca/projects/php-markdown/extra/#table)
-- [HTML tablolarını Markdown’a dönüştürme](https://jmalarcon.github.io/markdowntables/)
+- Geniş tabloların biçimlendirmesinde yardımcı olabilecek Markdig [tablo sarmalama özelliği](#table-wrapping).
+- GitHub’ın [Tablolarla bilgi düzenleme](https://help.github.com/articles/organizing-information-with-tables/) makalesi.
+- [Markdown Tablo Oluşturucu](https://www.tablesgenerator.com/markdown_tables) web uygulaması.
+- [Adam Pritchard - Markdown Hızlı Başvuru Kılavuzu](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables).
+- [Michel Fortin - Markdown Ekstra](https://michelf.ca/projects/php-markdown/extra/#table).
+- [HTML tablolarını Markdown’a dönüştürme](https://jmalarcon.github.io/markdowntables/).
 
 ### <a name="links"></a>Bağlantılar
 
@@ -212,6 +212,7 @@ Bu diller, kolay as desteğine ve dil vurgulamasına sahiptir.
 |PowerShell|powershell|
 |Python|python|
 |Q#|qsharp|
+|R|r|
 |Ruby|ruby|
 |SQL|sql|
 |Swift|swift|
@@ -336,18 +337,19 @@ Markdig, bir makaleye kod parçacığı uzantısı aracılığıyla gelişmiş k
 Alt çizgi içeren alternatif metin düzgün bir şekilde işlenmez. Örneğin, şunu kullanmak yerine:
 
 ```markdown
-![ADextension_2FA_Configure_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 Şunun gibi alt çizgilerden kaçının:
 
 ```markdown
-![ADextension\_2FA\_Configure\_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension\_2FA\_Configure\_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 ### <a name="apostrophes-and-quotation-marks"></a>Kesme işareti ve tırnak işaretleri
 
-Word dosyasından Markdown editörüne bir şey kopyalarsanız kopyaladığınız metin “akıllı” (kıvrık) kesme işaretleri veya tırnak işaretleri içerebilir. Bunların kodlanması veya kesme işareti ya da tırnak işaretlerine dönüştürülmesi gerekir. Aksi takdirde, dosya yayımlandığında şu karakterleri görebilirsiniz: Itâ€™s
+Word dosyasından Markdown editörüne bir şey kopyalarsanız kopyaladığınız metin “akıllı” (kıvrık) kesme işaretleri veya tırnak işaretleri içerebilir. Bunların kodlanması veya kesme işareti ya da tırnak işaretlerine dönüştürülmesi gerekir.
+Aksi takdirde, dosya yayımlandığında şu karakterleri görebilirsiniz: Itâ€™s
 
 Bu noktalama işaretlerinin “akıllı” olanları için kodlamalar aşağıdaki gibidir:
 
@@ -358,14 +360,15 @@ Bu noktalama işaretlerinin “akıllı” olanları için kodlamalar aşağıda
 
 ### <a name="angle-brackets"></a>Açılı ayraçlar
 
-Dosyanızın metninde (kodunda değil), yer tutucuları göstermek gibi bir amaçla açılı ayraç kullanıyorsanız bu ayraçları el ile kodlamanız gerekir. Aksi takdirde Markdown bunların HTML etiketleri olması gerektiğini düşünür.
+Bir yer tutucuyu ifade etmek için köşeli ayraç kullanımı yaygındır. Metinde (kodda değil) bunu yaptığınızda, köşeli ayraçları kodlamanız gerekir. Aksi takdirde Markdown bunların HTML etiketleri olması gerektiğini düşünür.
 
 Örneğin `<script name>` öğesini `&lt;script name&gt;` şeklinde kodlayın
 
-## <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca bkz.:
 
 ### <a name="markdown-resources"></a>Markdown kaynakları
 
 - [Markdown’a Giriş](https://daringfireball.net/projects/markdown/syntax)
 - [Docs Markdown kural sayfası](./media/documents/markdown-cheatsheet.pdf?raw=true)
 - [GitHub Markdown Temel Bilgileri](https://help.github.com/articles/markdown-basics/)
+- [Markdown Kılavuzu](https://www.markdownguide.org/)

@@ -3,14 +3,13 @@ title: Yerel Git deposunu ayarlama
 description: Bu makale, belgelere katkıda bulunmak amacıyla çatal oluşturma ve kopyalama işlemleri dahil olmak üzere yerel Git deponuzun oluşturulmasına yönelik rehber sağlar.
 author: jasonwhowell
 ms.author: jasonh
-manager: kfile
 ms.date: 01/18/2018
-ms.openlocfilehash: 2ad0de552d481e2460ca0f56570181e33d0a6608
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239001"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805689"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Belgeler için yerel Git deposunu ayarlama
 
@@ -30,7 +29,7 @@ Katkıda bulunmaya başlamak için şu bir kerelik kurulum etkinliklerini çalı
 
 ## <a name="overview"></a>Genel Bakış
 
-Microsoft’un belge sitesine katkıda bulunmak için ilgili belge deposunu kopyalayıp Markdown dosyalarını yerel olarak oluşturabilir ve düzenleyebilirsiniz. Microsoft kendi github hesabınıza uygun deponun çatalını oluşturmanızı gerektirir; böylece önerdiğiniz değişiklikleri depolamak için orada okuma/yazma izinleriniz olabilir. Sonra, değişiklikleri paylaşılan salt okunur merkezi depoya eklemek için çekme isteklerini kullanırsınız.
+Microsoft’un belge sitesine katkıda bulunmak için ilgili belge deposunu kopyalayıp Markdown dosyalarını yerel olarak oluşturabilir ve düzenleyebilirsiniz. Microsoft kendi GitHub hesabınıza uygun deponun çatalını oluşturmanızı gerektirir; böylece önerdiğiniz değişiklikleri depolamak için orada okuma/yazma izinleriniz olabilir. Sonra, değişiklikleri paylaşılan salt okunur merkezi depoya eklemek için çekme isteklerini kullanırsınız.
 
 ![GitHub Üçgeni](./media/git-and-github-initial-setup.png)
 
@@ -60,7 +59,7 @@ GitHub’da yeniyseniz çatal oluşturma ve kopyalama işlemlerine kavramsal bir
 ## <a name="fork-the-repository"></a>Depo çatalı oluşturma
 Uygun depoyu kullanarak, GitHub web sitesi yoluyla kendi GitHub hesabınızda depo çatalı oluşturun.
 
-Tüm Docs ana depoları salt okunur erişim sağladığı için depolardaki içeriklerde doğrudan değişiklik yapamazsınız, bu nedenle de kişisel bir çatal gereklidir. Değişiklik yapmak için deponuzdan ana depoya bir [çekme isteği](git-github-fundamentals.md#pull-requests) göndermeniz gerekir. Bu işlemi kolaylaştırmak için önce deponun yazma izniniz olan bir kopyasına ihtiyacınız vardır. GitHub *çatalı* bu amaca hizmet eder.
+Tüm ana belge depoları salt okunur erişim sağladığı için kişisel bir çatal gereklidir. Değişiklik yapmak için deponuzdan ana depoya bir [çekme isteği](git-github-fundamentals.md#pull-requests) göndermeniz gerekir. Bu işlemi kolaylaştırmak için önce deponun yazma izniniz olan bir kopyasına ihtiyacınız vardır. GitHub *çatalı* bu amaca hizmet eder.
 
 1. Ana deponun GitHub sayfasına gidin ve sağ üst köşedeki **Çatal** düğmesine tıklayın.
 

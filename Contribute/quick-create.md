@@ -8,12 +8,12 @@ ms.date: 07/24/2018
 ms.author: cfowler
 zone_pivot_groups: keyvault-languages
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 27ebd3e348fc231d8b82e6c17f282bd9ca4afb9f
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.openlocfilehash: 497631fe46ac4e2c9c495a609547753a84d662bf
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308836"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805758"
 ---
 # <a name="quickstart-set-and-retrieve-a-secret-from-azure-key-vault"></a>Hızlı başlangıç: Azure Key Vault'tan gizli dizi ayarlama ve alma
 
@@ -21,7 +21,7 @@ Bu hızlı başlangıçta Anahtar Kasasında gizli dizi depolama ve bunu Web uyg
 
 > [!div class="checklist"]
 > * Anahtar Kasası oluşturun.
-> * Anahtar Kasasında bir gizli dizi depolayın.
+> * Anahtar kasasında bir gizli dizi depolayın.
 > * Anahtar Kasasındaki bir gizli diziyi alın.
 > * Azure Web Uygulaması oluşturun.
 > * [Yönetilen hizmet kimliklerini etkinleştirin](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview).
@@ -30,16 +30,19 @@ Bu hızlı başlangıçta Anahtar Kasasında gizli dizi depolama ve bunu Web uyg
 Devam etmeden önce [temel kavramlar](https://docs.microsoft.com/azure/key-vault/key-vault-whatis#basic-concepts) hakkında bilgi sahibi olduğunuzdan emin olun.
 
 > [!NOTE]
-> Aşağıdaki öğreticinin neden en iyi yöntem olduğunu anlamak için bilmeniz gereken birkaç kavram vardır. Key Vault, gizli dizilerin program aracılığıyla depolandığı merkezi bir depodur. Bunu yapmak için uygulamaların/kullanıcıların gizli dizi sunarak Key Vault kimlik doğrulamasından geçmesi gerekir. Güvenlikle ilgili en iyi yöntemlerin uygulanması için bu ilk gizli dizinin de düzenli olarak döndürülmesi gerekir. Ancak [Yönetilen Hizmet Kimliği](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview) sayesinde Azure'da çalışan uygulamalara Azure tarafından otomatik olarak yönetilen bir kimlik verilir. Bu da **Gizli Dizi Belirleme Sorununu** çözerek kullanıcıların/uygulamaların en iyi yöntemleri uygulamasına ve ilk gizli diziyi döndürme konusunda endişelenmemesine yardımcı olur.
+> Aşağıdaki öğreticinin neden en iyi yöntem olduğunu anlamak için bilmeniz gereken birkaç kavram vardır. Key Vault, gizli dizilerin program aracılığıyla depolandığı merkezi bir depodur. Bunu yapmak için uygulamaların/kullanıcıların gizli dizi sunarak Key Vault kimlik doğrulamasından geçmesi gerekir. Güvenlikle ilgili en iyi yöntemlerin uygulanması için bu ilk gizli dizinin de düzenli olarak döndürülmesi gerekir. Ancak [Yönetilen Hizmet Kimliği](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview) sayesinde Azure’da çalışan uygulamalara Azure tarafından otomatik olarak yönetilen bir kimlik verilir. Bu da **Gizli Dizi Belirleme Sorununu** çözerek kullanıcıların/uygulamaların en iyi yöntemleri uygulamasına ve ilk gizli diziyi döndürme konusunda endişelenmemesine yardımcı olur.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
 ::: zone pivot="nodejs"
-* [Node JS](https://nodejs.org/en/) ::: zone-end ::: zone pivot="dotnet"
+* [Node JS](https://nodejs.org/en/)
+::: zone-end
+::: zone pivot="dotnet"
 * [Visual Studio 2017 sürüm 15.7.3 veya üzeri](https://www.microsoft.com/net/download/windows), aşağıdaki iş yükleriyle birlikte:
   * ASP.NET ve web geliştirme
   * .NET Core çoklu platform geliştirme
-* [.NET Core 2.1 SDK veya üzeri](https://www.microsoft.com/net/download/windows) :::zone-end
+* [.NET Core 2.1 SDK’sı veya üzeri](https://www.microsoft.com/net/download/windows)
+::: zone-end
 * Git ([indir](https://git-scm.com/downloads)).
 * Azure aboneliği. Azure aboneliğiniz yoksa başlamadan önce [ücretsiz bir hesap](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) oluşturun.
 * [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) 2.0.4 veya sonraki sürümü. Bu uygulama Windows, Mac ve Linux’ta kullanılabilir.
@@ -110,7 +113,10 @@ git clone https://github.com/Azure-Samples/key-vault-node-quickstart.git
 
 ## <a name="install-dependencies"></a>Bağımlılıkları yükleme
 
-Bu adımda bağımlılıkları yükleyeceksiniz. Şu komutları çalıştırın: cd key-vault-node-quickstart npm install
+Bu adımda bağımlılıkları yükleyeceksiniz. Aşağıdaki komutları çalıştırın:
+
+    cd key-vault-node-quickstart
+    npm install
 
 Bu projede 2 düğüm modülü kullanılmaktadır:
 
@@ -119,14 +125,14 @@ Bu projede 2 düğüm modülü kullanılmaktadır:
 
 ## <a name="publish-the-web-application-to-azure"></a>Web uygulamasını Azure’da yayımlama
 
-Yapmanız gereken birkaç adım aşağıda gösterilmiştir
+Uygulamayı Azure’da yayımlamak için tamamlamamız gereken birkaç adım, aşağıda verilmiştir.
 
 * 1. adım, [Azure App Service](https://azure.microsoft.com/services/app-service/) Planı oluşturmaktır. Bu planda birden fazla web uygulaması depolayabilirsiniz.
 
     ```azurecli
     az appservice plan create --name myAppServicePlan --resource-group myResourceGroup
     ```
-* Sonraki adımda bir web uygulaması oluşturmanız gerekir. Aşağıdaki örnekte <app_name> kısmını genel olarak benzersiz bir uygulama adıyla değiştirin (geçerli karakterler a-z, 0-9 ve - şeklindedir). Çalışma zamanı NODE|6.9 olarak ayarlanmıştır. Desteklenen tüm çalışma zamanlarını görmek için şu komutu çalıştırın: az webapp list-runtimes
+* Sonraki adımda bir web uygulaması oluşturmanız gerekir. Aşağıdaki örnekte <app_name> kısmını genel olarak benzersiz bir uygulama adıyla değiştirin (geçerli karakterler a-z, 0-9 ve - şeklindedir). Çalışma zamanı NODE|6.9 olarak ayarlanmıştır. Desteklenen tüm çalışma zamanlarını görmek için `az webapp list-runtimes` komutunu çalıştırın
 
     ```azurecli
     az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app_name> --runtime "NODE|6.9" --deployment-local-git
@@ -238,7 +244,8 @@ Ardından https://<app_name>.azurewebsites.net adresine gittiğinizde gizli dizi
 
 ::: zone-end
 
-::: zone pivot="dotnet" Uygulamayı çalıştırdığınızda gizli dizi değerinizin alındığını görürsünüz.
+::: zone pivot="dotnet"
+Uygulamayı çalıştırdığınızda gizli dizi değerinizin alındığını görürsünüz.
 ::: zone-end
 
 ## <a name="next-steps"></a>Sonraki adımlar
@@ -247,10 +254,12 @@ Ardından https://<app_name>.azurewebsites.net adresine gittiğinizde gizli dizi
 * [Azure Key Vault Ana Sayfası](https://azure.microsoft.com/services/key-vault/)
 * [Azure Key Vault Belgeleri](https://docs.microsoft.com/azure/key-vault/)
 * [Node için Azure SDK](https://docs.microsoft.com/javascript/api/overview/azure/key-vault)
-* [Azure REST API Başvurusu](https://docs.microsoft.com/rest/api/keyvault/) ::: zone-end
+* [Azure REST API Başvurusu](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end
 
 ::: zone pivot="dotnet"
 * [Azure Key Vault ana sayfası](https://azure.microsoft.com/services/key-vault/)
 * [Azure Key Vault belgeleri](https://docs.microsoft.com/azure/key-vault/)
 * [.NET için Azure SDK](https://github.com/Azure/azure-sdk-for-net)
-* [Azure REST API başvurusu](https://docs.microsoft.com/rest/api/keyvault/) ::: zone-end
+* [Azure REST API başvurusu](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end

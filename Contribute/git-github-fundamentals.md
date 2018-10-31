@@ -2,12 +2,12 @@
 title: Belgeler için Git ve GitHub temel özellikleri
 description: Bu makale, Git ve GitHub deposuna genel bir bakış sağlar, içeriğin nasıl organize edildiğini ve docs.microsoft.com adlandırma kurallarını açıklar.
 ms.date: 06/30/2017
-ms.openlocfilehash: 8a116067fdd7d031c560abfb7055236e0bfb1a3d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 05c758845007f859382014166e88fd9614cdb873
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805712"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Docs belgeleri için Git ve GitHub temel özellikleri
 
@@ -30,8 +30,8 @@ Git ayrıca, bir projenin içeriğini yönetmek için katmanlı bir yapı kullan
 
 Katkıda bulunanlar, yerel ve GitHub seviyelerinde depoları güncelleştirmek ve yönlendirmek için Git’i kullanır:
 
-- Yerel depoları yönetmek ve GitHub depoları ile iletişime geçmek için Git komutlarını destekleyen Git Bash konsolu gibi araçlarla yerel olarak
-- Ana depoya geri akan katkıların birleşimini yönetmek için Git’i tümleştiren [www.github.com](https://www.github.com) aracılığıyla
+- Yerel depoları yönetmek ve GitHub depoları ile iletişime geçmek için Git komutlarını destekleyen Git Bash konsolu gibi araçlarla yerel olarak.
+- Ana depoya geri akan katkıların birleşimini yönetmek için Git’i tümleştiren [www.github.com](https://www.github.com) aracılığıyla.
 
 ## <a name="github"></a>GitHub
 
@@ -46,7 +46,7 @@ Tüm iş akışları, herhangi bir Docs projesinin ana deposunun saklandığı G
 
 Daha önce bahsedildiği gibi bir projenin varsayılan/ana dalı, projenin geçerli içerik sürümü olarak hizmet verir. Ana daldaki (ve bundan oluşturulan dallardaki) içerikler, karşılık gelen Docs sayfalarındaki makalelerin düzeniyle biraz benzerdir. Alt dizinler; benzer içerikler (hizmetler gibi), medya içerikleri (görüntü dosyaları gibi) ve içeriğin tekrar kullanımını sağlayan “ekleme” dosyalarının ayrılması için kullanılır.
 
-Bir ana `articles` dizinini genellikle deponun kökünde bulabilirsiniz. Makale dizini bir alt dizin kümesini içerir. Alt dizinlerdeki makaleler, *.md* uzantısı kullanan Markdown dosyaları olarak biçimlendirilir. Birden fazla hizmeti destekleyen bazı depolar, genel bir `/articles` alt dizini kullanır, örneğin [https://github.com/microsoft/Azure-Docs](https://github.com/microsoft/Azure-Docs) deposu gibi. Diğerleri ise hizmete özgü bir ad kullanabilir, örneğin `/IntuneDocs` kullanan[https://github.com/microsoft/IntuneDocs](https://github.com/microsoft/IntuneDocs) deposu.
+Bir ana `articles` dizinini genellikle deponun kökünde bulabilirsiniz. Makale dizini bir alt dizin kümesini içerir. Alt dizinlerdeki makaleler, *.md* uzantısı kullanan Markdown dosyaları olarak biçimlendirilir. Birden fazla hizmeti destekleyen bazı depolar, genel bir `/articles` alt dizini kullanır, örneğin [Azure-Docs](https://github.com/MicrosoftDocs/Azure-Docs) deposu. Diğerleri ise hizmete özgü bir ad kullanabilir, örneğin `/IntuneDocs` kullanan [Intune-Docs](https://github.com/MicrosoftDocs/IntuneDocs) deposu.
 
 Bu dizinin kökünde, hizmet veya ürünün geneliyle alakalı makaleler bulabilirsiniz. Genelde özellikler/hizmetler veya yaygın senaryolarla eşleşen başka bir alt dizinler serisi bulabilirsiniz. Örneğin Azure “sanal makine” makaleleri `/virtual-machines` alt dizininde, “anlama ve keşfetme” makaleleri ise `/understand-explore` alt dizininde yer alır.
 

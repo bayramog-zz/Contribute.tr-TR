@@ -1,20 +1,19 @@
 ---
-title: VS Code için Docs Yazma Paketi
-description: Bu makale, docs.microsoft.com’da Markdown yazmayı kolaylaştıran VS Code uzantı paketini açıklar.
+title: Visual Studio Code için Docs Yazma Paketi
+description: Bu makale, docs.microsoft.com’da Markdown yazmayı kolaylaştıran Visual Studio Code uzantı paketini açıklar.
 author: meganbradley
 ms.author: mbradley
-manager: jemash
-ms.date: 04/06/2018
-ms.openlocfilehash: b9fedce0a73c5c4212ffd0893c745fab56677c8c
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.date: 10/22/2018
+ms.openlocfilehash: 00afafbbf16096ac6433c0ab276578d8d9084b51
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308928"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805666"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>VS Code için Docs Yazma Paketi
 
-Docs Yazma Paketi, docs.microsoft.com içim Markdown yazmaya yardımcı VS Code uzantılarının bir koleksiyonudur. Paketi [VS Code Marketi’nde mevcuttur](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) ve şu uzantıları barındırır:
+Docs Yazma Paketi, docs.microsoft.com içim Markdown yazmaya yardımcı Visual Studio Code uzantılarının bir koleksiyonudur. Paketi [VS Code Marketi’nde mevcuttur](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) ve şu uzantıları barındırır:
 
 - [markdownlint:](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) David Anson tarafından oluşturulan popüler bir Markdown lint aracı, Markdown’ınızın en iyi yöntemleri izlemesini sağlar.
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): Street Side Software tarafından oluşturulan tamamen çevrimdışı bir yazım denetimi aracı.
@@ -103,7 +102,7 @@ Templates uzantısı, üç dinamik meta veri alanını destekler: author, ms.aut
 |----------|---------------|
 |author    |VS Code ayar dosyasında belirtilen GitHub kimliğiniz.|
 |ms.author |VS Code ayar dosyasında belirtilen Microsoft diğer adınız. Microsoft çalışanı değilseniz bu alanı boş bırakın.|
-|ms.date   |Docs tarafından desteklenen biçimde geçerli tarih: AA/GG/YYYY. Dosyayı daha sonra güncelleştirdiğinizde tarihin otomatik olarak güncelleştirilmeyeceğini unutmayın. Makalenin güncelleştirme tarihini belirtmek için bu değeri el ile ayarlamanız gerekir.|
+|ms.date   |Docs tarafından desteklenen biçimde geçerli tarih: AA/GG/YYYY. Dosyayı daha sonra güncelleştirirseniz tarihin otomatik olarak güncelleştirilmediğine dikkat edin. Docs.microsoft.com sitesinde en son yayımlanma tarihini gösterecek şekilde ms.date değerini el ile güncelleştirmelisiniz.|
 
 ### <a name="to-set-author-github-id-andor-msauthor-microsoft-alias"></a>author (GitHub kimliği) ve/veya ms.author (Microsoft diğer adı) değerlerini ayarlama
 

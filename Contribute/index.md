@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 921c63c2748149543bfc73e4b38278a2ed74ac56
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: dab2de80654fb55382b2ca7c9f78df36df9971dc
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805804"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609373"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs katkıda bulunan kılavuzuna genel bakış
 
@@ -37,10 +37,12 @@ Hızlı düzeltmeler, belgelerdeki küçük hataları ve eksikleri rapor etme ve
 
 Daha sonra, aşağıdaki şekilde gösterilen kalem simgesine tıklayarak makaleyi düzenleyin.
 
-> [!NOTE]
-> Kalem simgesi griyse GitHub hesabınızla oturum açmanız veya yeni bir hesap oluşturmanız gerekir. Web düzenleyicisinde değişiklik yapın. **Değişiklik önizlemesi** sekmesine tıklayarak değişikliklerinizin biçimini görebilirsiniz.
-
 ![Kalem simgesinin konumu](./media/index/editicon.png)
+
+> [!NOTE]
+> Kalem simgesi griyse GitHub hesabınızla oturum açmanız veya yeni bir hesap oluşturmanız gerekir.
+
+Web düzenleyicisinde değişiklik yapın. **Değişiklik önizlemesi** sekmesine tıklayarak değişikliklerinizin biçimini görebilirsiniz.
 
 Değişikliklerinizi tamamladıktan sonra sayfanın sonuna kaydırın. PR’niz için bir ad ve açıklama girdikten sonra, aşağıdaki şekilde gösterildiği gibi **Dosya değişikliği öner**’e tıklayın:
 

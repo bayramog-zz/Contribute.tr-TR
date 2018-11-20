@@ -5,12 +5,12 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 9f22a416810711c076645a9483f022112a3a7642
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 715634a9a2342311eb1d358cb8379f90a7074d80
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251427"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609414"
 ---
 # <a name="install-content-authoring-tools"></a>İçerik yazma araçlarını yükleme
 
@@ -47,7 +47,7 @@ Markdown, okuması ve öğrenmesi kolay bir biçimlendirme dilidir. Bu nedenle, 
 
 Markdown metinleri, .md uzantılı dosyalara kaydedilir.
 
-Markdown temel bilgileri ve OPS özel Markdown uzantıları tarafından desteklenen özellikler dahil olmak üzere Markdown ile makale yazmaya yönelik ilave ayrıntılar daha sonra [Markdown kullanımı](how-to-write-use-markdown.md) makalesinde ele alınacaktır.
+Markdown temel bilgileri ve Open Publishing Services (OPS) özel Markdown uzantıları tarafından desteklenen özellikler dahil olmak üzere Markdown ile makale yazmaya yönelik ilave ayrıntılar, [Docs’ta makale yazmak için Markdown kullanma](how-to-write-use-markdown.md) ve [OPS için Markdown Başvurusu](markdown-reference.md) makalelerinde ele alınmaktadır.
 
 ## <a name="visual-studio-code"></a>Visual Studio Code
 
@@ -60,7 +60,7 @@ VS Code olarak da bilinen [Visual Studio Code](https://code.visualstudio.com/), 
 - [Linux](https://code.visualstudio.com/docs/setup/linux)
 
 > [!TIP]
-> VS Code'u başlatmak ve geçerli klasörü açmak için, komut satırında veya bash kabuğunda `code .` komutunu çalıştırın. Geçerli klasör yerel git deposunun bir parçasıysa, github tümleştirmesi Visual Studio Code'da otomatik olarak gösterilir.
+> VS Code'u başlatmak ve geçerli klasörü açmak için, komut satırında veya bash kabuğunda `code .` komutunu çalıştırın. Geçerli klasör yerel git deposunun bir parçasıysa GitHub tümleştirmesi Visual Studio Code’da otomatik olarak gösterilir.
 
 ## <a name="docs-authoring-pack"></a>Docs Yazma Paketi
 Visual Studio Code için Docs Yazma Paketi’ni yükleyin. Bu uzantı kümesi, Markdown yazarken yardım için temel yazma desteği ve Markdown’ın docs.microsoft.com sitesinde nasıl görüneceğine bakmanız için önizleme özelliği sağlar.

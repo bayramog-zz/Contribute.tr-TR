@@ -5,6 +5,6 @@ Belgelerde başvurulan Microsoft, Windows, Microsoft Azure ve/veya diğer Micros
 Bu projeye ait lisanslar size hiçbir Microsoft adını, logosunu veya ticari markasını kullanma hakkı sağlamaz.
 Microsoft’un genel ticari marka kılavuzuna http://go.microsoft.com/fwlink/?LinkID=254653 adresinden ulaşabilirsiniz.
 
-Gizlilik bilgilerine https://privacy.microsoft.com/en-us/ adresinden ulaşabilirsiniz
+Gizlilik bilgilerine https://privacy.microsoft.com/ adresinden ulaşabilirsiniz
 
-Microsoft ve diğer tüm katkıda bulunanlar, ilgili telif hakları, patenler veya ticari markaları uyarınca veya ima, estoppel veya başka bir şekilde diğer tüm hakları saklı tutar.
+Microsoft ve diğer tüm katkıda bulunanlar; ilgili telif hakları, patenler veya ticari markaları uyarınca veya dolaylı, dava engelli veya diğer tüm hakları saklı tutar.

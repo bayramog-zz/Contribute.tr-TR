@@ -1,13 +1,15 @@
 ---
 title: Belgelerde bağlantı oluşturma
 description: Bu makale, docs.microsoft.com’daki içeriklerde bağlantı oluşturma konusunda rehber sağlar.
-ms.date: 06/29/2017
-ms.openlocfilehash: 1820ed9af561964d7afe0b29827ee43526c72489
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+author: gewarren
+ms.author: gewarren
+ms.date: 10/31/2018
+ms.openlocfilehash: e56bc0fe3a5428af2a79641a8959b4da21270d53
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805781"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609442"
 ---
 # <a name="using-links-in-documentation"></a>Belgelerde bağlantı kullanma
 Bu makale, docs.microsoft.com’da barınan sayfalardaki bağlantıların nasıl kullanılacağını açıklar. Bağlantılar, çeşitli birkaç kural ile birlikte Markdown’a eklemesi kolay öğelerdir. Bağlantılar kullanıcıları aynı sayfadaki içeriğe, komşu sayfalardaki içeriğe veya harici site ve URL’lere götürebilir.
@@ -22,7 +24,7 @@ docs.microsoft.com site arka ucu, DocFX Flavored Markdown (DFM) uygulayan Açık
 Bağlantı metnine eklediğiniz kelimeler kolay olmalıdır. Diğer bir deyişle, bunlar normal Türkçe kelimeler veya bağlantı kurduğunuz sayfanın başlığı olmalıdır.
 
 > [!IMPORTANT]
-> "Buraya tıklayın" ifadesini kullanmayın. Bu, SEO açısından kötüdür ve hedefi yeterli derecede açıklamaz.
+> "Buraya tıklayın" ifadesini kullanmayın. Bu, arama alt yapısı iyileştirmesi açısından kötüdür ve hedefi yeterli derecede açıklamaz.
 
 **Doğru:**
 
@@ -56,7 +58,7 @@ Bir Docs teknik makalesinden aynı belge kümesinde bulunan bir diğer makaleye 
 
   `[link text](../directory/article-name.md)`
 
-- Belge kümeleri arası (aynı depoda olsa bile) bağlantı veren bir makale: `[link text](./directory/article-name)`
+- Belge kümeleri arası (aynı depoda olsa bile) bağlantı veren bir makale:  `[link text](./directory/article-name)`
 
 > [!IMPORTANT]
 > Yukarıdaki örneklerin hiçbiri `~/` öğesini bağlantının bir bölümü olarak kullanmaz. Deponun kökündeki bir yola bağlanıyorsanız `/` ile başlayın. `~/` dahil olmak üzere GitHub'daki kaynak depolarında gezinirken geçersiz bağlantılar oluşturur. Yolu `/` ile başlatmak doğru bir şekilde çözer.
@@ -84,17 +86,23 @@ Yer işaretleri oluşturmanız gerekmez. Yer işaretleri, yayımlanma anında t�
 
 Ekleme dosyaları başka bir dizinde bulunduğu için daha uzun göreli yollar kullanmanız gerekir. Bir ekleme dosyasından bir makaleye bağlantı vermek için şu biçimi kullanın:
 
-    [link text](../articles/folder/article-name.md)
+   ```markdown
+   [link text](../articles/folder/article-name.md)
+   ```
 
 ## <a name="links-in-selectors"></a>Seçicilerde bağlantılar
 
-Bir ekleme işlemine katıştırılmış seçicileriniz varsa (Azure belgeleri takımının olduğu gibi), aşağıdaki bağlantı yapısını kullanın:
+Seçici, bir belgeler makalesinde açılan liste olarak görüntülenen bir gezinti bileşenidir. Okuyucu, açılan listeden bir değer seçtiğinde tarayıcı, seçili makaleyi açar. Seçiciler genellikle bir makaleyle yakından ilgisi olan, aynı konunun birden fazla bilgisayar dilinde ele alındığı veya ilgili bir dizi başka makale gibi diğer makalelere yönlendiren bağlantıları içerir. 
 
-    > [AZURE.SEÇİCİ-LİSTESİ(Açılan menü1 | Açılan menü2 )]
-    - [(Metin1 | Örnek1)](../articles/folder/article-name1.md)
-    - [(Metin1 | Örnek2 )](../articles/folder/article-name2.md)
-    - [(Metin2 | Örnek3 )](../articles/folder/article-name3.md)
-    - [(Metin2 | Örnek4 )](../articles/folder/article-name4.md) -->
+Bir ekleme işlemine eklenmiş seçicileriniz varsa aşağıdaki bağlantı yapısını kullanın:
+
+   ```markdown
+   > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
+   - [(Text1 | Example1 )](../articles/folder/article-name1.md)
+   - [(Text1 | Example2 )](../articles/folder/article-name2.md)
+   - [(Text2 | Example3 )](../articles/folder/article-name3.md)
+   - [(Text2 | Example4 )](../articles/folder/article-name4.md) -->
+   ```
 
 ## <a name="reference-style-links"></a>Başvuru stili bağlantıları
 
@@ -102,23 +110,29 @@ Bir ekleme işlemine katıştırılmış seçicileriniz varsa (Azure belgeleri t
 
 Satır içi metin:
 
-    I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```markdown
+   I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```
 
 Makale sonunda başvuru bağlantıları:
 
-    <!--Reference links in article-->
-    [1]: http://google.com/
-    [2]: http://search.yahoo.com/
-    [3]: http://search.msn.com/
-
+   ```markdown
+   <!--Reference links in article-->
+   [1]: http://google.com/
+   [2]: http://search.yahoo.com/
+   [3]: http://search.msn.com/
+   ```
+   
 Bağlantıdan önce, iki nokta üst üste işaretinin sonuna boşluk koymayı unutmayın. Bu boşluğu unutursanız makale yayımlandığında diğer teknik makalelere verdiğiniz bağlantı bozuk olacaktır.
 
 ## <a name="links-to-pages-that-are-not-part-of-the-technical-documentation-set"></a>Teknik belgeler kümesine ait olmayan sayfaların bağlantıları
 
 Başka bir tür Microsoft sayfasına (fiyatlandırma sayfası, SLA sayfası gibi belge makalesi olmayan herhangi bir şey) bağlantı vermek için bir mutlak URL kullanın, ancak yerel ayarı çıkarın. Burada amaç, bağlantıların GitHub’da ve işlenmiş sitede çalışmasını sağlamaktır:
 
-    [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
-
+   ```markdown
+   [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
+   ```
+   
 ## <a name="links-to-third-party-sites"></a>Üçüncü taraf sitelerin bağlantıları
 
 En iyi kullanıcı deneyimi, kullanıcıları başka sitelere göndermekten olabildiğince uzak durarak sağlanır. Ancak bazen bunu yapmamız gerekir, bu durumda üçüncü taraf sitelere giden bağlantıları şu bilgiler temelinde oluşturun:
@@ -146,7 +160,7 @@ URL yapısı:
   - `/powershell/azure/<topic-file-name>[?view=<moniker-name>]`
   - `/powershell/azure/<service-name>/<topic-file-name>[?view=<moniker-name>]`
 
-&lt;moniker-name&gt; (bilinen ad) kısmı isteğe bağlıdır. Çıkarılırsa içeriğin son sürümüne yönlendirilirsiniz. &lt;service-name&gt; kısmı, aşağıdaki temel URL’lerde gösterilen örneklerden biridir:
+`<moniker-name>` kısmı isteğe bağlıdır. Çıkarılırsa içeriğin son sürümüne yönlendirilirsiniz. `<service-name>` kısmı, aşağıdaki temel URL’lerde gösterilen örneklerden biridir:
 
 - Azure PowerShell (AzureRM) içeriği: [https://docs.microsoft.com/powershell/azure/](https://docs.microsoft.com/powershell/azure/)
 - Azure PowerShell (ASM) içeriği: [https://docs.microsoft.com/powershell/azure/_servicemanagement_](https://docs.microsoft.com/powershell/azure/servicemanagement)

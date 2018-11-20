@@ -8,16 +8,16 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 audience: internal,external
-ms.openlocfilehash: e248eafb0247b200313ba198f2545eca947f5627
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 64921bacf48e638221048db4b24e1a941f1d2777
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805937"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609557"
 ---
 # <a name="markdown-reference-for-ops"></a>OPS için Markdown Başvurusu
 
-Markdown, düz metin biçimli söz dizimine sahip hafif bir biçimlendirme dilidir. OPS, Markdown için CommonMark standardını ve docs.microsoft.com’da daha zengin içerik sağlamak üzere tasarlanmış bazı Markdown uzantılarını destekler. Bu makale, docs.microsoft.com için OPS’de Markdown kullanmaya yönelik alfabetik başvuru sağlar.
+Markdown, düz metin biçimli söz dizimine sahip hafif bir biçimlendirme dilidir. Open Publishing Services (OPS), Markdown için CommonMark standardını ve docs.microsoft.com’da daha zengin içerik sağlamak üzere tasarlanmış bazı Markdown uzantılarını destekler. Bu makale, docs.microsoft.com için OPS’de Markdown kullanmaya yönelik alfabetik başvuru sağlar.
 
 Markdown yazmak için herhangi bir metin düzenleyiciyi kullanabilirsiniz. Hem standart Markdown söz dizimini hem de özel OPS uzantılarını eklemeyi kolaylaştıran bir düzenleyici olarak [Docs Yazma Paketi](https://aka.ms/DocsAuthoringPack) yükleyip [VS Code](https://code.visualstudio.com/) kullanmanızı öneririz.
 
@@ -122,7 +122,7 @@ OPS çoğu zaman diğer dosya ve sayfalara gitmek için standart Markdown bağla
 > VS Code için Docs Yazma Paketi, yolları bulmakla uğraşmadan göreli bağlantıları ve yer işaretlerini doğru şekilde eklemenize yardımcı olabilir.
 
 > [!IMPORTANT]
-> Belgelerinize eklediğiniz Microsoft site bağlantılarına tr-tr gibi yerel ayar kodlarını dahil etmeyin. Sabit kodlanmış yerel ayar kodları, yerelleştirilmiş içeriğin işlenmesini önler ve bu durum, diğer yerel ayarlara sahip kullanıcılar için kötü bir müşteri deneyimi sağlamakla kalmayıp yüksek yerelleştirme maliyetlerine yol açar. Bir tarayıcıdan URL kopyaladığınızda URL’de varsayılan olarak yerel ayar kodu bulunur; bağlantınızı oluştururken bu kodu kendiniz silmeniz gerekir. Örneğin şunu kullanın:
+> Belgelerinize eklediğiniz Microsoft site bağlantılarına tr-tr gibi yerel ayar kodlarını dahil etmeyin. Sabit kodlanmış yerel ayar kodları, yerelleştirilmiş içeriğin işlenmesini önler ve bu durum, diğer yerel ayarlara sahip kullanıcılar için kötü bir müşteri deneyimi sağlamakla kalmayıp yüksek yerelleştirme maliyetlerine yol açar. Bir tarayıcıdan URL kopyaladığınızda URL’de varsayılan olarak yerel ayar kodu bulunur; bağlantınızı oluştururken bu kodu el ile silmeniz gerekir. Örneğin şunu kullanın:
 >
 > `[Microsoft](https://www.microsoft.com)`
 >
@@ -206,7 +206,7 @@ To go to a section on another page.
 Geçerli veya farklı bir dosya kümesindeki otomatik oluşturulmuş API başvurularına bağlantı vermek için benzersiz kimlik (UID) ile XREF bağlantıları kullanın.
 
 > [!NOTE]
-> Diğer belge kümelerindeki API başvurularına başvurmak için `xrefService` dosyasında `docfx.json` yapılandırmasını eklemeniz gerekir.
+> Diğer belge kümelerindeki API başvurularına başvurmak için `xrefService` dosyasına `docfx.json` yapılandırmasını eklemeniz gerekir.
 > ```
 > "build": {
 >   ...

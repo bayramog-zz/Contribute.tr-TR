@@ -11,6 +11,11 @@
 ## [Stil ve üslup hızlı başlangıcı](style-quick-start.md)
 ## [Bağlantılar](how-to-write-links.md)
 ## [Docs Yazma Paketi](how-to-write-docs-auth-pack.md)
+# Belge kümesine özel rehber
+## [.NET belgeleri](dotnet-contribute.md)
+### [.NET belgelerine katkıda bulunma](dotnet-contribute-process.md)
+### [.NET belgeleri stil kuralları](dotnet-style-guide.md)
+### [Üslup ve ton kılavuzu](dotnet-voice-tone.md)
 
 <!--
 ## Creating new content

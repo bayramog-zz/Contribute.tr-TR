@@ -4,12 +4,12 @@ description: Bu makale, belgelere katkıda bulunmak amacıyla çatal oluşturma 
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 5373bf34399105c15caabe0abdc1ea0692c46a4a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805689"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609511"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Belgeler için yerel Git deposunu ayarlama
 
@@ -41,7 +41,7 @@ GitHub’da yeniyseniz çatal oluşturma ve kopyalama işlemlerine kavramsal bir
 
 [Docs.microsoft.com](https://docs.microsoft.com) sitesinde barındırılan belgeler [github.com](https://www.github.com)'daki birbirinden farklı çeşitli depolarda durur.
 
-1. Hangi depoyu kullanacağınızdan emin değilseniz, web tarayıcınızı kullanarak docs.microsoft.com'daki makaleyi ziyaret edin. Makalenin sağ üst kısmındaki **Düzenle** bağlantısını (kalem simgesi) seçin.
+1. Hangi depoyu kullanacağınızdan emin değilseniz Web tarayıcınızı kullanarak [docs.microsoft.com](https://docs.microsoft.com) adresindeki makaleyi ziyaret edin. Makalenin sağ üst kısmındaki **Düzenle** bağlantısını (kalem simgesi) seçin.
 
    ![Depo ve dosya konumunu saptamak için Düzenle'ye tıklayın.](media/index/edit-article.png)
 
@@ -92,7 +92,7 @@ Deponun kopyasını yerel olarak saklamak için yerel bir klasör oluşturun. Ba
 Git Bash kullanarak, **clone** komutunu çalıştırıp cihazınızda geçerli dizinde deponun bir kopyasını (çatalınızı) çekmeye hazırlanın. 
 
 ### <a name="authenticate-by-using-git-credential-manager"></a>Git Kimlik Bilgileri Yöneticisi kullanarak kimlik doğrulama
-Windows için en son Git sürümünü yüklediyseniz ve varsayılan yüklemeyi kabul ettiyseniz Git Kimlik Bilgileri Yöneticisi varsayılan olarak etkindir. Git Kimlik Bilgileri Yöneticisi, GitHub ile daha önceden kimliği doğrulanmış bağlantılarınızı ve uzak öğelerinizi yeniden kurarken kişisel erişim belirtecinizi kullanma gereğini ortadan kaldırarak kimlik doğrulamayı kolaylaştırır.
+Windows için en son Git sürümünü yüklediyseniz ve varsayılan yüklemeyi kabul ettiyseniz Git Kimlik Bilgileri Yöneticisi varsayılan olarak etkindir. Git Kimlik Bilgileri Yöneticisi, GitHub ile daha önceden kimliği doğrulanmış bağlantılarınızı ve uzak öğelerinizi yeniden kurarken kişisel erişim belirtecinizi kullanma gereğini ortadan kaldırarak kimlik doğrulamasını kolaylaştırır.
 
 1. Depo adı sağlayarak **clone** komutunu çalıştırın. Kopyalama, çatalı (kopyayı) yerel bilgisayarınızdaki çatallı depoya indirir. 
 

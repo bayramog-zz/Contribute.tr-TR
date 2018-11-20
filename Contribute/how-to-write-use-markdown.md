@@ -2,12 +2,12 @@
 title: Docs’ta makale yazmak için Markdown kullanma
 description: Bu makale, docs.microsoft.com makalelerinde kullanılan Markdown dilinin temellerini ve başvuru bilgilerini sağlar.
 ms.date: 07/13/2017
-ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 21194c4bd6020d847b526a4d9544c826aa199e2a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805747"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609534"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Docs’ta makale yazmak için Markdown kullanma
 
@@ -33,6 +33,14 @@ Bir bölüm başlığı oluşturmak için karma işaretini (#) aşağıdaki gibi
 #### This is heading 4
 ```
 
+Bölüm başlıkları, atx-style kullanılarak hazırlanmalıdır. Yani satırın başında, arkasından gelen kısmın bölüm başlığı olduğunu belirtmek için H1-H6 HTML başlık düzeyine karşılık gelecek şekilde 1-6 kare karakter (#) kullanın. Bir ila dördüncü düzey bölüm başlığı örnekleri yukarıda verilmiştir.
+
+Konunuz içerisinde yalnızca bir adet birinci düzey bölüm başlığı (H1) **olmalıdır** ve bu, sayfa başlığı olarak görüntülenir.
+
+Başlığınız `#` karakteriyle bitiyorsa başlığın doğru işlenmesi için sonuna fazladan bir `#` karakteri eklemeniz gerekir. Örneğin `# Async Programming in F# #`.
+
+İkinci düzey bölüm başlıkları, sayfa başlığının altındaki “Bu makalede” bölümünde yer alan İçindekiler (TOC) bölümünü oluşturur.
+
 ### <a name="bold-and-italic-text"></a>Kalın ve italik metin
 
 Bir metni **kalın** olarak biçimlendirmek için iki yıldız işareti arasına alırsınız:
@@ -52,6 +60,18 @@ Bir metni ***kalın ve italik*** olarak biçimlendirmek için üç yıldız işa
 ```markdown
 This is text is both ***bold and italic***.
 ```
+
+### <a name="blockquotes"></a>Blok alıntılar
+
+Blok alıntılar, `>` karakteri kullanılarak oluşturulur:
+
+```markdown
+> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
+```
+
+Yukarıdaki örnek, şu şekilde işlenir:
+
+> Kuraklık, on milyon yıldır devam ediyordu ve korkunç kertenkelelerin egemenliği çoktan sona ermişti. Burada, Ekvator’da, günün birinde Afrika olarak anılacak bu kıtada, var olmak için verilen savaşta vahşetin yeni bir zirvesine ulaşılmıştı ve ortada henüz bir galip yoktu. Bu kıraç ve kuru topraklarda, yalnızca küçük, hızlı veya vahşi olanlar büyüyebilirdi, ya da hayatta kalmayı umut edebilirdi.
 
 ### <a name="lists"></a>Listeler
 
@@ -93,8 +113,8 @@ Sıralı/adımlı bir listeyi biçimlendirmek için sıra numaraları kullanırs
 
 ```markdown
 1. First instruction
-2. Second instruction
-3. Third instruction
+1. Second instruction
+1. Third instruction
 ```
 
 şu şekilde oluşturulur:
@@ -108,8 +128,8 @@ Bir listeyi diğerinin içine yerleştirmek için alt lise öğelerini girintili
 ```markdown
 1. First instruction
    1. Sub-instruction
-   2. Sub-instruction
-2. Second instruction
+   1. Sub-instruction
+1. Second instruction
 ```
 
 şu şekilde oluşturulur:
@@ -118,6 +138,8 @@ Bir listeyi diğerinin içine yerleştirmek için alt lise öğelerini girintili
    1. Alt yönerge
    2. Alt yönerge
 2. İkinci yönerge
+
+Tüm girişler için “1.” kullandığımıza dikkat edin. Böylece sonraki güncelleştirmelerde yeni adımlar eklendiğinde veya mevcut adımlar çıkarıldığında, değişiklikleri gözden geçirmek kolaylaşır.
 
 ### <a name="tables"></a>eğlence
 
@@ -194,6 +216,8 @@ Bu diller, kolay as desteğine ve dil vurgulamasına sahiptir.
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
 |C#|csharp|
+|Tarayıcıda C#|csharp-interactive|
+|Konsol|konsol|
 |CSHTML|cshtml|
 |DAX|dax|
 |F#|fsharp|
@@ -221,6 +245,8 @@ Bu diller, kolay as desteğine ve dil vurgulamasına sahiptir.
 |VSTS CLI|vstscli|
 |XAML|xaml|
 |XML|xml|
+
+`csharp-interactive` adı, C# bilgisayar dilini ve tarayıcıdan örnek çalıştırma becerisini belirtir. Bu kod parçacıkları, bir Docker kapsayıcısında derlenir ve yürütülür. Bu program yürütüldüğünde ortaya çıkan sonuçlar kullanıcının tarayıcı penceresinde görüntülenir.
 
 #### <a name="example-c"></a>Örnek: C\#
 
@@ -256,8 +282,8 @@ __Markdown__
 
     ```sql
     CREATE TABLE T1 (
-      c1 int PRIMARY KEY,
-      c2 varchar(50) SPARSE NULL
+      c1 int PRIMARY KEY,
+      c2 varchar(50) SPARSE NULL
     );
     ```
 
@@ -265,8 +291,8 @@ __İşleme__
 
 ```sql
 CREATE TABLE T1 (
-  c1 int PRIMARY KEY,
-  c2 varchar(50) SPARSE NULL
+  c1 int PRIMARY KEY,
+  c2 varchar(50) SPARSE NULL
 );
 ```
 
@@ -296,6 +322,36 @@ Tam bir liste için içerikler bölümünde “Markdig ve Markdown uzantıları�
 
 Genel olarak not bloklarını fazla kullanmaktan kaçınmalısınız, dikkat dağıtıcı olabilir. Not bloklarında kod blokları, görüntüler, listeler ve bağlantılar destekleniyor olsa da bunları olabildiğince sade ve düz bir şekilde oluşturun.
 
+Örnekler:
+
+```markdown
+> [!NOTE]
+> This is a NOTE
+
+> [!WARNING]
+> This is a WARNING
+
+> [!TIP]
+> This is a TIP
+
+> [!IMPORTANT]
+> This is IMPORTANT
+```
+
+Bunlar aşağıdaki gibi işlenir:
+
+> [!NOTE]
+> Bu bir NOT’tur
+
+> [!WARNING]
+> Bu bir UYARI’dır
+
+> [!TIP]
+> Bu bir İPUCU’dur
+
+> [!IMPORTANT]
+> Bu ÖNEMLİ’dir
+
 ### <a name="includes"></a>Eklemeler
 
 Makale dosyalarına dahil edilmesi gereken yeniden kullanılabilir metin veya görüntü dosyalarınız varsa dosyayı Markdig dosya dahil etme özelliği ile “dahil etmek” için bir başvuru kullanabilirsiniz. Bu özellik, verilen dosyayı makalenize derleme sırasında “eklemesi” için OPS’yi yönlendirir, böylece dosya da yayımlanan makalenizin bir parçası olur. İçerikleri tekrar kullanmanıza imkan veren üç tür ekleme vardır:
@@ -317,13 +373,29 @@ Eklemelere yönelik gereksinimler ve önemli konular şunlardır:
 - Normal makalelerde olduğu gibi, ekleme dosyaları arasında medya paylaşmayın. Her bir ekleme ve makale için benzersiz ada sahip ayrı dosyalar kullanın. Medya dosyasını, eklemeyle ilişkili medya klasöründe depolayın.
 - Eklemeleri, bir makalenin tek içeriği olarak kullanmayın.  Eklemelerin, makaledeki diğer içerikleri tamamlayıcı görevi vardır.
 
+Örnek:
+
+```markdown
+[!INCLUDE[sample include file](../includes/sampleinclude.md)]
+```
+
 ### <a name="selectors"></a>Seçiciler
 
-Seçicileri; teknik makalelerde, aynı makalenin farklı bölümlerini yazdığınızda teknolojiler veya platformlar arasındaki uygulama farklılıklarına değinirken kullanın. Bu genellikle geliştiriciler için mobil platform içeriklerimizde kullanılır. Markdig’de şu anda iki farklı türde seçici vardır; tekli seçici ve çoklu seçici.
+Seçicileri teknik makalelerde, aynı makalenin farklı bölümlerini yazdığınızda teknolojiler veya platformlar arasındaki uygulama farklılıklarına değinirken kullanın. Bu genellikle geliştiriciler için mobil platform içeriklerimizde kullanılır. Markdig’de şu anda iki farklı türde seçici vardır; tekli seçici ve çoklu seçici.
 
 Aynı seçici Markdown, seçimdeki her bir makaleye gittiği için makalenizin seçicisini bir eklemeye yerleştirmeniz önerilir. Daha sonra tüm makalelerinizde aynı seçiciyi kullanan eklemeye başvurabilirsiniz.
 
-### <a name="code-snippets"></a>Kod parçacıkları
+Aşağıdaki kodda bir seçici örneği gösterilmektedir:
+
+```markdown
+> [!div class="op_single_selector"]
+- [macOS](../docs/core/tutorials/using-on-macos.md)
+- [Windows](../docs/core/tutorials/with-visual-studio.md)
+```
+
+[Azure belgelerinde](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic) seçicilerin nasıl kullanıldığının örneklerini bulabilirsiniz.
+
+### <a name="code-includes"></a>Kod ekleme
 
 Markdig, bir makaleye kod parçacığı uzantısı aracılığıyla gelişmiş kod eklemeyi destekler. Programlama dili seçimi ve söz dizimi renklendirme gibi GFM özellikleri üzerinde ortaya çıkan gelişmiş işleme seçenekleri sağlar, bunların yanında aşağıdaki gibi kullanışlı özellikler de getirir:
 
@@ -348,8 +420,7 @@ Alt çizgi içeren alternatif metin düzgün bir şekilde işlenmez. Örneğin, 
 
 ### <a name="apostrophes-and-quotation-marks"></a>Kesme işareti ve tırnak işaretleri
 
-Word dosyasından Markdown editörüne bir şey kopyalarsanız kopyaladığınız metin “akıllı” (kıvrık) kesme işaretleri veya tırnak işaretleri içerebilir. Bunların kodlanması veya kesme işareti ya da tırnak işaretlerine dönüştürülmesi gerekir.
-Aksi takdirde, dosya yayımlandığında şu karakterleri görebilirsiniz: Itâ€™s
+Word dosyasından Markdown editörüne bir şey kopyalarsanız kopyaladığınız metin “akıllı” (kıvrık) kesme işaretleri veya tırnak işaretleri içerebilir. Bunların kodlanması veya kesme işareti ya da tırnak işaretlerine dönüştürülmesi gerekir. Aksi takdirde, dosya yayımlandığında şu karakterleri görebilirsiniz: Itâ€™s
 
 Bu noktalama işaretlerinin “akıllı” olanları için kodlamalar aşağıdaki gibidir:
 

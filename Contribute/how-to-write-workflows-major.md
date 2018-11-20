@@ -2,12 +2,12 @@
 title: Büyük veya uzun ömürlü değişiklikler için GitHub katkı iş akışı
 description: Bu makale, docs.microsoft.com makalelerine katkı sağlamak için “büyük” katkı iş akışını nasıl kullanacağınızı gösterir.
 ms.date: 08/30/2017
-ms.openlocfilehash: 31f9421fc5edbc2f65c5ff20a86da08c70211ec7
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 93e659df4f72c6a272d15fd7487eb3a997bdf3c8
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239837"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609419"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>Büyük veya uzun ömürlü değişiklikler için GitHub katkı iş akışı
 
@@ -31,7 +31,7 @@ Başlamadan önce, bu iş akışında kullanılan bazı Git/GitHub terimleri ve 
 | Ad | Açıklama |
 |-----------|-------------|
 |çatal|Normalde, bir ana GitHub deposunun kopyasını ifade eden isim olarak kullanılır. Pratikte, bir çatal aslında sadece başka bir depoyu ifade eder. Ancak özelliği, GitHub’ın bu çatal ile ana/üst depo arasında bir bağlantı bulundurmasıdır. Bazen eylem içerisinde kullanılır, örneğin “Önce deponun çatalını oluşturmanız gerekir.”|
-|uzak öğe|Bir uzak depoyla yapılan ve “başlangıç” veya “yukarı akış” uzak öğesi gibi bir adı olan bağlantı. Git, bunlara uzak öğeler adını verir çünkü bunlar, başka bilgisayarda barındırılan bir depoya başvururken kullanılır. Bu iş akışında uzak öğe her zaman bir GitHub deposudur.|
+|uzak öğe|Bir uzak depoyla yapılan ve “başlangıç” veya “yukarı akış” uzak öğesi gibi bir adı olan bağlantı. Git, bu bağlantıya uzak öğe adını verir çünkü bu, başka bilgisayarda barındırılan bir depoya başvururken kullanılır. Bu iş akışında uzak öğe her zaman bir GitHub deposudur.|
 |başlangıç|Yerel deponuz ve bunun kopyalandığı depo arasındaki bağlantıya atanan ad. Bu iş akışında başlangıç, çatalınızla olan bağlantıyı ifade eder. Bu, bazen başlangıç deposunun bilinen adı olarak kullanılır, örneğin: “Değişikliklerinizi başlangıca göndermeyi unutmayın.”|
 |yukarı akış|Başlangıç uzak öğesine benzer şekilde yukarı akış, başka bir depoyla yapılan bağlantının adıdır. Bu iş akışında yukarı akış, yerel deponuz ile çatalınızın oluşturulduğu ana depo arasındaki bağlantıyı ifade eder. Bu, bazen yukarı akış deposunun bilinen adı olarak kullanılır, örneğin: “Değişikliklerinizi yukarı akıştan almayı unutmayın.”|
 

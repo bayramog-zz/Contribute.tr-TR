@@ -16,6 +16,7 @@
 ### [.NET belgelerine katkıda bulunma](dotnet-contribute-process.md)
 ### [.NET belgeleri stil kuralları](dotnet-style-guide.md)
 ### [Üslup ve ton kılavuzu](dotnet-voice-tone.md)
+# [Ek kaynaklar](additional-resources.md)
 
 <!--
 ## Creating new content
@@ -79,4 +80,3 @@
 
      Open question: How to keep this up to date?
    -->
-## [Ek kaynaklar](additional-resources.md)

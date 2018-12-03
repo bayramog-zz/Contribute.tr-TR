@@ -2,12 +2,12 @@
 title: .NET makaleleri için şablon ve başvuru sayfası
 description: Bu makale, .NET belge depoları için yeni makaleler oluştururken işinize yarayacak bir şablon içerir
 ms.date: 11/07/2018
-ms.openlocfilehash: 8980f5e39213d8f2edd1d29e66d900f2c3d04bbc
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 15f64ec86c475e2da2f6539c8f388d076389c4e0
+ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609751"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52299672"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET belgeleri için meta veriler ve Markdown şablonu
 
@@ -79,9 +79,11 @@ Yer işaretleri, dahili bağlantılar, diğer belgelere giden bağlantılar, kod
 - Çoğu durumda göreli bağlantılar kullanırız ve göreli bağlantılar GitHub’daki kaynakta çözümlendiğinden, bağlantılarda `~/` kullanımını önermeyiz. Ancak bağımlı bir depodaki dosyalara bağlantı verdiğimizde, yolu sağlamak için `~/` karakterini kullanırız. Bağımlı depolardaki dosyalar GitHub’da farklı bir konumda olduğundan, nasıl yazıldıkları fark etmeksizin bağlantılar göreli bağlantılarla doğru çözümlenmez.
 - C# bilgisayar dili belirtimi ve Visual Basic bilgisayar dili belirtimi, bilgisayar dili depolarından kaynak eklenerek .NET dosyalarına eklenir. Markdown kaynakları, [csharplang](https://github.com/dotnet/csharplang) ve [vblang](https://github.com/dotnet/vblang) depolarında yönetilir.
 
-Belirtimlere yönlendiren bağlantılar, belirtimlerin bulunduğu kaynak dizinlere işaret etmelidir. Bunlar, C# için **~/_csharplang/spec** ve VB için **~/_vblang/spec** dizinleridir.
+Belirtimlere yönlendiren bağlantılar, belirtimlerin bulunduğu kaynak dizinlere işaret etmelidir. Bunlar, C# için **~/_csharplang/spec** ve VB için **~/_vblang/spec** dizinleridir. Şu örnekte görebilirsiniz:
 
-- Örnek: `[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)`
+```markdown
+[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)
+```
 
 ### <a name="links-to-apis"></a>API’lere giden bağlantılar
 
@@ -111,13 +113,13 @@ Bazı UID’ler \`, \# veya \* özel karakterlerini içerir, bu durumda UID değ
 - System.Exception.\#ctor, `System.Exception.%23ctor` olur
 - System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode), `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29` olur
 
-Türlerin, üye aşırı yükleme listesinin veya belirli bir aşırı yüklenmiş üyenin UID’sini `https://xref.docs.microsoft.com/autocomplete` adresinden bulabilirsiniz. “?text=*\<type-member-name>*” sorgu satırı, UID’sini görmek istediğiniz türü veya üyeyi belirler. Örneğin `https://xref.docs.microsoft.com/autocomplete?text=string.format`, [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format) aşırı yüklemelerini alır. Araç, sağlanan `text` sorgu parametresini UID’nin herhangi bir bölümünde arar. Örneğin üye adı (ToString), kısmi üye adı (ToStri), tür ve üye adı (Double.ToString) gibi bilgileri arayabilirsiniz.
+Türlerin, üye aşırı yükleme listesinin veya belirli bir aşırı yüklenmiş üyenin UID’sini `https://xref.docs.microsoft.com/autocomplete` adresinden bulabilirsiniz. `?text=*\<type-member-name>*` sorgu satırı, UID’sini görmek istediğiniz türü veya üyeyi belirler. Örneğin `https://xref.docs.microsoft.com/autocomplete?text=string.format`, [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format) aşırı yüklemelerini alır. Araç, sağlanan `text` sorgu parametresini UID’nin herhangi bir bölümünde arar. Örneğin üye adı (ToString), kısmi üye adı (ToStri), tür ve üye adı (Double.ToString) gibi bilgileri arayabilirsiniz.
 
-UID’den sonra bir \* (veya %2A) eklerseniz bağlantı belirli bir API’yi değil, aşırı yükleme sayfasını gösterir. Örneğin, [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_) gibi belirli bir aşırı yükleme yerine genel bir şekilde [List\<T>.BinarySearch Method](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) sayfasına bağlantı oluşturmak istediğinizde bunu kullanabilirsiniz. Üye aşırı yüklü olmadığında üye sayfasına bağlantı vermek için bir \* sembolünü de kullanabilirsiniz, böylece parametre listesini UID’ye eklemenize gerek kalmaz.
+UID’den sonra bir \* (veya `%2A`) eklerseniz bağlantı belirli bir API’yi değil, aşırı yükleme sayfasını gösterir. Örneğin, [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_) gibi belirli bir aşırı yükleme yerine genel bir şekilde [List\<T>.BinarySearch Method](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) sayfasına bağlantı oluşturmak istediğinizde bunu kullanabilirsiniz. Üye aşırı yüklü olmadığında üye sayfasına bağlantı vermek için bir \* sembolünü de kullanabilirsiniz, böylece parametre listesini UID’ye eklemenize gerek kalmaz.
 
 Belirli bir metot aşırı yüklemesine bağlantı vermek için her bir metot parametresinin tam tür adını eklemeniz gerekir. Örneğin, \<xref:System.DateTime.ToString>, parametresiz [DateTime.ToString](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString) metoduna bağlantı verirken \<xref:System.DateTime.ToString(System.String,System.IFormatProvider)>, [DateTime.ToString(String,IFormatProvider)](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString_System_String_System_IFormatProvider_) metoduna bağlantı verir.
 
-[System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1) gibi genel bir türe bağlantı vermek için \` (%60) karakterini ve ardından genel tür parametrelerinin sayısını kullanırsınız. Örneğin, \<xref:System.Nullable%601>, [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1) türüne bağlantı verirken \<xref:System.Func%602>, [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2) temsilcisine bağlantı verir.
+[System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1) gibi genel bir türe bağlantı vermek için \` (`%60`) karakterini ve ardından genel tür parametrelerinin sayısını kullanırsınız. Örneğin, `<xref:System.Nullable%601>`, [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1) türüne bağlantı verirken `<xref:System.Func%602>` ise [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2) temsilcisine bağlantı verir.
 
 ## <a name="code"></a>Kod
 

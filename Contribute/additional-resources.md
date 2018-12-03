@@ -4,12 +4,12 @@ description: Bu makale, docs.microsoft.com’a katkıda bulunmak adına Git ve G
 author: billwagner
 ms.author: wiwagn
 manager: wpickett
-ms.openlocfilehash: bf12947d0956a5ee2953d74840afe3060425074d
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 4c29bfd09f17e32624ee3fc484424c4fe8d3b68e
+ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609580"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52299649"
 ---
 # <a name="additional-git-and-github-resources"></a>Ek Git ve GitHub kaynakları
 
@@ -20,8 +20,8 @@ Git veya GitHub'ı kullanmaya alışkın değilseniz, bu kaynaklar öğrenmenize
 - [Git temel bilgileri](https://go.microsoft.com/fwlink/?linkid=853939): Bu, Git'in nasıl çalıştığını açıklayan temel genel bakış bilgileri içerir.
 - [Pro Git e-kitabı (web)](https://go.microsoft.com/fwlink/?linkid=853940): Bu, HTML biçiminde kapsamlı bir Git başvurusudur.
 - [Pro Git e-kitabı (PDF)](https://progit2.s3.amazonaws.com/en/2016-03-22-f3531/progit-en.1084.pdf): Önceki bağlantıyla aynıdır, sadece PDF biçimindedir.
-- [Codeacademy’den Git Öğrenme kursu](https://www.codecademy.com/learn/learn-git): Codeacademy Git öğreticisi.
-- [Code School'dan Git'i Deneme kursu](https://www.codeschool.com/courses/try-git): Code School'dan Git öğreticisi
+- [Codeacademy'den Git'i Öğrenme kursu](https://www.codecademy.com/learn/learn-git): Codeacademy'den Git öğreticisi.
+- [Pluralsight üzerinde Code School'dan Git'i Deneme kursu](https://www.pluralsight.com/courses/code-school-git-real): Pluralsight üzerinde Code School'dan Git öğreticisi.
 - [Udacity’den Git ve Github Öğrenme kursu](https://www.udacity.com/course/how-to-use-git-and-github--ud775): Udacity Git ve Github öğreticisi
 
 ## <a name="github-resources"></a>GitHub kaynakları

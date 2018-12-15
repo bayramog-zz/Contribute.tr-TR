@@ -2,12 +2,12 @@
 title: .NET belge depolarına katkıda bulunma süreci
 description: Bu makale, .NET belge depolarına katkıda bulunma sürecini kısaca tanıtır. Kullanılan depoları, içerik düzenleme sürecini ve kod örnekleri ile diğer varlıkları yönetme ilkelerini öğrenirsiniz.
 ms.date: 11/07/2018
-ms.openlocfilehash: b83a3080f1abd4df8caaa9d10859760006216e86
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 0e7199b72cf9b94d00a09fb180ffef0558c59a53
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609774"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245861"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>.NET belgelerine katkıda bulunma süreci
 
@@ -131,6 +131,7 @@ Yakın zamanda bu projeleri derlemek için bir CI sistemimiz olacak.
 2. Örneğinizde gösterilen kavramları açıklayan konuyu yazın (örneğin: `docs/standard/linq/where-clause.md`).
 3. Örneğinizi yazın (örneğin: `WhereClause-Sample1.cs`).
 4. Örneklerinize çağrı yapan bir Ana giriş noktası içeren bir Program.cs oluşturun. Bu zaten varsa çağrıyı örneğinize ekleyin:
+
     ```csharp
     public class Program
     {
@@ -143,6 +144,7 @@ Yakın zamanda bu projeleri derlemek için bir CI sistemimiz olacak.
         }
     }
     ```
+
 Tüm .NET Core kod parçacıklarını .NET Core CLI kullanarak derlersiniz. Bunu, [.NET Core SDK’sı](https://www.microsoft.com/net/download) ile yükleyebilirsiniz. Örneğinizi derlemek ve çalıştırmak için:
 
 1. Örnek klasörüne ve derlemesine giderek hataları denetleyin:

@@ -2,12 +2,12 @@
 title: Docs’ta makale yazmak için Markdown kullanma
 description: Bu makale, docs.microsoft.com makalelerinde kullanılan Markdown dilinin temellerini ve başvuru bilgilerini sağlar.
 ms.date: 07/13/2017
-ms.openlocfilehash: 21194c4bd6020d847b526a4d9544c826aa199e2a
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 8613d525afc11caf9ec760c4f15ea44010781634
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609534"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245907"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Docs’ta makale yazmak için Markdown kullanma
 
@@ -282,8 +282,8 @@ __Markdown__
 
     ```sql
     CREATE TABLE T1 (
-      c1 int PRIMARY KEY,
-      c2 varchar(50) SPARSE NULL
+      c1 int PRIMARY KEY,
+      c2 varchar(50) SPARSE NULL
     );
     ```
 
@@ -291,8 +291,8 @@ __İşleme__
 
 ```sql
 CREATE TABLE T1 (
-  c1 int PRIMARY KEY,
-  c2 varchar(50) SPARSE NULL
+  c1 int PRIMARY KEY,
+  c2 varchar(50) SPARSE NULL
 );
 ```
 
@@ -304,7 +304,7 @@ CREATE TABLE T1 (
 Docs makaleleri çoğu zaman paragraflar, bağlantılar, listeler ve bölüm başlıkları gibi makale biçimlendirmeleri için GFM’yi kullanır. Makaleler, daha zengin biçimlendirme için aşağıdakiler gibi Markdig özelliklerini kullanabilir:
 
 - Not blokları
-- Eklemeler
+- Dosyaları dahil et
 - Seçiciler
 - Ekli videolar
 - Kod parçacıkları/örnekleri
@@ -352,26 +352,26 @@ Bunlar aşağıdaki gibi işlenir:
 > [!IMPORTANT]
 > Bu ÖNEMLİ’dir
 
-### <a name="includes"></a>Eklemeler
+### <a name="include-files"></a>Dosyaları dahil et
 
-Makale dosyalarına dahil edilmesi gereken yeniden kullanılabilir metin veya görüntü dosyalarınız varsa dosyayı Markdig dosya dahil etme özelliği ile “dahil etmek” için bir başvuru kullanabilirsiniz. Bu özellik, verilen dosyayı makalenize derleme sırasında “eklemesi” için OPS’yi yönlendirir, böylece dosya da yayımlanan makalenizin bir parçası olur. İçerikleri tekrar kullanmanıza imkan veren üç tür ekleme vardır:
+Makale dosyalarına dahil edilmesi gereken yeniden kullanılabilir metin veya görüntü dosyalarınız varsa dosyayı Markdig dosya dahil etme özelliği ile “dahil etmek” için bir başvuru kullanabilirsiniz. Bu özellik, verilen dosyayı makalenize derleme sırasında “eklemesi” için OPS’yi yönlendirir, böylece dosya da yayımlanan makalenizin bir parçası olur. İçerikleri tekrar kullanmanıza imkan veren üç tür ekleme başvurusu vardır:
 
-- Satır içi: Genel bir metin parçacığını başka bir cümlede satır içinde yeniden kullanın.
+- Satır İçi: Genel bir metin parçacığını başka bir cümlede satır içinde yeniden kullanın.
 - Blok: Makalenin bir bölümündeki bütün bir Markdown dosyasını yeniden kullanın.
-- Görüntüler: Docs’ta standart görüntü ekleme yoludur.
+- Görüntü: Docs’ta standart görüntü ekleme yoludur.
 
-Satır içi ve blok eklemeleri, basit birer Markdown (.md) dosyasıdır. Bu dosyalar, herhangi bir geçerli Markdown barındırabilir. Tüm ekleme Markdown dosyaları, depo kökünde [ortak bir `/includes` alt dizinine](git-github-fundamentals.md#includes-subdirectory) yerleştirilmelidir. Makale yayımlandığında, eklenen dosya makaleyle sorunsuz bir şekilde tümleşmiş olur.
+Satır içi ve blok ekleme dosyaları, basit birer Markdown (.md) dosyasıdır. Bu dosyalar, herhangi bir geçerli Markdown barındırabilir. Tüm ekleme Markdown dosyaları, depo kökünde [ortak bir `/includes` alt dizinine](git-github-fundamentals.md#includes-subdirectory) yerleştirilmelidir. Makale yayımlandığında, eklenen dosya makaleyle sorunsuz bir şekilde tümleşmiş olur.
 
-Eklemelere yönelik gereksinimler ve önemli konular şunlardır:
+Ekleme dosyalarına yönelik gereksinimler ve önemli konular şunlardır:
 
-- Aynı metni birden fazla makalede kullanmanız gerektiği zaman eklemeleri kullanın.
-- Blok eklemeleri bir veya iki paragraf, paylaşılan bir yordam veya paylaşılan bir kısım gibi büyük içeriklerle kullanın. Ancak bir cümleden daha küçük şeyler için kullanmayın.
-- Eklenen dosyalar, makalenizin GitHub tarafından işlenmiş görünümünde işlenmez çünkü bunlar, Markdig uzantılarına bağlıdır. Bunlar yalnızca yayın sonrasında oluşturulur.
-- Eklemeye başvuran makaledeki bir eklemede bütün metnin, tam cümlelerden oluşmasına veya öncesinde ya da sonrasındaki metne bağlı olmayan tümcecikler halinde olmasına dikkat edin. Bu kılavuzu dikkate almamak, makalede çevrilemeyen bir satır oluşturur ve yerelleştirme deneyimini bozar.
-- Eklemeleri birbirine eklemeyin. Bu, desteklenmeyen bir durumdur.
-- Medya dosyalarını ekleme alt dizinine özgü bir medya klasörüne yerleştirin, örneğin `<repo>`/eklemeler/medya klasörü. Medya dizini, kökünde hiçbir görüntü barındırmamalıdır. Eklemede görüntü yoksa buna karşılık gelecek bir medya dizini gerekli değildir.
-- Normal makalelerde olduğu gibi, ekleme dosyaları arasında medya paylaşmayın. Her bir ekleme ve makale için benzersiz ada sahip ayrı dosyalar kullanın. Medya dosyasını, eklemeyle ilişkili medya klasöründe depolayın.
-- Eklemeleri, bir makalenin tek içeriği olarak kullanmayın.  Eklemelerin, makaledeki diğer içerikleri tamamlayıcı görevi vardır.
+- Aynı metni birden fazla makalede kullanmanız gerektiği zaman ekleme dosyalarını kullanın.
+- Bir veya iki paragraf, paylaşılan bir yordam veya paylaşılan bir bölüm gibi büyük içeriklerde blok ekleme başvurusunu kullanın. Ancak bir cümleden daha küçük şeyler için kullanmayın.
+- Ekleme başvuruları, Markdig uzantılarına bağlı olduğu için makalenizin GitHub tarafından işlenmiş görünümünde işlenmez. Bunlar yalnızca yayın sonrasında oluşturulur.
+- Ekleme dosyasına başvuran makalelerdeki ekleme dosyalarında bütün metnin, öncesinde veya sonrasında gelen metinden bağımsız tam cümleler veya ifadeler şeklinde olmasına dikkat edin. Bu kılavuzu dikkate almamak, makalede çevrilemeyen bir satır oluşturur ve yerelleştirme deneyimini bozar.
+- Ekleme başvurularını diğer ekleme dosyalarına eklemeyin. Bu, desteklenmeyen bir durumdur.
+- Medya dosyalarını ekleme alt dizinine özgü bir medya klasörüne yerleştirin, örneğin `<repo>`/eklemeler/medya klasörü. Medya dizini, kökünde hiçbir görüntü barındırmamalıdır. Ekleme dosyasında görüntü yoksa buna karşılık gelecek bir medya dizini gerekli değildir.
+- Normal makalelerde olduğu gibi, ekleme dosyaları arasında medya paylaşmayın. Her bir ekleme dosyası ve makale için benzersiz ada sahip ayrı dosyalar kullanın. Medya dosyasını, ekleme dosyasıyla ilişkili medya klasöründe depolayın.
+- Ekleme dosyalarını bir makaledeki tek içerik olacak şekilde kullanmayın.  Ekleme dosyaları, makaledeki diğer içerikleri tamamlayıcı niteliktedir.
 
 Örnek:
 
@@ -383,7 +383,7 @@ Eklemelere yönelik gereksinimler ve önemli konular şunlardır:
 
 Seçicileri teknik makalelerde, aynı makalenin farklı bölümlerini yazdığınızda teknolojiler veya platformlar arasındaki uygulama farklılıklarına değinirken kullanın. Bu genellikle geliştiriciler için mobil platform içeriklerimizde kullanılır. Markdig’de şu anda iki farklı türde seçici vardır; tekli seçici ve çoklu seçici.
 
-Aynı seçici Markdown, seçimdeki her bir makaleye gittiği için makalenizin seçicisini bir eklemeye yerleştirmeniz önerilir. Daha sonra tüm makalelerinizde aynı seçiciyi kullanan eklemeye başvurabilirsiniz.
+Seçimdeki her bir makaleye aynı seçici Markdown gittiği için makalenizin seçicisini bir ekleme dosyasına koymanız önerilir. Daha sonra aynı seçiciyi kullanan tüm makalelerinizde bu ekleme dosyasına başvurabilirsiniz.
 
 Aşağıdaki kodda bir seçici örneği gösterilmektedir:
 
@@ -395,7 +395,7 @@ Aşağıdaki kodda bir seçici örneği gösterilmektedir:
 
 [Azure belgelerinde](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic) seçicilerin nasıl kullanıldığının örneklerini bulabilirsiniz.
 
-### <a name="code-includes"></a>Kod ekleme
+### <a name="code-include-references"></a>Kod ekleme başvuruları
 
 Markdig, bir makaleye kod parçacığı uzantısı aracılığıyla gelişmiş kod eklemeyi destekler. Programlama dili seçimi ve söz dizimi renklendirme gibi GFM özellikleri üzerinde ortaya çıkan gelişmiş işleme seçenekleri sağlar, bunların yanında aşağıdaki gibi kullanışlı özellikler de getirir:
 
@@ -420,7 +420,7 @@ Alt çizgi içeren alternatif metin düzgün bir şekilde işlenmez. Örneğin, 
 
 ### <a name="apostrophes-and-quotation-marks"></a>Kesme işareti ve tırnak işaretleri
 
-Word dosyasından Markdown editörüne bir şey kopyalarsanız kopyaladığınız metin “akıllı” (kıvrık) kesme işaretleri veya tırnak işaretleri içerebilir. Bunların kodlanması veya kesme işareti ya da tırnak işaretlerine dönüştürülmesi gerekir. Aksi takdirde, dosya yayımlandığında şu karakterleri görebilirsiniz: Itâ€™s
+Word dosyasından Markdown editörüne bir şey kopyalarsanız kopyaladığınız metin “akıllı” (kıvrık) kesme işaretleri veya tırnak işaretleri içerebilir. Bunların kodlanması veya kesme işareti ya da tırnak işaretlerine dönüştürülmesi gerekir. Aksi takdirde, dosya yayımlandığında şöyle karakterler görebilirsiniz: Itâ€™s
 
 Bu noktalama işaretlerinin “akıllı” olanları için kodlamalar aşağıdaki gibidir:
 

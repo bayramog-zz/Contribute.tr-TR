@@ -1,6 +1,6 @@
 ---
-title: OPS ve docs.microsoft.com için Markdown başvurusu
-description: Markdown ve DocFX Flavored Markdown (DFM) uzantılarını kullanmaya yönelik OPS platform kılavuzu.
+title: docs.microsoft.com için Markdown başvurusu
+description: Docs platformu Markdown kılavuzu.
 author: meganbradley
 ms.author: mbradley
 manager: jemash
@@ -8,24 +8,24 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 audience: internal,external
-ms.openlocfilehash: 64921bacf48e638221048db4b24e1a941f1d2777
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 1023f3036e5c1facd0bcd4c31069e6faf3c95483
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609557"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245884"
 ---
-# <a name="markdown-reference-for-ops"></a>OPS için Markdown Başvurusu
+# <a name="markdown-reference"></a>Markdown Başvurusu
 
-Markdown, düz metin biçimli söz dizimine sahip hafif bir biçimlendirme dilidir. Open Publishing Services (OPS), Markdown için CommonMark standardını ve docs.microsoft.com’da daha zengin içerik sağlamak üzere tasarlanmış bazı Markdown uzantılarını destekler. Bu makale, docs.microsoft.com için OPS’de Markdown kullanmaya yönelik alfabetik başvuru sağlar.
+Markdown, düz metin biçimli söz dizimine sahip hafif bir biçimlendirme dilidir. Docs platformu, Markdown için CommonMark standardını ve docs.microsoft.com’da daha zengin içerik sağlamak üzere tasarlanmış bazı Markdown uzantılarını destekler. Bu makale, docs.microsoft.com’da Markdown kullanmaya yönelik alfabetik başvuru sağlar.
 
-Markdown yazmak için herhangi bir metin düzenleyiciyi kullanabilirsiniz. Hem standart Markdown söz dizimini hem de özel OPS uzantılarını eklemeyi kolaylaştıran bir düzenleyici olarak [Docs Yazma Paketi](https://aka.ms/DocsAuthoringPack) yükleyip [VS Code](https://code.visualstudio.com/) kullanmanızı öneririz.
+Markdown yazmak için herhangi bir metin düzenleyiciyi kullanabilirsiniz. Hem standart Markdown söz dizimini hem de özel Docs uzantılarını eklemeyi kolaylaştıran bir düzenleyici olarak [Docs Yazma Paketi](https://aka.ms/DocsAuthoringPack) yükleyip [VS Code](https://code.visualstudio.com/) kullanmanızı öneririz.
 
-OPS, tüm yeni depolarda standart olarak Markdig altyapısını kullanır ve eski depolar da Markdig’e geçirilmektedir. [https://babelmark.github.io/](https://babelmark.github.io/) adresine giderek Markdig’e kıyasla diğer altyapılarda Markdown’ın nasıl işlendiğini test edebilirsiniz.
+Docs, Markdig Markdown altyapısını kullanır. [https://babelmark.github.io/](https://babelmark.github.io/) adresine giderek Markdig’e kıyasla diğer altyapılarda Markdown’ın nasıl işlendiğini test edebilirsiniz.
 
 ## <a name="alerts-note-tip-important-caution-warning"></a>Uyarılar (Not, İpucu, Önemli, Dikkat, Uyarı)
 
-Uyarılar, docs.microsoft.com’da içeriğin önemini belirtmek adına renkler ve simgelerle işlenen alıntı blokları oluşturma amaçlı, OPS’ye özel bir Markdown uzantısıdır. Aşağıdaki uyarı türleri desteklenir:
+Uyarılar, docs.microsoft.com’da içeriğin önemini belirtmek adına renkler ve simgelerle işlenen blok alıntı oluşturma amaçlı bir Docs Markdown uzantısıdır. Aşağıdaki uyarı türleri desteklenir:
 
 ```markdown
 > [!NOTE]
@@ -71,7 +71,7 @@ Markdown dosyalarınıza kod parçacıkları ekleyebilirsiniz:
 
 ## <a name="headings"></a>Bölüm başlıkları
 
-OPS, altı Markdown bölüm başlığı düzeyini destekler:
+Docs, altı Markdown bölüm başlığı düzeyini destekler:
 
 ```markdown
 # This is a first level heading (H1)
@@ -92,7 +92,7 @@ OPS, altı Markdown bölüm başlığı düzeyini destekler:
 
 ## <a name="html"></a>HTML
 
-Markdown satır içi HTML’yi desteklese de OPS yoluyla belge yayımlarken HTML önerilmez ve bazı değerler dışında derleme hatalarına ve uyarılarına sebep olur. <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
+Markdown satır içi HTML’yi desteklese de Docs yoluyla belge yayımlarken HTML önerilmez ve bazı değerler dışında derleme hatalarına ve uyarılarına sebep olur. <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
 
 ## <a name="images"></a>Görüntüler
 
@@ -116,7 +116,7 @@ Diğer görüntü türlerini belge kümenizin docfx.json dosyasına<!--add link 
 
 ## <a name="links"></a>Bağlantılar
 
-OPS çoğu zaman diğer dosya ve sayfalara gitmek için standart Markdown bağlantılarını kullanır. Bağlantı türleri, aşağıdaki alt bölümlerde açıklanmıştır.
+Docs çoğu zaman diğer dosya ve sayfalara gitmek için standart Markdown bağlantılarını kullanır. Bağlantı türleri, aşağıdaki alt bölümlerde açıklanmıştır.
 
 > [!TIP]
 > VS Code için Docs Yazma Paketi, yolları bulmakla uğraşmadan göreli bağlantıları ve yer işaretlerini doğru şekilde eklemenize yardımcı olabilir.
@@ -132,7 +132,7 @@ OPS çoğu zaman diğer dosya ve sayfalara gitmek için standart Markdown bağla
 
 ### <a name="relative-links-to-files-in-the-same-doc-set"></a>Aynı belge kümesindeki dosyalara giden göreli bağlantılar
 
-Göreli yol, geçerli dosyayla ilgili bir hedef dosyaya ait yoldur. OPS’de göreli yolları kullanarak aynı belge kümesindeki başka bir dosyaya bağlantı verebilirsiniz. Göreli yollar için söz dizimi aşağıdaki gibidir:
+Göreli yol, geçerli dosyayla ilgili bir hedef dosyaya ait yoldur. Docs’ta göreli yolları kullanarak aynı belge kümesindeki başka bir dosyaya bağlantı verebilirsiniz. Göreli yollar için söz dizimi aşağıdaki gibidir:
 
 ```markdown
 [link text](../../folder/filename.md)
@@ -142,7 +142,7 @@ Göreli yol, geçerli dosyayla ilgili bir hedef dosyaya ait yoldur. OPS’de gö
 
 - Göreli yol, derleme esnasında .md uzantısının kaldırılması dahil olmak üzere çözümlenir.
 - Üst klasördeki bir dosyaya bağlantı sağlamak için “../” kullanabilirsiniz ancak bu klasörün aynı belge kümesinde yer alması gerekir. Farklı bir belge kümesi klasöründeki dosyaya bağlantı vermek için “../” kullanamazsınız.
-- OPS ayrıca “~” ile başlayan özel bir göreli yol formunu da destekler (örneğin ~/foo/bar.md). Bu söz dizimi, bir belge kümesinin kök klasöründe bulunan bir dosyayı gösterir. Bu tür bir yol da derleme sırasında doğrulanıp çözümlenir.
+- Docs ayrıca “~” ile başlayan özel bir göreli yol biçimini de destekler (örneğin ~/foo/bar.md). Bu söz dizimi, bir belge kümesinin kök klasöründe bulunan bir dosyayı gösterir. Bu tür bir yol da derleme sırasında doğrulanıp çözümlenir.
 
 > [!IMPORTANT]
 > Dosya uzantısını göreli yola dahil edin. Derleme, bu göreli yola ait hedef dosyanın varlığını doğrular. Ve göreli yolda dosya uzantısı yoksa derlemenin bozuk bağlantı uyarısı raporlaması olasıdır. Örneğin şunu kullanın:
@@ -153,7 +153,7 @@ Göreli yol, geçerli dosyayla ilgili bir hedef dosyaya ait yoldur. OPS’de gö
 >
 > `[link text](../../folder/filename)`
 
-### <a name="absolute-links-to-other-files-in-ops"></a>OPS’deki diğer dosyalara giden mutlak bağlantılar
+### <a name="site-relative-links-to-other-files-on-docs"></a>Docs’taki diğer dosyalara giden site göreli bağlantıları
 
 ```markdown
 [Azure and Linux](/articles/virtual-machines/linux/overview)
@@ -252,7 +252,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 Numaralandırılmış liste oluşturmak için yalnızca 1 sayısını kullanabilirsiniz, belge yayımlandığında bunlar sıralı bir liste olarak işlenir. Kaynak okunurluğunu artırmak için artışlı liste oluşturabilirsiniz.
 
-Bu listelerde (iç içe geçmiş listeler dahil) harf kullanmayın. Harf kullanılan listeler, OPS yoluyla yayımlandığında düzgün işlenmez. Sayıların kullanıldığı iç içe geçmiş listeler, yayımlandığında küçük harfli listeler olarak işlenir. Örneğin:
+Bu listelerde (iç içe geçmiş listeler dahil) harf kullanmayın. Bunlar, Docs’ta yayımlandığında düzgün işlenmez. Sayıların kullanıldığı iç içe geçmiş listeler, yayımlandığında küçük harfli listeler olarak işlenir. Örneğin:
 
 ```markdown
 1. This is
@@ -423,14 +423,6 @@ Yukarıdaki alıntı bloğu Markdown metni şu şekilde işlenir:
 > - [(Xamarin iOS | Javascript)](how-to-write-workflows-major.md)
 > - [(Xamarin Android | Javascript)](how-to-write-workflows-major.md)
 
-<!-- uncomment and link when Cory's topic is live
-## Tabbed content
-
-Tabs are a Markdown extension for docs.microsoft.com that allow us to present different versions of content, such as procedural steps to accomplish the same task on different platforms, in a tabbed format.
-
-Because the syntax and requirements for tabbed content are fairly complex, they are documented separately in Tabbed Content.
--->
-
 ## <a name="tables"></a>eğlence
 
 Markdown’da bir tablo oluşturmanın en kolay yolu, kanallar ve çizgiler kullanmaktır. Üst bilgisi olan standart bir tablo oluşturmak için ilk satırın altına kısa çizgilerden oluşan bir satır ekleyin:
@@ -535,13 +527,13 @@ Docs.microsoft.com’da HTML tabloları önerilmez. Bu tablolar, Markdown’ın 
 
 ### <a name="embedding-videos-into-a-markdown-page"></a>Markdown sayfalarına video ekleme
 
-OPS, şu anda şu üç konumda yayımlanmış videoları desteklemektedir:
+Docs şu anda şu üç konumda yayımlanmış videoları desteklemektedir:
 
 - YouTube
 - Channel 9
 - Microsoft’un kendi “One Player” sistemi
 
-Aşağıdaki söz dizimiyle videoyu ekleyebilirsiniz ve OPS bunu işler.
+Aşağıdaki söz dizimiyle videoyu ekleyebilirsiniz. Docs bu videoyu işler.
 
 ```markdown
 > [!VIDEO <embedded_video_link>]

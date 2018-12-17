@@ -2,12 +2,12 @@
 title: .NET makaleleri için şablon ve başvuru sayfası
 description: Bu makale, .NET belge depoları için yeni makaleler oluştururken işinize yarayacak bir şablon içerir
 ms.date: 11/07/2018
-ms.openlocfilehash: 15f64ec86c475e2da2f6539c8f388d076389c4e0
-ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
+ms.openlocfilehash: 08c8e19c858e7417d49cc2de543c67f330b93e89
+ms.sourcegitcommit: b0556fc33803358009a030ac9efcaed23f562868
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52299672"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53264514"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET belgeleri için meta veriler ve Markdown şablonu
 
@@ -31,10 +31,10 @@ ms.date: [CREATION/UPDATE DATE - mm/dd/yyyy]
 
 - İki nokta (:) ile meta veri öğesi arasına bir boşluk koymanız **zorunludur**.
 - Bir değerdeki (örneğin başlıktaki) iki nokta işareti, meta veri ayrıştırıcısını keser. Bu durumda başlığın başına ve sonuna tırnak işareti koyun (örneğin `title: "Writing .NET Core console apps: An advanced step-by-step guide"`).
-- **title (başlık)**: Arama alt yapısı sonuçlarında görünür. Başlık, H1 başlığınızla aynı olmamalı ve en fazla 60 karakterden oluşmalıdır.
+- **title (başlık)**: Arama altyapısı sonuçlarında görünür. Başlık, H1 başlığınızla aynı olmamalı ve en fazla 60 karakterden oluşmalıdır.
 - **description (açıklama)**: Makalenin içeriğini özetler. Genellikle arama sonuçları sayfasında görüntülenir ancak arama sıralaması için kullanılmaz. Açıklama uzunluğu, boşluklu 115-145 karakter olmalıdır.
 - **author (yazar)**: Yazar alanı, yazarın **GitHub kullanıcı adını** içermelidir.
-- **ms.date**: En son yapılan büyük güncelleştirmenin tarihi. Tüm makaleyi gözden geçirip güncelleştirdiyseniz mevcut makalelerde bunu da güncelleştirin. Yazım hataları gibi küçük düzeltmeler güncelleştirme gerektirmez.
+- **ms.date**: En son yapılan önemli güncelleştirmenin tarihi. Tüm makaleyi gözden geçirip güncelleştirdiyseniz mevcut makalelerde bunu da güncelleştirin. Yazım hataları gibi küçük düzeltmeler güncelleştirme gerektirmez.
 
 Diğer meta veriler makalelere eklenir, ancak çoğu meta veri değeri, **docfx.json** klasöründe belirtilen klasör düzeyinde uygulanır.
 
@@ -244,13 +244,13 @@ Düğme bağlantıları:
 
 ```markdown
 > [!div class="button"]
-[button links](dotnet-contribute.md)
+> [button links](dotnet-contribute.md)
 ```
 
 Bu, şu şekilde işlenir:
 
 > [!div class="button"]
-[düğme bağlantıları](dotnet-contribute.md)
+> [düğme bağlantıları](dotnet-contribute.md)
 
 [Visual Studio belgelerinde](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-2---download-visual-studio), düğmelerin nasıl kullanıldığının örneklerini bulabilirsiniz.
 
@@ -258,8 +258,8 @@ Bu, şu şekilde işlenir:
 
 ```markdown
 >[!div class="step-by-step"]
-[Pre](../docs/csharp/expression-trees-interpreting.md)
-[Next](../docs/csharp/expression-trees-translating.md)
+> [Pre](../docs/csharp/expression-trees-interpreting.md)
+> [Next](../docs/csharp/expression-trees-translating.md)
 ```
 
 [C# Kılavuzunda](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/program-structure), adım adım açıklamaların nasıl kullanıldığının örneklerini bulabilirsiniz.

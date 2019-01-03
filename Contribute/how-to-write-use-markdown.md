@@ -2,12 +2,12 @@
 title: Docs’ta makale yazmak için Markdown kullanma
 description: Bu makale, docs.microsoft.com makalelerinde kullanılan Markdown dilinin temellerini ve başvuru bilgilerini sağlar.
 ms.date: 07/13/2017
-ms.openlocfilehash: 8613d525afc11caf9ec760c4f15ea44010781634
-ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
+ms.openlocfilehash: ef75ffd59b75db5757822642f651d863906cf14c
+ms.sourcegitcommit: 18c271ebec920bb976a4bc901f4ab8c1d36b02fa
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53245907"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53615847"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Docs’ta makale yazmak için Markdown kullanma
 
@@ -232,7 +232,8 @@ Bu diller, kolay as desteğine ve dil vurgulamasına sahiptir.
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
-|Power Apps Formula|powerappsfl|
+|PowerApps (nokta ondalık ayırıcısı)|powerapps-dot|
+|PowerApps (virgül ondalık ayırıcısı)|powerapps-comma|
 |PowerShell|powershell|
 |Python|python|
 |Q#|qsharp|

@@ -16,6 +16,7 @@
 ### [.NET belgelerine katkıda bulunma](dotnet-contribute-process.md)
 ### [.NET belgeleri stil kuralları](dotnet-style-guide.md)
 ### [Üslup ve ton kılavuzu](dotnet-voice-tone.md)
+### [Belge çekme isteği gözden geçirme süreci](dotnet-pr-review.md)
 # [Ek kaynaklar](additional-resources.md)
 
 <!--

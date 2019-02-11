@@ -1,24 +1,19 @@
 ---
 title: Docs’ta makale yazmak için Markdown kullanma
 description: Bu makale, docs.microsoft.com makalelerinde kullanılan Markdown dilinin temellerini ve başvuru bilgilerini sağlar.
-ms.date: 07/13/2017
-ms.openlocfilehash: ef75ffd59b75db5757822642f651d863906cf14c
-ms.sourcegitcommit: 18c271ebec920bb976a4bc901f4ab8c1d36b02fa
+ms.date: 01/29/2019
+ms.openlocfilehash: 5235189d11c8c20ac20c91572d8bafcf525fb7c0
+ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53615847"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55887310"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Docs’ta makale yazmak için Markdown kullanma
 
 [Docs.microsoft.com](http://docs.microsoft.com) makaleleri, [Markdown](https://daringfireball.net/projects/markdown/) adı verilen hafif biçimlendirme dilinde yazılır. Bu dilin okunması ve öğrenilmesi kolaydır. O nedenle bu dil kısa sürede endüstri standardı haline gelmiştir.
 
-Docs içerikleri GitHub’da depolandığı için [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) adlı bir Markdown üst kümesi kullanabilir. GFM, yaygın biçimlendirme ihtiyaçları için ilave işlevler sağlar. Ayrıca Open Publishing Services (OPS), Markdig Markdown Ayrıştırıcısı’nı uygular. Markdig, GFM ile yüksek uyumluluğa sahip olduğu için Docs’a özgü özellikleri etkinleştirmek için ek işlevsellik sağlar.
-
-* Markdig; .NET için hızlı, güçlü, CommonMark uyumlu, genişletilebilir Markdown işlemcisidir.
-* https://github.com/lunet-io/markdig
-* Daha iyi topluluk desteği
-* Daha iyi standartlar desteği
+docs.microsoft.com sitesi arka ucu, [Markdig](https://github.com/lunet-io/markdig) ile ayrıştırılan [CommonMark](https://commonmark.org/) uyumlu markdown’ı destekleyen Open Publishing Services (OPS) kullanır ve aynı zamanda [DocFX Flavored Markdown’ı (DFM)](https://dotnet.github.io/docfx/) destekler. Çoğu belge GitHub’da depolanıp burada düzenlenebildiği için bu markdown özellikleri çoğunlukla [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) ile uyumludur. Markdown uzantıları ile ilave işlevler eklenir.
 
 ## <a name="markdown-basics"></a>Markdown temel bilgileri
 
@@ -220,6 +215,7 @@ Bu diller, kolay as desteğine ve dil vurgulamasına sahiptir.
 |Konsol|konsol|
 |CSHTML|cshtml|
 |DAX|dax|
+|Docker|dockerfile|
 |F#|fsharp|
 |Go|go|
 |HTML|html|
@@ -227,8 +223,8 @@ Bu diller, kolay as desteğine ve dil vurgulamasına sahiptir.
 |Java|java|
 |JavaScript|javascript|
 |JSON|json|
+|Kusto Sorgu Dili|kusto|
 |Markdown|md|
-|NodeJS|nodejs|
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
@@ -243,7 +239,6 @@ Bu diller, kolay as desteğine ve dil vurgulamasına sahiptir.
 |Swift|swift|
 |TypeScript|typescript|
 |VB|vb|
-|VSTS CLI|vstscli|
 |XAML|xaml|
 |XML|xml|
 

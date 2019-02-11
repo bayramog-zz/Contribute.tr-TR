@@ -2,12 +2,12 @@
 title: Belgeler için Git ve GitHub temel özellikleri
 description: Bu makale, Git ve GitHub deposuna genel bir bakış sağlar, içeriğin nasıl organize edildiğini ve docs.microsoft.com adlandırma kurallarını açıklar.
 ms.date: 06/30/2017
-ms.openlocfilehash: 05c758845007f859382014166e88fd9614cdb873
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: b7eb82f299d3efcdb1e49649fb77367ef8ba3fae
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805712"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712890"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Docs belgeleri için Git ve GitHub temel özellikleri
 
@@ -25,7 +25,7 @@ Merkezileştirilmiş sürüm denetim sistemlerine (Team Foundation Server, Share
 
 Git ayrıca, bir projenin içeriğini yönetmek için katmanlı bir yapı kullanır:
 
-- *Depo* - Aynı zamanda *repo* olarak bilinir, en üst düzey depolama birimidir. Bir depo bir veya daha fazla dal içerir.
+- *Depo*: Aynı zamanda *repo* olarak bilinir, en üst düzey depolama birimidir. Bir depo bir veya daha fazla dal içerir.
 - *Dal*: Bir projenin içerik kümesini oluşturan dosya ve klasörleri içeren depolama birimi. Dallar, iş akışlarını (genellikle sürümler olarak adlandırılır) birbirinden ayırır. Katkılar her zaman belirli bir dal kapsamında yapılır. Tüm depoların bir varsayılan dalı (genellikle “ana” olarak adlandırılır) ve tekrar bu ana dalla birleştirilmek üzere bir veya daha fazla dalı bulunur. Ana dal, projenin geçerli sürümü ve "tek gerçeklik kaynağı" olarak görev yapar. Depodaki diğer tüm dallar bu üst öğeden oluşturulur.
 
 Katkıda bulunanlar, yerel ve GitHub seviyelerinde depoları güncelleştirmek ve yönlendirmek için Git’i kullanır:
@@ -58,7 +58,7 @@ Her makale dizini, karşılık gelen medya dosyaları için bir `/media` alt diz
 
 İki ya da daha fazla makale tarafından paylaşılan yeniden kullanılabilir içerik olduğunda, bu içerikler ana `/includes` dizininden alınan bir `articles` alt dizinine yerleştirilir. Ekleme dosyasını kullanan Markdown dosyasında, ekleme dosyasına başvurulması gereken konuma karşılık gelen bir “ekleme” Markdown uzantısı yerleştirilir.
 
-Daha fazla bilgi için [Markdown’ı kullanma - Eklemeler](how-to-write-use-markdown.md#includes) bölümüne bakın.
+Ek yönergeler için bkz. [Markdown’ı Kullanma: Eklemeler](how-to-write-use-markdown.md#include-files).
 
 ### <a name="markdown-file-template"></a>Markdown dosya şablonu
 

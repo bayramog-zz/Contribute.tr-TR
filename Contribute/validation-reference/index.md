@@ -1,29 +1,17 @@
 ---
 author: meganbradley
 ms.author: mbradley
-ms.openlocfilehash: fa048980afcf3c50f7d990f9c88064df6ee5ebb5
-ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.openlocfilehash: 5488ba364ea561a732357bcebf9bf66039c26542
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084629"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712798"
 ---
-# <a name="docs-pr-validation-service"></a>Docs çekme isteği doğrulama hizmeti
+# <a name="docs-validation-reference"></a>Belge doğrulama başvurusu
 
-Docs çekme isteği doğrulama hizmeti, bir çekme isteği dosyaları üzerinde doğrulama kuralları çalıştıran bir GitHub uygulamasıdır.
+Bu bölümdeki makaleler, bir docs.microsoft.com deposuna PR gönderirken veya docs.microsoft.com adresinde yayımlanacak bir depo oluştururken görebileceğiniz Hatalar, Uyarılar ve Öneriler hakkında bilgiler verir.
 
-Doğrulama hizmeti bir havuzda etkinleştirildiğinde aşağıdaki davranışları görürsünüz:
+Tüm sorunların tüm depolarda geçerli olmadığını unutmayın. Bazıları belirli içerik kümelerine özgüdür. Bu başvuruda açıklanan her sorunu değil, derleme raporunuzda listelenen sorunları düzeltin.
 
-1. Bir çekme isteği gönderirsiniz.
-1. Çekme isteğinizin durumunu gösteren GitHub açıklamasında havuzda "denetimler" durumunun etkin olduğunu görürsünüz. Bu örnekte iki denetimin; "İşleme Doğrulaması" ve "OpenPublishing.Build"'ın etkinleştirildiğine dikkat edin:
-
-   ![bazı denetimler başarısız oldu](media/validation-failed.png)
-
-   İşleme doğrulaması başarısız olsa bile derleme geçebilir.
-
-1. Daha fazla bilgi için **Ayrıntılar**'ı görüntüleyin.
-1. Ayrıntılar sayfasında, doğrulama denetimlerinin başarısız olduğunu ve beraberinde verilen sorunu çözme bilgilerini görürsünüz:
-
-   ![doğrulama mesajı](media/validation-details.png)
-
-Şu anda hizmette olan doğrulamaların listesi için bu makalenin sol tarafındaki İçindekiler Tablosu'na bakın.
+Ayrıca bu başvurunun eksiksiz olmadığını unutmayın. Sürekli olarak yeni makaleler eklenecek ve derleme raporu hata kodları ile ilişkilendirilecektir. Derleme raporları genel erişime açık olsa da bazı sorunları düzeltmek için gereken bilgilerin bazılarına Microsoft dışından erişilemez. Bir Hata ya da Uyarının belgelerini bulamazsanız, ileti veya belgeler anlaşılır değilse veya Microsoft dışından katılımcıysanız ve ek bilgilere erişemiyorsanız bir GitHub sorunu oluşturmak için aşağıdaki belge geri bildirimi düğmesini kullanın.

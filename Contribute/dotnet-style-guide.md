@@ -2,12 +2,12 @@
 title: .NET makaleleri için şablon ve başvuru sayfası
 description: Bu makale, .NET belge depoları için yeni makaleler oluştururken işinize yarayacak bir şablon içerir
 ms.date: 11/07/2018
-ms.openlocfilehash: 08c8e19c858e7417d49cc2de543c67f330b93e89
-ms.sourcegitcommit: b0556fc33803358009a030ac9efcaed23f562868
+ms.openlocfilehash: e342373a09b623dc71aadd63e8d8627d154ec8b6
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53264514"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712936"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET belgeleri için meta veriler ve Markdown şablonu
 
@@ -123,7 +123,7 @@ Belirli bir metot aşırı yüklemesine bağlantı vermek için her bir metot pa
 
 ## <a name="code"></a>Kod
 
-Kod eklemenin en iyi yolu, çalışan bir örnekten kod parçacığı eklemektir. [.NET’e katkıda bulunma](dotnet-contribute-process.md#contributing-to-samples) makalesindeki yönergeleri izleyerek örneğinizi oluşturun. Kod eklemenin temel kuralları, [kod](how-to-write-use-markdown.md#code-includes) hakkındaki genel rehberde yer almaktadır.
+Kod eklemenin en iyi yolu, çalışan bir örnekten kod parçacığı eklemektir. [.NET’e katkıda bulunma](dotnet-contribute-process.md#contributing-to-samples) makalesindeki yönergeleri izleyerek örneğinizi oluşturun. Kod eklemenin temel kuralları, [kod](how-to-write-use-markdown.md#code-snippets) hakkındaki genel rehberde yer almaktadır.
 
 Şu söz dizimini kullanarak kod ekleyebilirsiniz:
 

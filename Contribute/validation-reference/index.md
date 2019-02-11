@@ -1,29 +1,17 @@
 ---
 author: meganbradley
 ms.author: mbradley
-ms.openlocfilehash: fa048980afcf3c50f7d990f9c88064df6ee5ebb5
-ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.openlocfilehash: 5488ba364ea561a732357bcebf9bf66039c26542
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084629"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712798"
 ---
-# <a name="docs-pr-validation-service"></a><span data-ttu-id="505b2-101">Docs çekme isteği doğrulama hizmeti</span><span class="sxs-lookup"><span data-stu-id="505b2-101">Docs PR validation service</span></span>
+# <a name="docs-validation-reference"></a><span data-ttu-id="c843d-101">Belge doğrulama başvurusu</span><span class="sxs-lookup"><span data-stu-id="c843d-101">Docs validation reference</span></span>
 
-<span data-ttu-id="505b2-102">Docs çekme isteği doğrulama hizmeti, bir çekme isteği dosyaları üzerinde doğrulama kuralları çalıştıran bir GitHub uygulamasıdır.</span><span class="sxs-lookup"><span data-stu-id="505b2-102">The Docs PR validation service is a GitHub app that runs validation rules on the files in a PR.</span></span>
+<span data-ttu-id="c843d-102">Bu bölümdeki makaleler, bir docs.microsoft.com deposuna PR gönderirken veya docs.microsoft.com adresinde yayımlanacak bir depo oluştururken görebileceğiniz Hatalar, Uyarılar ve Öneriler hakkında bilgiler verir.</span><span class="sxs-lookup"><span data-stu-id="c843d-102">The articles in this section provide information about Errors, Warnings, and Suggestions you might see when submitting a PR to a docs.microsoft.com repo, or when building a repo to publish to docs.microsoft.com.</span></span>
 
-<span data-ttu-id="505b2-103">Doğrulama hizmeti bir havuzda etkinleştirildiğinde aşağıdaki davranışları görürsünüz:</span><span class="sxs-lookup"><span data-stu-id="505b2-103">When the validation service is enabled on a repo, you'll see the following behavior:</span></span>
+<span data-ttu-id="c843d-103">Tüm sorunların tüm depolarda geçerli olmadığını unutmayın. Bazıları belirli içerik kümelerine özgüdür.</span><span class="sxs-lookup"><span data-stu-id="c843d-103">Note that not all issues will be enabled on all repos; some are specific to certain content sets.</span></span> <span data-ttu-id="c843d-104">Bu başvuruda açıklanan her sorunu değil, derleme raporunuzda listelenen sorunları düzeltin.</span><span class="sxs-lookup"><span data-stu-id="c843d-104">Fix the issues listed in your build report, not every issue described in this reference.</span></span>
 
-1. <span data-ttu-id="505b2-104">Bir çekme isteği gönderirsiniz.</span><span class="sxs-lookup"><span data-stu-id="505b2-104">You submit a PR.</span></span>
-1. <span data-ttu-id="505b2-105">Çekme isteğinizin durumunu gösteren GitHub açıklamasında havuzda "denetimler" durumunun etkin olduğunu görürsünüz.</span><span class="sxs-lookup"><span data-stu-id="505b2-105">In the GitHub comment that indicates the status of your PR, you'll see the status of "checks" enabled on the repo.</span></span> <span data-ttu-id="505b2-106">Bu örnekte iki denetimin; "İşleme Doğrulaması" ve "OpenPublishing.Build"'ın etkinleştirildiğine dikkat edin:</span><span class="sxs-lookup"><span data-stu-id="505b2-106">Note that in this example, there are two checks enabled, "Commit Validation" and "OpenPublishing.Build":</span></span>
-
-   ![bazı denetimler başarısız oldu](media/validation-failed.png)
-
-   <span data-ttu-id="505b2-108">İşleme doğrulaması başarısız olsa bile derleme geçebilir.</span><span class="sxs-lookup"><span data-stu-id="505b2-108">Build can pass even if commit validation fails.</span></span>
-
-1. <span data-ttu-id="505b2-109">Daha fazla bilgi için **Ayrıntılar**'ı görüntüleyin.</span><span class="sxs-lookup"><span data-stu-id="505b2-109">Click **Details** for more information.</span></span>
-1. <span data-ttu-id="505b2-110">Ayrıntılar sayfasında, doğrulama denetimlerinin başarısız olduğunu ve beraberinde verilen sorunu çözme bilgilerini görürsünüz:</span><span class="sxs-lookup"><span data-stu-id="505b2-110">On the Details page, you'll see all the validation checks that failed, with information about how to fix the issues:</span></span>
-
-   ![doğrulama mesajı](media/validation-details.png)
-
-<span data-ttu-id="505b2-112">Şu anda hizmette olan doğrulamaların listesi için bu makalenin sol tarafındaki İçindekiler Tablosu'na bakın.</span><span class="sxs-lookup"><span data-stu-id="505b2-112">See the left-hand TOC of this article for the list of validations currently in the service.</span></span>
+<span data-ttu-id="c843d-105">Ayrıca bu başvurunun eksiksiz olmadığını unutmayın. Sürekli olarak yeni makaleler eklenecek ve derleme raporu hata kodları ile ilişkilendirilecektir.</span><span class="sxs-lookup"><span data-stu-id="c843d-105">Also note that this reference is not complete - new articles will be added and linked from build report error codes as an ongoing effort.</span></span> <span data-ttu-id="c843d-106">Derleme raporları genel erişime açık olsa da bazı sorunları düzeltmek için gereken bilgilerin bazılarına Microsoft dışından erişilemez.</span><span class="sxs-lookup"><span data-stu-id="c843d-106">Although build reports are public, some of the information required to fix some issues is not available outside of Microsoft.</span></span> <span data-ttu-id="c843d-107">Bir Hata ya da Uyarının belgelerini bulamazsanız, ileti veya belgeler anlaşılır değilse veya Microsoft dışından katılımcıysanız ve ek bilgilere erişemiyorsanız bir GitHub sorunu oluşturmak için aşağıdaki belge geri bildirimi düğmesini kullanın.</span><span class="sxs-lookup"><span data-stu-id="c843d-107">If you can't find documentation for an Error or Warning, if the message or documentation isn't clear, or if you're a non-Microsoft contributor and can't access additional information, use the documentation feedback button below to file a GitHub issue.</span></span>

@@ -4,17 +4,17 @@ description: Bu makale, docs.microsoft.com’daki içeriklerde bağlantı oluşt
 author: gewarren
 ms.author: gewarren
 ms.date: 10/31/2018
-ms.openlocfilehash: e56bc0fe3a5428af2a79641a8959b4da21270d53
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 9dc1b6dc2ac19b8f28a5a137817245f9a8c34eaf
+ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609442"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55887264"
 ---
 # <a name="using-links-in-documentation"></a>Belgelerde bağlantı kullanma
 Bu makale, docs.microsoft.com’da barınan sayfalardaki bağlantıların nasıl kullanılacağını açıklar. Bağlantılar, çeşitli birkaç kural ile birlikte Markdown’a eklemesi kolay öğelerdir. Bağlantılar kullanıcıları aynı sayfadaki içeriğe, komşu sayfalardaki içeriğe veya harici site ve URL’lere götürebilir.
 
-docs.microsoft.com site arka ucu, DocFX Flavored Markdown (DFM) uygulayan Açık Yayımlama Hizmetleri’ni (OPS) kullanır. DFM, GitHub Flavored Markdown (GFM) ile yüksek uyumluluk sağlar ve Markdown uzantıları yoluyla ek işlevsellik sağlar.
+docs.microsoft.com sitesi arka ucu, [Markdig](https://github.com/lunet-io/markdig) ile ayrıştırılan [CommonMark](https://commonmark.org/) uyumlu markdown’ı destekleyen Open Publishing Services (OPS) kullanır ve aynı zamanda [DocFX Flavored Markdown’ı (DFM)](https://dotnet.github.io/docfx/) destekler. Çoğu belge GitHub’da depolanıp burada düzenlenebildiği için bu markdown özellikleri çoğunlukla [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) ile uyumludur. Markdown uzantıları ile ilave işlevler eklenir.
 
 > [!IMPORTANT]
 > Hedef desteklediğinde (büyük bir bölümü destekler), tüm bağlantılar güvenli olmalıdır (`https` veya `http`).
@@ -137,12 +137,12 @@ Başka bir tür Microsoft sayfasına (fiyatlandırma sayfası, SLA sayfası gibi
 
 En iyi kullanıcı deneyimi, kullanıcıları başka sitelere göndermekten olabildiğince uzak durarak sağlanır. Ancak bazen bunu yapmamız gerekir, bu durumda üçüncü taraf sitelere giden bağlantıları şu bilgiler temelinde oluşturun:
 
-- **Sorumluluk:** Paylaşmak istediğiniz bilgi üçüncü tarafa aitse üçüncü taraf içeriğine bağlantı verin. Örneğin, Android geliştirici araçlarını kullanmayı anlatmak Microsoft’un işi değildir, bu görev Google’a düşer. Gerekirse Android geliştirici araçlarının Azure *ile birlikte* nasıl kullanılacağını anlatabiliriz ancak kendi araçlarının kullanımı açıklamak yine Google’ın işidir.
+- **Sorumluluk**: Paylaşmak istediğiniz bilgi üçüncü tarafa aitse, üçüncü taraf içeriğine yönlendiren bir bağlantı verin. Örneğin, Android geliştirici araçlarını kullanmayı anlatmak Microsoft’un işi değildir, bu görev Google’a düşer. Gerekirse Android geliştirici araçlarının Azure *ile birlikte* nasıl kullanılacağını anlatabiliriz ancak kendi araçlarının kullanımı açıklamak yine Google’ın işidir.
 - **PM oturum kapatma**: Microsoft’un üçüncü taraf içerikte oturum kapatmasını isteyin. Bağlantı vererek, bağlantı verdiğimiz siteye güvendiğimizi ve insanlar bu yönergeleri izlediğinde üzerimize düşen yükümlülüğün farkında olduğumuzu belirtmiş oluruz.
-- **Güncellik gözden geçirmeleri:** Üçüncü taraf bilgilerinin hala geçerli, doğru, alakalı olduğundan ve bağlantının değişmediğinden emin olun.
-- **Site dışı:** Kullanıcıların başka bir siteye gittiklerini fark etmelerini sağlayın. Bağlam bunu açıklamıyorsa belirleyici bir ifade ekleyin. Örneğin: “Önkoşullar arasında Android Geliştirici Araçları vardır, bunları Android Studio sitesinden indirebilirsiniz.”
-- **Sonraki adımlar:** “Sonraki adımlar” bölümünde, örneğin bir MVP bloguna bağlantı verilebilir. Yalnızca kullanıcıların siteden ayrıldıklarını fark etmelerini sağlayın.
-- **Yasal:** Her ms.com sayfasının alt bilgisinde bulunan **Kullanım Koşulları**’nda, **Üçüncü Taraf Site Bağlantıları**’na yasal olarak bağlıyız.
+- **Güncellik gözden geçirmeleri**: Üçüncü taraf bilgilerinin hala geçerli, doğru, alakalı olduğundan ve bağlantının değişmediğinden emin olun.
+- **Site dışı**: Kullanıcıların başka bir siteye gittiklerini fark etmelerini sağlayın. Bağlam bunu açıklamıyorsa belirleyici bir ifade ekleyin. Örneğin: “Önkoşullar arasında Android Geliştirici Araçları vardır. Bunları Android Studio sitesinden indirebilirsiniz.”
+- **Sonraki adımlar**: “Sonraki adımlar” bölümünde, örneğin bir MVP bloguna bağlantı verilebilir. Yalnızca kullanıcıların siteden ayrıldıklarını fark etmelerini sağlayın.
+- **Yasal**: Her ms.com sayfasının alt bilgisinde bulunan **Kullanım Koşulları**’nda, **Üçüncü Taraf Site Bağlantıları**’na yasal olarak bağlıyız.
 
 ## <a name="links-to-msdn-or-technet"></a>MSDN veya TechNet bağlantıları
 

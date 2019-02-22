@@ -17,7 +17,7 @@ Tek düzeyli sekme:
 
 İki sekmesi ve sekme grubu ayırıcısı (---) olan tek düzeyli sekme seçimi örneği:
 
-```
+```markdown
 # [Linux](#tab/linux)
 
 Content for Linux...

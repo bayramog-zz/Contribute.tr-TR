@@ -1,22 +1,16 @@
 ---
 title: Microsoft Docs katkıda bulunan kılavuzuna genel bakış
-description: Bu kılavuz, Microsoft belge sitesi olan docs.microsoft.com’a nasıl katkıda bulunabileceğinizi açıklar.
+description: 'Bu kılavuz, Microsoft belge sitesi olan docs.microsoft.com’a nasıl katkıda bulunabileceğinizi açıklar.'
 author: billwagner
 ms.author: wiwagn
-manager: wpickett
-ms.date: 04/17/2018
-ms.openlocfilehash: 4a9a7573a62cfc7d5187b90de7e1fe147825273e
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
-ms.translationtype: HT
-ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712867"
+ms.date: 02/19/2019
 ---
+
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs katkıda bulunan kılavuzuna genel bakış
 
 [docs.microsoft.com ](https://docs.microsoft.com) (Docs) Stil Kılavuzu’na hoş geldiniz!
 
-Belge kümelerimizden birkaçı açık kaynaktır ve GitHub’da barınır. Microsoft’ta sürekli olarak daha fazla ekip bu modeli benimsemektedir. Tamamen açık kaynak olmayan belge kümelerinde bile çekme istekleri yapabileceğiniz genel kullanıma yönelik depolar vardır. Böylece mühendisler, içerik ekipleri ve müşterilerimiz arasındaki iletişim kolaylaşır ve iyileşir. Açık çalışmanın bazı avantajları vardır:
+Microsoft belgelerinin birkaçı açık kaynaktır ve GitHub’da barındırılır. Bazı belgeler açık kaynak değildir, ancak birçoğunda çekme istekleri yapabileceğiniz genel kullanıma yönelik depolar vardır. Böylece mühendisler, içerik ekipleri ve müşterilerimiz arasındaki iletişim kolaylaşır ve iyileşir. Açık çalışmanın bazı avantajları vardır:
 
 - Açık kaynak depolar, hangi belgelere en çok ihtiyaç olduğuna dair geri bildirim almak için açık olarak planlanır.
 - Açık kaynak depolar, ilk sürümde en faydalı içeriği yayımlamak için açık olarak gözden geçirilir.
@@ -31,34 +25,34 @@ Belge kümelerimizden birkaçı açık kaynaktır ve GitHub’da barınır. Micr
 
 ## <a name="quick-edits-to-existing-documents"></a>Mevcut belgelerde hızlı düzeltmeler
 
-Hızlı düzeltmeler, belgelerdeki küçük hataları ve eksikleri rapor etme ve düzeltme sürecini kolaylaştırır. Tüm çabalara rağmen yayımlanmış belgelerimizde ufak gramer ve yazım hataları oluyor. Bir hatayı rapor etmek için sorun da oluşturabilirsiniz ancak bunun için çekme isteği (PR) oluşturmak, daha hızlı ve kolaydır. Neredeyse tüm makalelerde, aşağıdaki şekilde gösterildiği gibi bir düzenleme düğmesi vardır. **Düzenle** (veya çevirisi) düğmesine tıklayarak GitHub’daki kaynak dosyaya gidersiniz.
+Hızlı düzeltmeler, belgelerdeki küçük hataları ve eksikleri rapor etme ve düzeltme sürecini kolaylaştırır. Tüm çabalara rağmen yayımlanmış belgelerimizde ufak gramer ve yazım hataları oluyor. Bir hatayı rapor etmek için sorun da oluşturabilirsiniz ancak mümkün olduğunda bunun için çekme isteği (PR) oluşturmak, daha hızlı ve kolaydır.
 
-![Düzenle bağlantısının konumu](./media/index/edit-article.png)
+1. Bazı belge sayfalarında doğrudan tarayıcıda düzenleme yapabilirsiniz. Böyle durumlarda aşağıdaki gibi bir **Düzenle** düğmesi görürsünüz. **Düzenle** (veya çevirisi) düğmesine tıklayarak GitHub’daki kaynak dosyaya gidersiniz. **Düzenle** düğmesi (kalem simgesi) olmadığında belge sayfası değiştirilemez.
 
-Daha sonra, aşağıdaki şekilde gösterilen kalem simgesine tıklayarak makaleyi düzenleyin.
+   ![Düzenle bağlantısının konumu](./media/index/edit-article.png)
 
-![Kalem simgesinin konumu](./media/index/edit-icon.png)
+2. Sonra, gösterildiği biçimde makaleyi düzenlemek için kalem simgesine tıklayın. Kalem simgesi griyse GitHub hesabınızla oturum açmanız veya yeni bir hesap oluşturmanız gerekir. 
 
-> [!NOTE]
-> Kalem simgesi griyse GitHub hesabınızla oturum açmanız veya yeni bir hesap oluşturmanız gerekir.
+   ![Kalem simgesinin konumu](./media/index/edit-icon.png)
 
-Web düzenleyicisinde değişiklik yapın. **Değişiklik önizlemesi** sekmesine tıklayarak değişikliklerinizin biçimini görebilirsiniz.
 
-Değişikliklerinizi tamamladıktan sonra sayfanın sonuna kaydırın. PR’niz için bir ad ve açıklama girdikten sonra, aşağıdaki şekilde gösterildiği gibi **Dosya değişikliği öner**’e tıklayın:
+3. Web düzenleyicisinde değişiklik yapın. Değişikliklerinizin biçimlendirmesini denetlemek için **Değişiklik önizlemesi** sekmesine tıklayın.
 
-![değişikliğinizi önerme](./media/index/submit-pull-request.png)
+4. Değişikliklerinizi tamamladıktan sonra sayfanın sonuna kaydırın. Değişiklikleriniz için bir ad ve açıklama girdikten sonra, aşağıdaki şekilde gösterildiği gibi **Dosya değişikliği öner**’e tıklayın:
 
-Değişikliğinizi önerdiğinizde göre deponun sahiplerinden yaptığınız değişiklikleri depolarına "çekmelerini" istemeniz gerekir. Bunun için "çekme isteği" adı verilen bir işlem kullanılır. Yukarıdaki şekilde **Dosya değişikliği öner**'e tıkladığınızda aşağıdakine benzer bir sayfanın açılması gerekir:
+   ![Dosya değişikliği önerme](./media/index/submit-pull-request.png)
 
-![Çekme isteği oluşturma](media/index/create-pull-request.png)
+5. Değişikliğinizi önerdiğinizde göre deponun sahiplerinden yaptığınız değişiklikleri depolarına "çekmelerini" istemeniz gerekir. Bunun için "çekme isteği" adı verilen bir işlem kullanılır. Yukarıdaki şekilde **Dosya değişikliği öner**'e tıkladığınızda aşağıdakine benzer bir sayfanın açılması gerekir:
 
-**Çekme isteği oluştur**'a tıklayın, çekme isteği için bir ad (ve isteğe bağlı olarak bir açıklama) girin ve yeniden **Çekme isteği oluştur**'a tıklayın.
+   ![Çekme isteği oluşturma](media/index/create-pull-request.png)
 
-İşte bu kadar! İçerik ekibi üyeleri, PR’nizi gözden geçirip birleştirecekler. Büyük değişiklikler yaptıysanız, değişiklik talep eden geri bildirimler alabilirsiniz.
+   **Çekme isteği oluştur**'a tıklayın, çekme isteği için bir ad (ve isteğe bağlı olarak bir açıklama) girin ve yeniden **Çekme isteği oluştur**'a tıklayın.
+
+6. İşte bu kadar! İçerik ekibi üyeleri, PR’nizi gözden geçirip birleştirecekler. Büyük değişiklikler yaptıysanız, değişiklik talep eden geri bildirimler alabilirsiniz.
 
 GitHub düzenleme UI’si depodaki izinlerinizi yanıtlar. Önceki görüntüler, hedef depoda yazma izinleri olmayan katkıda bulunanlar için geçerlidir. GitHub, hesabınızda otomatik olarak hedef depo çatalı oluşturur. Hedef depoda yazma erişiminiz varsa, GitHub hedef depoda yeni bir dal oluşturur. Bu dalın adı **\<GitHubKimliği\>-düzeltmeeki-n** biçimindedir. GitHub kimliğiniz ve düzeltme eki dalı için bir sayısal tanımlayıcı kullanılır.
 
-Hepimiz değişiklikler için PR’leri kullanıyoruz, yazma erişimi olan katkıda bulunanlar bile. Çoğu depoda, güncelleştirmelerin PR olarak gönderilmesi için `master` dal korumalıdır.
+Hepimiz değişiklikler için çekme isteklerini kullanıyoruz, yazma erişimi olan katkıda bulunanlar bile. Çoğu depoda, güncelleştirmelerin çekme isteği olarak gönderilmesi için `master` dal korumalıdır.
 
 Tarayıcıda düzenleme deneyimi, ufak veya sık görülmeyen değişiklikler için idealdir. BBüyük katkılar yapıyor veya gelişmiş Git özellikleri (dallara ayırma yönetimi veya gelişmiş birleştirme çakışmasını çözümleme gibi) kullanıyorsanız [deponun çatalını oluşturup yerel olarak çalışmanız](how-to-write-workflows-major.md) gerekir.
 
@@ -75,6 +69,8 @@ Açık PR’lere bakarsanız, yeni konuları yayımlanmadan önce okuyabilirsini
 ## <a name="create-quality-issues"></a>Kalite sorunları oluşturma
 
 Belgelerimiz, devamlı olarak süren işlerdir. İyi sorunlar, topluluk için en önemli olan yerlere odaklanmamıza yardımcı olur. Ne kadar çok ayrıntı sağlayabilirseniz, sorun da o kadar yararlı olur. Hangi bilgileri aradığınızı bizimle paylaşın. Kullandığınız arama terimlerini de. Nereden başlayacağınızı bilmiyorsanız, bilmediğiniz bir teknolojiyi nasıl keşfetmek istediğinizi bizimle paylaşın.
+
+Microsoft’un belge sayfalarının birçoğunda, sayfanın alt kısmında bir **Geri bildirim** bölümü bulunur. Söz konusu makaleye özel sorunları izlemek için buraya tıklayarak **Ürün geri bildirimi** veya **İçerik geri bildirimi** bırakabilirsiniz.
 
 Sorunlar, gerekli şeyler konusunda konuşma başlatır. İçerik ekibi, ekleyebileceğimiz şeylerle ilgili fikirlerini verir ve sizden de düşüncelerinizi ister. Bir taslak oluşturduğumuzda, [PR’yi incelemenizi](#review-open-prs) isteyeceğiz.
 

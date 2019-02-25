@@ -1,19 +1,19 @@
 ---
-title: ms-date-invalid
-description: Belgeler derleme sorunu ms-date-invalid için açıklama ve çözüm
+title: ms-topic-invalid
+description: Docs derleme sorunu ms-topic-invalid için açıklama ve çözüm
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 1/15/2019
+ms.date: 2/19/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: e960bc2d8e9013e480f2bb391cdfa0c1da043b8b
+ms.openlocfilehash: e7b10f3f146ee33cd00bcd31d16b01e8d99f7134
 ms.sourcegitcommit: f374ad2607360f46d88982b4b7ecc63d3ab08235
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 02/20/2019
-ms.locfileid: "56431519"
+ms.locfileid: "56431735"
 ---
-# <a name="ms-date-invalid"></a>ms-date-invalid
+# <a name="ms-topic-invalid"></a>ms-topic-invalid
 
 **Çok yakında!**
 
@@ -21,17 +21,13 @@ ms.locfileid: "56431519"
 
 ## <a name="suggestion"></a>Öneri
 
-`Invalid value for ms.date: '{value}'. Must be a date in format MM/DD/YYYY.`
+`Invalid value for ms.topic: '{value}'.`
 
 ## <a name="resolution"></a>Çözüm
 
-Makalenin bozuk bir içerik olmaksızın güncel olduğunu onaylayın, ardından AA/GG/YYYY biçiminde geçerli bir tarih ekleyin:
+`ms.topic` için makale türünü belirten geçerli bir değer ekleyin.
 
-```yml
----
-ms.date: 02/19/2019
----
-```
+Geçerli değerler [bu Microsoft iç sitesinde](https://docsmetadatatool.azurewebsites.net/whitelists) bulunabilir.
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]

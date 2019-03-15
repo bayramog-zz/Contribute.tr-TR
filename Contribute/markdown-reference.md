@@ -572,7 +572,7 @@ Yayımlanan sayfalarda da şöyle görüntülenir:
 Yeni bir video, şu süreci takip ederek karşıya yüklenmelidir:
 
 1. IDWEB’deki **docs_video_users** grubuna katılın.
-1. https://aka.ms/VideoUploadRequest adresine gidin ve videonuzun ayrıntılarını belirtin. Şunlara ihtiyacınız olacaktır (bu öğelerden hiçbiri diğer kişilere görünür olmayacaktır):
+1. [https://aka.ms/VideoUploadRequest](https://aka.ms/VideoUploadRequest) adresine gidin ve videonuzun ayrıntılarını belirtin. Şunlara ihtiyacınız olacaktır (bu öğelerden hiçbiri diğer kişilere görünür olmayacaktır):
     1. Videonuz için başlık.
     1. Videonuzun ilgili olduğu ürünler/hizmetler listesi.
     1. Videonuzun barınacağı hedef sayfa veya (sayfanız henüz yoksa) belge kümesi.

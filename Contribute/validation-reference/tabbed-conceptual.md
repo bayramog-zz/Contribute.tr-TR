@@ -1,21 +1,29 @@
-# <a name="tabbed-conceptual"></a><span data-ttu-id="d0959-101">Sekmeli kavramsal</span><span class="sxs-lookup"><span data-stu-id="d0959-101">Tabbed conceptual</span></span>
+---
+ms.openlocfilehash: fa7cd177f6c4a3c4862677dbfa89f63a91e7f464
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987835"
+---
+# <a name="tabbed-conceptual"></a><span data-ttu-id="0c32f-101">Sekmeli kavramsal</span><span class="sxs-lookup"><span data-stu-id="0c32f-101">Tabbed conceptual</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="d0959-102">Sekmeli kavramsal söz dizimi kullanım dışıdır ve yeni sekmeler eklenmemelidir.</span><span class="sxs-lookup"><span data-stu-id="d0959-102">The tabbed conceptual syntax has been deprecated and new tabs should not be added.</span></span> <span data-ttu-id="d0959-103">Bu makalede açıklanan doğrulamalar, değişim işlevi kullanılabilir olana kadar sekmeli kavramsal söz dizimi kullanması onaylanan içerik kümeleri için geçerlidir.</span><span class="sxs-lookup"><span data-stu-id="d0959-103">The validations described in this article apply to content sets that have been approved to use tabbed conceptual until replacement functionality is available.</span></span>
+> <span data-ttu-id="0c32f-102">Sekmeli kavramsal söz dizimi kullanım dışıdır ve yeni sekmeler eklenmemelidir.</span><span class="sxs-lookup"><span data-stu-id="0c32f-102">The tabbed conceptual syntax has been deprecated and new tabs should not be added.</span></span> <span data-ttu-id="0c32f-103">Bu makalede açıklanan doğrulamalar, değişim işlevi kullanılabilir olana kadar sekmeli kavramsal söz dizimi kullanması onaylanan içerik kümeleri için geçerlidir.</span><span class="sxs-lookup"><span data-stu-id="0c32f-103">The validations described in this article apply to content sets that have been approved to use tabbed conceptual until replacement functionality is available.</span></span>
 
-## <a name="tab-syntax"></a><span data-ttu-id="d0959-104">Sekme söz dizimi</span><span class="sxs-lookup"><span data-stu-id="d0959-104">Tab syntax</span></span>
+## <a name="tab-syntax"></a><span data-ttu-id="0c32f-104">Sekme söz dizimi</span><span class="sxs-lookup"><span data-stu-id="0c32f-104">Tab syntax</span></span>
 
-<span data-ttu-id="d0959-105">Sekmeler için söz dizimi aşağıdaki gibidir:</span><span class="sxs-lookup"><span data-stu-id="d0959-105">The syntax for tabs is as follows:</span></span>
+<span data-ttu-id="0c32f-105">Sekmeler için söz dizimi aşağıdaki gibidir:</span><span class="sxs-lookup"><span data-stu-id="0c32f-105">The syntax for tabs is as follows:</span></span>
 
-<span data-ttu-id="d0959-106">Tek düzeyli sekme:</span><span class="sxs-lookup"><span data-stu-id="d0959-106">Single level tab:</span></span>
+<span data-ttu-id="0c32f-106">Tek düzeyli sekme:</span><span class="sxs-lookup"><span data-stu-id="0c32f-106">Single level tab:</span></span>
 
 `# [Tab Display Name](#tab/tab-id)`
 
-<span data-ttu-id="d0959-107">İsteğe bağlı bağımlı sekme:</span><span class="sxs-lookup"><span data-stu-id="d0959-107">Optional dependent tab:</span></span>
+<span data-ttu-id="0c32f-107">İsteğe bağlı bağımlı sekme:</span><span class="sxs-lookup"><span data-stu-id="0c32f-107">Optional dependent tab:</span></span>
 
 `# [Tab Display Name](#tab/tab-id/tab-condition)`
 
-<span data-ttu-id="d0959-108">İki sekmesi ve sekme grubu ayırıcısı (---) olan tek düzeyli sekme seçimi örneği:</span><span class="sxs-lookup"><span data-stu-id="d0959-108">Example of a single-level tab section with two tabs and the tab group terminator (---):</span></span>
+<span data-ttu-id="0c32f-108">İki sekmesi ve sekme grubu ayırıcısı (---) olan tek düzeyli sekme seçimi örneği:</span><span class="sxs-lookup"><span data-stu-id="0c32f-108">Example of a single-level tab section with two tabs and the tab group terminator (---):</span></span>
 
 ```markdown
 # [Linux](#tab/linux)
@@ -29,7 +37,7 @@ Content for Windows...
 ---
 ```
 
-<span data-ttu-id="d0959-109">Sekmeler isteğe bağlı olarak ikincil sekmeler veya bağımlılık sekmeleri içerebilir.</span><span class="sxs-lookup"><span data-stu-id="d0959-109">Tabs can optionally contain secondary tabs, or dependency tabs.</span></span> <span data-ttu-id="d0959-110">Böylece sekmeler, başka sekme kümelerindeki seçime bağımlı hale gelir.</span><span class="sxs-lookup"><span data-stu-id="d0959-110">This makes tabs dependent on the selection in another set of tabs.</span></span> <span data-ttu-id="d0959-111">Bunun bir örneği aşağıda verilmiştir:</span><span class="sxs-lookup"><span data-stu-id="d0959-111">Here's an example:</span></span>
+<span data-ttu-id="0c32f-109">Sekmeler isteğe bağlı olarak ikincil sekmeler veya bağımlılık sekmeleri içerebilir.</span><span class="sxs-lookup"><span data-stu-id="0c32f-109">Tabs can optionally contain secondary tabs, or dependency tabs.</span></span> <span data-ttu-id="0c32f-110">Böylece sekmeler, başka sekme kümelerindeki seçime bağımlı hale gelir.</span><span class="sxs-lookup"><span data-stu-id="0c32f-110">This makes tabs dependent on the selection in another set of tabs.</span></span> <span data-ttu-id="0c32f-111">Bunun bir örneği aşağıda verilmiştir:</span><span class="sxs-lookup"><span data-stu-id="0c32f-111">Here's an example:</span></span>
 
 ```markdown
 # [Azure CLI](#tab/azure-cli/linux)
@@ -51,22 +59,22 @@ PowerShell content for Windows...
 ---
 ```
 
-<span data-ttu-id="d0959-112">Aşağıdaki doğrulamalar, sekme söz dizimi için geçerlidir:</span><span class="sxs-lookup"><span data-stu-id="d0959-112">The following validations apply to tab syntax:</span></span>
+<span data-ttu-id="0c32f-112">Aşağıdaki doğrulamalar, sekme söz dizimi için geçerlidir:</span><span class="sxs-lookup"><span data-stu-id="0c32f-112">The following validations apply to tab syntax:</span></span>
 
-- <span data-ttu-id="d0959-113">Sekme söz dizimi doğru olmalıdır.</span><span class="sxs-lookup"><span data-stu-id="d0959-113">Tab syntax must be correct.</span></span>
-- <span data-ttu-id="d0959-114">Bağımlı sekmeler, önceki sekme grubunda tanımlanmış olmalıdır.</span><span class="sxs-lookup"><span data-stu-id="d0959-114">Dependent tabs must have been defined in a previous tab group.</span></span>
-- <span data-ttu-id="d0959-115">Yalnızca bir bağımlılık düzeyine izin verilir.</span><span class="sxs-lookup"><span data-stu-id="d0959-115">Only one level of dependency is allowed.</span></span>
-- <span data-ttu-id="d0959-116">İkiden az sekmeye izin verilmez.</span><span class="sxs-lookup"><span data-stu-id="d0959-116">No fewer than two tabs are allowed.</span></span>
-- <span data-ttu-id="d0959-117">Dörtten fazla sekmeye izin verilmez.</span><span class="sxs-lookup"><span data-stu-id="d0959-117">No more than four tabs are allowed.</span></span>
-- <span data-ttu-id="d0959-118">Sekmeler güvenilir listeye alınmalıdır.</span><span class="sxs-lookup"><span data-stu-id="d0959-118">Tabs must be whitelisted.</span></span>
-- <span data-ttu-id="d0959-119">Sekme/Kimlik çiftleri geçerli olmalıdır.</span><span class="sxs-lookup"><span data-stu-id="d0959-119">Tab/ID pairs must be valid.</span></span>
-- <span data-ttu-id="d0959-120">Bir sekme grubunda aynı sekme kimliği birden fazla kez kullanılamaz.</span><span class="sxs-lookup"><span data-stu-id="d0959-120">Cannot have the same tab ID multiple times in one tab group.</span></span>
+- <span data-ttu-id="0c32f-113">Sekme söz dizimi doğru olmalıdır.</span><span class="sxs-lookup"><span data-stu-id="0c32f-113">Tab syntax must be correct.</span></span>
+- <span data-ttu-id="0c32f-114">Bağımlı sekmeler, önceki sekme grubunda tanımlanmış olmalıdır.</span><span class="sxs-lookup"><span data-stu-id="0c32f-114">Dependent tabs must have been defined in a previous tab group.</span></span>
+- <span data-ttu-id="0c32f-115">Yalnızca bir bağımlılık düzeyine izin verilir.</span><span class="sxs-lookup"><span data-stu-id="0c32f-115">Only one level of dependency is allowed.</span></span>
+- <span data-ttu-id="0c32f-116">İkiden az sekmeye izin verilmez.</span><span class="sxs-lookup"><span data-stu-id="0c32f-116">No fewer than two tabs are allowed.</span></span>
+- <span data-ttu-id="0c32f-117">Dörtten fazla sekmeye izin verilmez.</span><span class="sxs-lookup"><span data-stu-id="0c32f-117">No more than four tabs are allowed.</span></span>
+- <span data-ttu-id="0c32f-118">Sekmeler onaylanmalıdır.</span><span class="sxs-lookup"><span data-stu-id="0c32f-118">Tabs must be approved.</span></span>
+- <span data-ttu-id="0c32f-119">Sekme/Kimlik çiftleri geçerli olmalıdır.</span><span class="sxs-lookup"><span data-stu-id="0c32f-119">Tab/ID pairs must be valid.</span></span>
+- <span data-ttu-id="0c32f-120">Bir sekme grubunda aynı sekme kimliği birden fazla kez kullanılamaz.</span><span class="sxs-lookup"><span data-stu-id="0c32f-120">Cannot have the same tab ID multiple times in one tab group.</span></span>
 
-## <a name="tab-whitelist"></a><span data-ttu-id="d0959-121">Güvenilir sekme listesi</span><span class="sxs-lookup"><span data-stu-id="d0959-121">Tab whitelist</span></span>
+## <a name="approved-tabs"></a><span data-ttu-id="0c32f-121">Onaylanan sekmeler</span><span class="sxs-lookup"><span data-stu-id="0c32f-121">Approved tabs</span></span>
 
-<span data-ttu-id="d0959-122">Aşağıdaki sekme adı/sekme kimliği çiftleri güvenilir listeye alınmıştır.</span><span class="sxs-lookup"><span data-stu-id="d0959-122">The following tab name/tab ID pairs are whitelisted.</span></span> <span data-ttu-id="d0959-123">Bağımlı sekme kimlikleri, Sekme Kimliği sütunuyla eşleştirilmez ancak bu sütuna göre geçerli olmalıdır.</span><span class="sxs-lookup"><span data-stu-id="d0959-123">Dependent tab IDs are not paired but must be valid per the Tab ID column.</span></span> <span data-ttu-id="d0959-124">Değerler büyük/küçük harfe duyarlıdır</span><span class="sxs-lookup"><span data-stu-id="d0959-124">The values are case-sensitive</span></span>
+<span data-ttu-id="0c32f-122">Aşağıdaki sekme adı/sekme kimliği çiftleri onaylanır.</span><span class="sxs-lookup"><span data-stu-id="0c32f-122">The following tab name/tab ID pairs are approved.</span></span> <span data-ttu-id="0c32f-123">Bağımlı sekme kimlikleri, Sekme Kimliği sütunuyla eşleştirilmez ancak bu sütuna göre geçerli olmalıdır.</span><span class="sxs-lookup"><span data-stu-id="0c32f-123">Dependent tab IDs are not paired but must be valid per the Tab ID column.</span></span> <span data-ttu-id="0c32f-124">Değerler büyük/küçük harfe duyarlıdır</span><span class="sxs-lookup"><span data-stu-id="0c32f-124">The values are case-sensitive</span></span>
 
-|<span data-ttu-id="d0959-125">Sekme adı</span><span class="sxs-lookup"><span data-stu-id="d0959-125">Tab name</span></span>              |<span data-ttu-id="d0959-126">Sekme kimliği</span><span class="sxs-lookup"><span data-stu-id="d0959-126">Tab ID</span></span>            |
+|<span data-ttu-id="0c32f-125">Sekme adı</span><span class="sxs-lookup"><span data-stu-id="0c32f-125">Tab name</span></span>              |<span data-ttu-id="0c32f-126">Sekme kimliği</span><span class="sxs-lookup"><span data-stu-id="0c32f-126">Tab ID</span></span>            |
 |----------------------|------------------|
 |`[.NET]`              |`(#tab/dotnet)`   |
 |`[.NET Core 1.x]`     |`(#tab/netcore1x)`|

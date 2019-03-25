@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
-ms.openlocfilehash: 17bc6d3bf2de5077f490bea2f03cddf23d925b78
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: b4ac631a4ebdf7daf00bc39be80fe2e479720392
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712959"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987894"
 ---
 # <a name="markdown-reference"></a>Markdown Başvurusu
 
@@ -90,7 +90,7 @@ Docs, altı Markdown bölüm başlığı düzeyini destekler:
 
 ## <a name="html"></a>HTML
 
-Markdown satır içi HTML’yi desteklese de Docs yoluyla belge yayımlarken HTML önerilmez ve bazı değerler dışında derleme hatalarına ve uyarılarına sebep olur. <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
+Markdown satır içi HTML’yi desteklese de Docs yoluyla belge yayımlarken HTML önerilmez ve bazı değerler dışında derleme hatalarına ve uyarılarına sebep olur.
 
 ## <a name="images"></a>Görüntüler
 
@@ -110,7 +110,7 @@ Görüntüler, belge kümeniz içerisinde bir `/media` klasöründe depolanmalı
 - .jpg
 - .png
 
-Diğer görüntü türlerini belge kümenizin docfx.json dosyasına<!--add link to reference when available--> kaynak olarak ekleyerek bunlar için de destek sağlayabilirsiniz.
+Diğer görüntü türlerini belge kümenizin docfx.json dosyasına kaynak olarak ekleyerek bunlar için de<!--add link to reference when available--> destek sağlayabilirsiniz.
 
 ## <a name="links"></a>Bağlantılar
 
@@ -169,7 +169,7 @@ Başka bir Web sayfasına giden URL temelli bağlantı (https:// içermelidir).
 
 ### <a name="bookmark-links"></a>Yer işareti bağlantıları
 
-Aynı depodaki farklı bir dosyada bulunan bölüm başlığına giden yer işareti bağlantısı:
+Aynı depodaki farklı bir dosyada bulunan bölüm başlığına giden yer işareti bağlantısı. Örneğin:
 
 ```markdown
 [Managed Disks](../../linux/overview.md#managed-disks)
@@ -181,7 +181,12 @@ Geçerli dosyadaki bölüm başlığına giden yer işareti bağlantısı:
 [Managed Disks](#managed-disks)
 ```
 
-Bir diyez etiketi, ardından noktalama işaretleri kaldırılmış ve boşluklar yerine kısa çizgi getirilmiş bölüm başlığı adını kullanın.
+Karma işaretini `#` yazıp ardından başlık sözcüklerini ekleyin. Başlık metnini bağlantı metni olarak değiştirmek için:
+- Tamamını küçük harflerle yazın
+- Noktalama işaretlerini kaldırın
+- Boşluk yerine kısa çizgi kullanın
+
+Örneğin, başlık adı "2.2 Güvenlik konuları" ise yer işareti bağlantısı "#22-güvenlik-konuları" olmalıdır.
 
 ### <a name="explicit-anchor-links"></a>Açık yer işareti bağlantıları
 
@@ -230,7 +235,7 @@ UID, tam nitelikli sınıf ve üye adına karşılık gelir. UID’den sonra bir
 - `<xref:System.String?displayProperty=nameWithType>`, “System.String” olarak işlenir.
 - `[String class](xref:System.String)`, “String class” olarak işlenir.
 
-Şu an için UID’leri bulmanın kolay bir yolu yoktur. <!-- ? -->Bir API UID’sini bulmanın en iyi yolu, bağlantı oluşturmak istediğiniz API sayfasına ilişkin kaynağı görüntülemek ve ms.assetid değerini bulmaktır. Aşırı yükleme değerleri kaynakta tek tek gösterilmez. İleride daha iyi bir sistem sunmak için çalışıyoruz.
+Şu an için UID’leri bulmanın kolay bir yolu yoktur. <!-- ? -->Bir API için UID’yi bulmanın en iyi yolu bağlantı oluşturmak istediğiniz API sayfasına ilişkin kaynağı görüntülemek ve ms.assetid değerini bulmaktır. Aşırı yükleme değerleri kaynakta tek tek gösterilmez. İleride daha iyi bir sistem sunmak için çalışıyoruz.
 
 UID; \`, \# veya \* özel karakterlerini içerdiğinde UID değerinin sırasıyla `%60`, `%23` ve `%2A` olarak kodlanmış HTML olması gerekir. Bazen parantezlerin kodlandığını görürsünüz ancak bu, zorunlu değildir.
 
@@ -336,7 +341,8 @@ Bir sonraki adım eyleminde desteklenen tüm bağlantıları kullanabilirsiniz, 
 
 ## <a name="section-definition"></a>Bölüm tanımı
 
-<!-- more info about this would be helpful! --> Bazı bölümleri tanımlamanız gerekebilir. Bu söz dizimi daha çok kod tabloları için kullanılır.
+<!-- more info about this would be helpful! -->
+Bir bölümü tanımlaması gerekebilir. Bu söz dizimi daha çok kod tabloları için kullanılır.
 Aşağıdaki örneğe bakın:
 
 ````
@@ -360,7 +366,8 @@ Yukarıdaki alıntı bloğu Markdown metni şu şekilde işlenir:
 
 ## <a name="selectors"></a>Seçiciler
 
-<!-- could be more clear! --> Aynı makalede farklı sayfaları bağlamak istiyorsanız seçici kullanabilirsiniz. Böylelikle okuyucular, belirttiğiniz sayfalar arasında geçiş yapabilirler.
+<!-- could be more clear! -->
+Aynı makalede farklı sayfaları bağlamak için seçici kullanabilirsiniz. Böylelikle okuyucular, belirttiğiniz sayfalar arasında geçiş yapabilirler.
 
 > [!NOTE]
 > Bu uzantı, docs.microsoft.com ve MSDN’de farklı çalışır. <!-- should we keep info about MSDN? If so say how they differ?-->

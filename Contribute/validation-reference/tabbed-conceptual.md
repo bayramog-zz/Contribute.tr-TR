@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fa7cd177f6c4a3c4862677dbfa89f63a91e7f464
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987835"
+---
 # <a name="tabbed-conceptual"></a>Sekmeli kavramsal
 
 > [!IMPORTANT]
@@ -58,13 +66,13 @@ Aşağıdaki doğrulamalar, sekme söz dizimi için geçerlidir:
 - Yalnızca bir bağımlılık düzeyine izin verilir.
 - İkiden az sekmeye izin verilmez.
 - Dörtten fazla sekmeye izin verilmez.
-- Sekmeler güvenilir listeye alınmalıdır.
+- Sekmeler onaylanmalıdır.
 - Sekme/Kimlik çiftleri geçerli olmalıdır.
 - Bir sekme grubunda aynı sekme kimliği birden fazla kez kullanılamaz.
 
-## <a name="tab-whitelist"></a>Güvenilir sekme listesi
+## <a name="approved-tabs"></a>Onaylanan sekmeler
 
-Aşağıdaki sekme adı/sekme kimliği çiftleri güvenilir listeye alınmıştır. Bağımlı sekme kimlikleri, Sekme Kimliği sütunuyla eşleştirilmez ancak bu sütuna göre geçerli olmalıdır. Değerler büyük/küçük harfe duyarlıdır
+Aşağıdaki sekme adı/sekme kimliği çiftleri onaylanır. Bağımlı sekme kimlikleri, Sekme Kimliği sütunuyla eşleştirilmez ancak bu sütuna göre geçerli olmalıdır. Değerler büyük/küçük harfe duyarlıdır
 
 |Sekme adı              |Sekme kimliği            |
 |----------------------|------------------|

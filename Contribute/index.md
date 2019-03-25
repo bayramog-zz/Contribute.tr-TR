@@ -12,9 +12,9 @@ ms.date: 02/19/2019
 
 Microsoft belgelerinin birkaçı açık kaynaktır ve GitHub’da barındırılır. Bazı belgeler açık kaynak değildir, ancak birçoğunda çekme istekleri yapabileceğiniz genel kullanıma yönelik depolar vardır. Böylece mühendisler, içerik ekipleri ve müşterilerimiz arasındaki iletişim kolaylaşır ve iyileşir. Açık çalışmanın bazı avantajları vardır:
 
-- Açık kaynak depolar, hangi belgelere en çok ihtiyaç olduğuna dair geri bildirim almak için açık olarak planlanır.
-- Açık kaynak depolar, ilk sürümde en faydalı içeriği yayımlamak için açık olarak gözden geçirilir.
-- Açık kaynak depolar, içeriği devamlı olarak geliştirmeyi kolaylaştırmak için açık olarak güncelleştirilir.
+- Açık kaynak depolar, hangi belgelere en çok ihtiyaç olduğuna dair geri bildirim almak için _açık olarak planlanır_.
+- Açık kaynak depolar, ilk sürümde en faydalı içeriği yayımlamak için _açık olarak gözden geçirilir_.
+- Açık kaynak depolar, içeriği devamlı olarak geliştirmeyi kolaylaştırmak için _açık olarak güncelleştirilir_.
 
 [docs.microsoft.com](https://docs.microsoft.com) kullanıcı deneyimi, [GitHub](https://github.com) iş akışlarını doğrudan tümleştirerek daha da kolaylaştırır. [Görüntülediğiniz belgeyi düzenleyerek](#quick-edits-to-existing-documents) başlayın. Veya [yeni konuları inceleyerek](#review-open-prs) ya da [kalite sorunları oluşturarak](#create-quality-issues) yardımcı olun.
 
@@ -25,9 +25,9 @@ Microsoft belgelerinin birkaçı açık kaynaktır ve GitHub’da barındırıl�
 
 ## <a name="quick-edits-to-existing-documents"></a>Mevcut belgelerde hızlı düzeltmeler
 
-Hızlı düzeltmeler, belgelerdeki küçük hataları ve eksikleri rapor etme ve düzeltme sürecini kolaylaştırır. Tüm çabalara rağmen yayımlanmış belgelerimizde ufak gramer ve yazım hataları oluyor. Bir hatayı rapor etmek için sorun da oluşturabilirsiniz ancak mümkün olduğunda bunun için çekme isteği (PR) oluşturmak, daha hızlı ve kolaydır.
+Hızlı düzeltmeler, belgelerdeki küçük hataları ve eksikleri rapor etme ve düzeltme sürecini kolaylaştırır. Tüm çabalara rağmen yayımlanmış belgelerimizde ufak dil bilgisi ve yazım hataları _oluyor_. Bir hatayı rapor etmek için sorun da oluşturabilirsiniz ancak mümkün olduğunda bunun için çekme isteği (PR) oluşturmak, daha hızlı ve kolaydır.
 
-1. Bazı belge sayfalarında doğrudan tarayıcıda düzenleme yapabilirsiniz. Böyle durumlarda aşağıdaki gibi bir **Düzenle** düğmesi görürsünüz. **Düzenle** (veya çevirisi) düğmesine tıklayarak GitHub’daki kaynak dosyaya gidersiniz. **Düzenle** düğmesi (kalem simgesi) olmadığında belge sayfası değiştirilemez.
+1. Bazı belge sayfalarında doğrudan tarayıcıda düzenleme yapabilirsiniz. Böyle durumlarda aşağıdaki gibi bir **Düzenle** düğmesi görürsünüz. **Edit** (veya eşdeğer çevirisi olan Düzenle) düğmesine tıklayarak GitHub’daki kaynak dosyaya gidebilirsiniz. **Düzenle** düğmesi (metin içermeyen kalem simgesi) olmadığında belge sayfası değiştirilemez.
 
    ![Düzenle bağlantısının konumu](./media/index/edit-article.png)
 
@@ -46,20 +46,20 @@ Hızlı düzeltmeler, belgelerdeki küçük hataları ve eksikleri rapor etme ve
 
    ![Çekme isteği oluşturma](media/index/create-pull-request.png)
 
-   **Çekme isteği oluştur**'a tıklayın, çekme isteği için bir ad (ve isteğe bağlı olarak bir açıklama) girin ve yeniden **Çekme isteği oluştur**'a tıklayın.
+   **Çekme isteği oluştur**'a tıklayın, çekme isteği için bir ad (ve isteğe bağlı olarak bir açıklama) girin ve yeniden **Çekme isteği oluştur**'a tıklayın. (GitHub’da yeniyseniz daha fazla bilgi için bkz. [Çekme İstekleri Hakkında](https://help.github.com/en/articles/about-pull-requests).)
 
 6. İşte bu kadar! İçerik ekibi üyeleri, PR’nizi gözden geçirip birleştirecekler. Büyük değişiklikler yaptıysanız, değişiklik talep eden geri bildirimler alabilirsiniz.
 
-GitHub düzenleme UI’si depodaki izinlerinizi yanıtlar. Önceki görüntüler, hedef depoda yazma izinleri olmayan katkıda bulunanlar için geçerlidir. GitHub, hesabınızda otomatik olarak hedef depo çatalı oluşturur. Hedef depoda yazma erişiminiz varsa, GitHub hedef depoda yeni bir dal oluşturur. Bu dalın adı **\<GitHubKimliği\>-düzeltmeeki-n** biçimindedir. GitHub kimliğiniz ve düzeltme eki dalı için bir sayısal tanımlayıcı kullanılır.
+GitHub düzenleme UI’si depodaki izinlerinizi yanıtlar. Önceki görüntüler, hedef depoda yazma izinleri olmayan katkıda bulunanlar için geçerlidir. GitHub, hesabınızda otomatik olarak hedef depo çatalı oluşturur. Hedef depoda yazma erişiminiz varsa GitHub, hedef depoda yeni bir dal oluşturur. Bu dalın adı **\<GitHubKimliği\>-düzeltmeeki-n** biçimindedir. GitHub kimliğiniz ve düzeltme eki dalı için bir sayısal tanımlayıcı kullanılır.
 
-Hepimiz değişiklikler için çekme isteklerini kullanıyoruz, yazma erişimi olan katkıda bulunanlar bile. Çoğu depoda, güncelleştirmelerin çekme isteği olarak gönderilmesi için `master` dal korumalıdır.
+Yazma erişimi olan katkıda bulunanlar dahil olmak üzere hepimiz değişiklikler için çekme isteklerini kullanıyoruz. Çoğu depoda, güncelleştirmelerin çekme isteği olarak gönderilmesi için `master` dal korumalıdır.
 
-Tarayıcıda düzenleme deneyimi, ufak veya sık görülmeyen değişiklikler için idealdir. BBüyük katkılar yapıyor veya gelişmiş Git özellikleri (dallara ayırma yönetimi veya gelişmiş birleştirme çakışmasını çözümleme gibi) kullanıyorsanız [deponun çatalını oluşturup yerel olarak çalışmanız](how-to-write-workflows-major.md) gerekir.
+Tarayıcıda düzenleme deneyimi, ufak veya sık görülmeyen değişiklikler için idealdir. Büyük katkılar yapıyor veya gelişmiş Git özellikleri (dallara ayırma yönetimi veya gelişmiş birleştirme çakışmasını çözümleme gibi) kullanıyorsanız [deponun çatalını oluşturup yerel olarak çalışmanız](how-to-write-workflows-major.md) gerekir.
 
 > [!NOTE]
 > Bu özellik etkinleştirilmişse makaleyi **istediğiniz dilde** düzenleyebilirsiniz ve düzenleme türüne göre aşağıdaki işlemler gerçekleştirilir:
 > 1. onaylanan dilbilimsel değişiklikler, Makine Çevirisi altyapımızın geliştirilmesine de yardımcı olur
-> 2. makalenin içeriğini önemli ölçüde değiştiren düzenlemeler şirket içinde değerlendirilerek İngilizce makale için değişiklik önerisi oluşturulur ve onaylanması durumunda bu değişikliğin tüm dillere yansıtılması sağlanır.
+> 2. Makalenin içeriğini önemli ölçüde değiştiren düzenlemeler şirket içinde değerlendirilerek İngilizce makale için değişiklik önerisi oluşturulur ve onaylanması durumunda bu değişikliğin tüm dillere yansıtılması sağlanır.
 > Geliştirme önerileriniz yalnızca kendi dilinizdeki makaleleri olumlu yönde değiştirmekle kalmaz, diğer tüm dillerdeki içeriğe de katkıda bulunur.
 
 ## <a name="review-open-prs"></a>Açık PR’leri gözden geçirme
@@ -72,7 +72,7 @@ Belgelerimiz, devamlı olarak süren işlerdir. İyi sorunlar, topluluk için en
 
 Microsoft’un belge sayfalarının birçoğunda, sayfanın alt kısmında bir **Geri bildirim** bölümü bulunur. Söz konusu makaleye özel sorunları izlemek için buraya tıklayarak **Ürün geri bildirimi** veya **İçerik geri bildirimi** bırakabilirsiniz.
 
-Sorunlar, gerekli şeyler konusunda konuşma başlatır. İçerik ekibi, ekleyebileceğimiz şeylerle ilgili fikirlerini verir ve sizden de düşüncelerinizi ister. Bir taslak oluşturduğumuzda, [PR’yi incelemenizi](#review-open-prs) isteyeceğiz.
+Sorunlar, gerekli şeyler konusunda konuşma başlatır. İçerik ekibi, ekleyebileceğimiz şeylerle ilgili fikirlerini verir ve sizden de düşüncelerinizi ister. Bir taslak oluşturduğumuzda, [PR’yi incelemenizi](#review-open-PRs) isteyeceğiz.
 
 ## <a name="get-more-involved"></a>Daha fazla katılım gösterin
 

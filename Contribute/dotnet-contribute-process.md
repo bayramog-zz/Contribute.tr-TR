@@ -2,12 +2,12 @@
 title: .NET belge depolarına katkıda bulunma süreci
 description: Bu makale, .NET belge depolarına katkıda bulunma sürecini kısaca tanıtır. Kullanılan depoları, içerik düzenleme sürecini ve kod örnekleri ile diğer varlıkları yönetme ilkelerini öğrenirsiniz.
 ms.date: 11/07/2018
-ms.openlocfilehash: 0e7199b72cf9b94d00a09fb180ffef0558c59a53
-ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
+ms.openlocfilehash: 121f6c885ef6d292968e5bb3961cae8e9c22942b
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53245861"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58637518"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>.NET belgelerine katkıda bulunma süreci
 

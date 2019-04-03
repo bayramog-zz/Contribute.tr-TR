@@ -2,12 +2,12 @@
 title: .NET makaleleri için şablon ve başvuru sayfası
 description: Bu makale, .NET belge depoları için yeni makaleler oluştururken işinize yarayacak bir şablon içerir
 ms.date: 11/07/2018
-ms.openlocfilehash: e342373a09b623dc71aadd63e8d8627d154ec8b6
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 9b57abd96093940c96f90a4a01b9f81eae063ffb
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712936"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653632"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET belgeleri için meta veriler ve Markdown şablonu
 
@@ -132,7 +132,7 @@ Kod eklemenin en iyi yolu, çalışan bir örnekten kod parçacığı eklemektir
 ```
 
 * `-<language>` (*isteğe bağlı* ancak *önerilen*)
-  * Başvurulan kod parçacığının bilgisayar dili. Desteklenen değerlerin listesi için bkz. [Desteklenen diller](#supported-languages).
+  * Başvurulan kod parçacığının bilgisayar dili.
 
 * `<name>` (*isteğe bağlı*)
   * Kod parçacığı için ad. Bu başlığın çıkış HTML’si üzerinde hiçbir etkisi yoktur ancak Markdown kaynağınızın okunabilirliğini geliştirmek için başlık kullanabilirsiniz.

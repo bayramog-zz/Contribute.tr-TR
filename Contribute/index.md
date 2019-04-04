@@ -1,16 +1,21 @@
 ---
 title: Microsoft Docs katkıda bulunan kılavuzuna genel bakış
-description: 'Bu kılavuz, Microsoft belge sitesi olan docs.microsoft.com’a nasıl katkıda bulunabileceğinizi açıklar.'
+description: Bu kılavuz, Microsoft belge sitesi olan docs.microsoft.com’a nasıl katkıda bulunabileceğinizi açıklar.
 author: billwagner
 ms.author: wiwagn
 ms.date: 02/19/2019
+ms.openlocfilehash: 9b091f864f5191c9f7a00900ec11a4a1cffdb698
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653517"
 ---
-
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs katkıda bulunan kılavuzuna genel bakış
 
 [docs.microsoft.com ](https://docs.microsoft.com) (Docs) Stil Kılavuzu’na hoş geldiniz!
 
-Microsoft belgelerinin birkaçı açık kaynaktır ve GitHub’da barındırılır. Bazı belgeler açık kaynak değildir, ancak birçoğunda çekme istekleri yapabileceğiniz genel kullanıma yönelik depolar vardır. Böylece mühendisler, içerik ekipleri ve müşterilerimiz arasındaki iletişim kolaylaşır ve iyileşir. Açık çalışmanın bazı avantajları vardır:
+Microsoft belgelerinin birkaçı açık kaynaktır ve GitHub’da barındırılır. Tüm belge kümeleri tamamen açık kaynak değildir, ancak birçoğunda çekme istekleri aracılığıyla önerilen değişiklikler yapabileceğiniz genel kullanıma yönelik depolar vardır. Bu açık kaynak yaklaşımı ürün mühendisleri, içerik ekipleri ve müşteriler arasındaki iletişimi kolaylaştırır ve diğer avantajlar sunar:
 
 - Açık kaynak depolar, hangi belgelere en çok ihtiyaç olduğuna dair geri bildirim almak için _açık olarak planlanır_.
 - Açık kaynak depolar, ilk sürümde en faydalı içeriği yayımlamak için _açık olarak gözden geçirilir_.
@@ -72,7 +77,7 @@ Belgelerimiz, devamlı olarak süren işlerdir. İyi sorunlar, topluluk için en
 
 Microsoft’un belge sayfalarının birçoğunda, sayfanın alt kısmında bir **Geri bildirim** bölümü bulunur. Söz konusu makaleye özel sorunları izlemek için buraya tıklayarak **Ürün geri bildirimi** veya **İçerik geri bildirimi** bırakabilirsiniz.
 
-Sorunlar, gerekli şeyler konusunda konuşma başlatır. İçerik ekibi, ekleyebileceğimiz şeylerle ilgili fikirlerini verir ve sizden de düşüncelerinizi ister. Bir taslak oluşturduğumuzda, [PR’yi incelemenizi](#review-open-PRs) isteyeceğiz.
+Sorunlar, gerekli şeyler konusunda konuşma başlatır. İçerik ekibi, ekleyebileceğimiz şeylerle ilgili fikirlerini verir ve sizden de düşüncelerinizi ister. Bir taslak oluşturduğumuzda, [PR’yi incelemenizi](#review-open-prs) isteyeceğiz.
 
 ## <a name="get-more-involved"></a>Daha fazla katılım gösterin
 

@@ -1,19 +1,18 @@
 ---
 title: Docs’ta makale yazmak için Markdown kullanma
 description: Bu makale, docs.microsoft.com makalelerinde kullanılan Markdown dilinin temellerini ve başvuru bilgilerini sağlar.
-ms.date: 01/29/2019
-ms.openlocfilehash: 5235189d11c8c20ac20c91572d8bafcf525fb7c0
-ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
+ms.date: 03/26/2019
+ms.openlocfilehash: eeb49961fbf530676b55ae4e42d4fca7b8d7edf7
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55887310"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58637495"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Docs’ta makale yazmak için Markdown kullanma
 
-[Docs.microsoft.com](http://docs.microsoft.com) makaleleri, [Markdown](https://daringfireball.net/projects/markdown/) adı verilen hafif biçimlendirme dilinde yazılır. Bu dilin okunması ve öğrenilmesi kolaydır. O nedenle bu dil kısa sürede endüstri standardı haline gelmiştir.
+[Docs.microsoft.com](http://docs.microsoft.com) makaleleri, [Markdown](https://daringfireball.net/projects/markdown/) adı verilen hafif biçimlendirme dilinde yazılır. Bu dilin okunması ve öğrenilmesi kolaydır. O nedenle bu dil kısa sürede endüstri standardı haline gelmiştir. Belgeler sitesi Markdown’ın [Markdig varyantını](#markdown-flavor) kullanır.
 
-docs.microsoft.com sitesi arka ucu, [Markdig](https://github.com/lunet-io/markdig) ile ayrıştırılan [CommonMark](https://commonmark.org/) uyumlu markdown’ı destekleyen Open Publishing Services (OPS) kullanır ve aynı zamanda [DocFX Flavored Markdown’ı (DFM)](https://dotnet.github.io/docfx/) destekler. Çoğu belge GitHub’da depolanıp burada düzenlenebildiği için bu markdown özellikleri çoğunlukla [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) ile uyumludur. Markdown uzantıları ile ilave işlevler eklenir.
 
 ## <a name="markdown-basics"></a>Markdown temel bilgileri
 
@@ -162,7 +161,6 @@ Tablolar, temel Markdown belirtiminin parçası değildir, ancak GFM tarafından
 
 Tablo oluşturma hakkında daha fazla bilgi için şunlara bakın:
 
-- Geniş tabloların biçimlendirmesinde yardımcı olabilecek Markdig [tablo sarmalama özelliği](#table-wrapping).
 - GitHub’ın [Tablolarla bilgi düzenleme](https://help.github.com/articles/organizing-information-with-tables/) makalesi.
 - [Markdown Tablo Oluşturucu](https://www.tablesgenerator.com/markdown_tables) web uygulaması.
 - [Adam Pritchard - Markdown Hızlı Başvuru Kılavuzu](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables).
@@ -207,6 +205,7 @@ Bu diller, kolay as desteğine ve dil vurgulamasına sahiptir.
 |AzCopy|azcopy|
 |Azure CLI’si|azurecli|
 |Azure PowerShell|azurepowershell|
+|Bash|bash|
 |C++|cpp|
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
@@ -430,6 +429,10 @@ Bu noktalama işaretlerinin “akıllı” olanları için kodlamalar aşağıda
 Bir yer tutucuyu ifade etmek için köşeli ayraç kullanımı yaygındır. Metinde (kodda değil) bunu yaptığınızda, köşeli ayraçları kodlamanız gerekir. Aksi takdirde Markdown bunların HTML etiketleri olması gerektiğini düşünür.
 
 Örneğin `<script name>` öğesini `&lt;script name&gt;` şeklinde kodlayın
+
+## <a name="markdown-flavor"></a>Markdown varyantı
+
+docs.microsoft.com sitesi arka ucu, [Markdig](https://github.com/lunet-io/markdig) ayrıştırma altyapısı aracılığıyla ayrıştırılan [CommonMark](https://commonmark.org/) uyumlu markdown’ı destekleyen Open Publishing Services (OPS) kullanır. Çoğu belge GitHub’da depolanıp burada düzenlenebildiği için bu markdown varyantı çoğunlukla [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) ile uyumludur. Markdown uzantıları ile ilave işlevler eklenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.:
 

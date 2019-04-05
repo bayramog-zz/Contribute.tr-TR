@@ -4,17 +4,17 @@ description: Bu makale, docs.microsoft.com’daki içeriklerde bağlantı oluşt
 author: gewarren
 ms.author: gewarren
 ms.date: 10/31/2018
-ms.openlocfilehash: 9dc1b6dc2ac19b8f28a5a137817245f9a8c34eaf
-ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
+ms.openlocfilehash: 464c6b2ae8976252828d73390f9cbeea67f4e3ce
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55887264"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58637564"
 ---
 # <a name="using-links-in-documentation"></a>Belgelerde bağlantı kullanma
 Bu makale, docs.microsoft.com’da barınan sayfalardaki bağlantıların nasıl kullanılacağını açıklar. Bağlantılar, çeşitli birkaç kural ile birlikte Markdown’a eklemesi kolay öğelerdir. Bağlantılar kullanıcıları aynı sayfadaki içeriğe, komşu sayfalardaki içeriğe veya harici site ve URL’lere götürebilir.
 
-docs.microsoft.com sitesi arka ucu, [Markdig](https://github.com/lunet-io/markdig) ile ayrıştırılan [CommonMark](https://commonmark.org/) uyumlu markdown’ı destekleyen Open Publishing Services (OPS) kullanır ve aynı zamanda [DocFX Flavored Markdown’ı (DFM)](https://dotnet.github.io/docfx/) destekler. Çoğu belge GitHub’da depolanıp burada düzenlenebildiği için bu markdown özellikleri çoğunlukla [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) ile uyumludur. Markdown uzantıları ile ilave işlevler eklenir.
+docs.microsoft.com sitesi arka ucu, [Markdig](https://github.com/lunet-io/markdig) ayrıştırma altyapısı aracılığıyla ayrıştırılan [CommonMark](https://commonmark.org/) uyumlu markdown’ı destekleyen Open Publishing Services (OPS) kullanır. Çoğu belge GitHub’da depolanıp burada düzenlenebildiği için bu markdown varyantı çoğunlukla [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) ile uyumludur. Markdown uzantıları ile ilave işlevler eklenir.
 
 > [!IMPORTANT]
 > Hedef desteklediğinde (büyük bir bölümü destekler), tüm bağlantılar güvenli olmalıdır (`https` veya `http`).

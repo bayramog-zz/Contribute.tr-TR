@@ -13,18 +13,18 @@ ms.locfileid: "58653517"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs katkıda bulunan kılavuzuna genel bakış
 
-[docs.microsoft.com ](https://docs.microsoft.com) (Docs) Stil Kılavuzu’na hoş geldiniz!
+[Docs.microsoft.com ](https://docs.microsoft.com) (Docs) Katkıda Bulunan Kılavuzu’na hoş geldiniz!
 
-Microsoft belgelerinin birkaçı açık kaynaktır ve GitHub’da barındırılır. Tüm belge kümeleri tamamen açık kaynak değildir, ancak birçoğunda çekme istekleri aracılığıyla önerilen değişiklikler yapabileceğiniz genel kullanıma yönelik depolar vardır. Bu açık kaynak yaklaşımı ürün mühendisleri, içerik ekipleri ve müşteriler arasındaki iletişimi kolaylaştırır ve diğer avantajlar sunar:
+Microsoft belge kümelerinin birçoğu açık kaynaktır ve GitHub’da barındırılır. Tüm belge kümeleri tamamen açık kaynak değildir, ancak birçoğunda çekme istekleri aracılığıyla önerilen değişiklikler yapabileceğiniz genel kullanıma yönelik depolar vardır. Bu açık kaynak yaklaşımı ürün mühendisleri, içerik ekipleri ve müşteriler arasındaki iletişimi kolaylaştırır ve diğer avantajlar sunar:
 
 - Açık kaynak depolar, hangi belgelere en çok ihtiyaç olduğuna dair geri bildirim almak için _açık olarak planlanır_.
 - Açık kaynak depolar, ilk sürümde en faydalı içeriği yayımlamak için _açık olarak gözden geçirilir_.
 - Açık kaynak depolar, içeriği devamlı olarak geliştirmeyi kolaylaştırmak için _açık olarak güncelleştirilir_.
 
-[docs.microsoft.com](https://docs.microsoft.com) kullanıcı deneyimi, [GitHub](https://github.com) iş akışlarını doğrudan tümleştirerek daha da kolaylaştırır. [Görüntülediğiniz belgeyi düzenleyerek](#quick-edits-to-existing-documents) başlayın. Veya [yeni konuları inceleyerek](#review-open-prs) ya da [kalite sorunları oluşturarak](#create-quality-issues) yardımcı olun.
+[Docs.microsoft.com](https://docs.microsoft.com) kullanıcı deneyimi, [GitHub](https://github.com) iş akışlarını doğrudan tümleştirerek daha da kolaylaştırır. [Görüntülediğiniz belgeyi düzenleyerek](#quick-edits-to-existing-documents) başlayın. Veya [yeni konuları inceleyerek](#review-open-prs) ya da [kalite sorunları oluşturarak](#create-quality-issues) yardımcı olun.
 
 > [!IMPORTANT]
-> Docs.microsoft.com’da yayın yapan tüm depolar [Microsoft Açık Kaynak Kullanım Şartları](https://opensource.microsoft.com/codeofconduct/) veya [.NET Foundation Kullanım Şartları](https://dotnetfoundation.org/code-of-conduct)’na tabidir. Daha fazla bilgi için bkz. [Kullanım Kuralları SSS](https://opensource.microsoft.com/codeofconduct/faq/). İsterseniz, soru ya da yorumlarınız için [opencode@microsoft.com](mailto:opencode@microsoft.com) veya [conduct@dotnetfoundation.org](mailto:conduct@dotnetfoundation.org) ile de iletişim kurabilirsiniz.<br>
+> Docs.microsoft.com’da yayın yapan tüm depolar [Microsoft Açık Kaynak Kullanım Kuralları](https://opensource.microsoft.com/codeofconduct/) veya [.NET Foundation Kullanım Şartları](https://dotnetfoundation.org/code-of-conduct)’na tabidir. Daha fazla bilgi için bkz. [Kullanım Kuralları SSS](https://opensource.microsoft.com/codeofconduct/faq/). İsterseniz, soru ya da yorumlarınız için [opencode@microsoft.com](mailto:opencode@microsoft.com) veya [conduct@dotnetfoundation.org](mailto:conduct@dotnetfoundation.org) ile de iletişim kurabilirsiniz.<br>
 >
 > Belgelerde yapılan küçük düzeltmeler ve açıklamalar ile ortak depolardaki kod örnekleri, [docs.microsoft.com Kullanım Koşulları](https://docs.microsoft.com/legal/termsofuse)’nda anlatılmıştır. Bir Microsoft çalışanı değilseniz çekme isteğinde yeni veya önemli değişiklikler, çevrimiçi bir Katılım Lisans Sözleşmesi (CLA) göndermenizi isteyen bir yorum oluşturur. Çekme isteğiniz gözden geçirilmeden veya kabul edilmeden önce bu çevrimiçi formu doldurmanız gerekir.
 
@@ -41,21 +41,21 @@ Hızlı düzeltmeler, belgelerdeki küçük hataları ve eksikleri rapor etme ve
    ![Kalem simgesinin konumu](./media/index/edit-icon.png)
 
 
-3. Web düzenleyicisinde değişiklik yapın. Değişikliklerinizin biçimlendirmesini denetlemek için **Değişiklik önizlemesi** sekmesine tıklayın.
+3. Web düzenleyicisinde değişiklik yapın. Değişikliklerinizin biçimlendirmesini denetlemek için **Preview changes** (Değişiklik önizlemesi) sekmesine tıklayın.
 
-4. Değişikliklerinizi tamamladıktan sonra sayfanın sonuna kaydırın. Değişiklikleriniz için bir ad ve açıklama girdikten sonra, aşağıdaki şekilde gösterildiği gibi **Dosya değişikliği öner**’e tıklayın:
+4. Değişikliklerinizi tamamladıktan sonra sayfanın sonuna kaydırın. Değişiklikleriniz için bir ad ve açıklama girdikten sonra, aşağıdaki şekilde gösterildiği gibi **Propose file change**(Dosyada değişiklik öner) düğmesine tıklayın:
 
    ![Dosya değişikliği önerme](./media/index/submit-pull-request.png)
 
-5. Değişikliğinizi önerdiğinizde göre deponun sahiplerinden yaptığınız değişiklikleri depolarına "çekmelerini" istemeniz gerekir. Bunun için "çekme isteği" adı verilen bir işlem kullanılır. Yukarıdaki şekilde **Dosya değişikliği öner**'e tıkladığınızda aşağıdakine benzer bir sayfanın açılması gerekir:
+5. Değişikliğinizi önerdiğinizde deponun sahiplerinden yaptığınız değişiklikleri depolarına "çekmelerini" istemeniz gerekir. Bunun için "çekme isteği" adı verilen bir işlem kullanılır. Yukarıdaki şekilde **Dosya değişikliği öner**'e tıkladığınızda aşağıdakine benzer bir sayfanın açılması gerekir:
 
    ![Çekme isteği oluşturma](media/index/create-pull-request.png)
 
-   **Çekme isteği oluştur**'a tıklayın, çekme isteği için bir ad (ve isteğe bağlı olarak bir açıklama) girin ve yeniden **Çekme isteği oluştur**'a tıklayın. (GitHub’da yeniyseniz daha fazla bilgi için bkz. [Çekme İstekleri Hakkında](https://help.github.com/en/articles/about-pull-requests).)
+   **Create pull request** (Çekme isteği oluştur) düğmesine tıklayın, çekme isteği için bir ad (ve isteğe bağlı olarak bir açıklama) girin ve yeniden **Create pull request** (Çekme isteği oluştur) düğmesine tıklayın. (GitHub’da yeniyseniz daha fazla bilgi için bkz. [Çekme İstekleri Hakkında](https://help.github.com/en/articles/about-pull-requests).)
 
 6. İşte bu kadar! İçerik ekibi üyeleri, PR’nizi gözden geçirip birleştirecekler. Büyük değişiklikler yaptıysanız, değişiklik talep eden geri bildirimler alabilirsiniz.
 
-GitHub düzenleme UI’si depodaki izinlerinizi yanıtlar. Önceki görüntüler, hedef depoda yazma izinleri olmayan katkıda bulunanlar için geçerlidir. GitHub, hesabınızda otomatik olarak hedef depo çatalı oluşturur. Hedef depoda yazma erişiminiz varsa GitHub, hedef depoda yeni bir dal oluşturur. Bu dalın adı **\<GitHubKimliği\>-düzeltmeeki-n** biçimindedir. GitHub kimliğiniz ve düzeltme eki dalı için bir sayısal tanımlayıcı kullanılır.
+GitHub düzenleme UI’si depodaki izinlerinize uygun şekilde çalışır. Önceki görüntüler, hedef depoda yazma izinleri olmayan katkıda bulunanlar için geçerlidir. GitHub, hesabınızda otomatik olarak hedef depo çatalı oluşturur. Hedef depoda yazma erişiminiz varsa GitHub, hedef depoda yeni bir dal oluşturur. Bu dalın adı **\<GitHubKimliği\>-düzeltmeeki-n** biçimindedir. GitHub kimliğiniz ve düzeltme eki dalı için bir sayısal tanımlayıcı kullanılır.
 
 Yazma erişimi olan katkıda bulunanlar dahil olmak üzere hepimiz değişiklikler için çekme isteklerini kullanıyoruz. Çoğu depoda, güncelleştirmelerin çekme isteği olarak gönderilmesi için `master` dal korumalıdır.
 
@@ -63,7 +63,7 @@ Tarayıcıda düzenleme deneyimi, ufak veya sık görülmeyen değişiklikler i�
 
 > [!NOTE]
 > Bu özellik etkinleştirilmişse makaleyi **istediğiniz dilde** düzenleyebilirsiniz ve düzenleme türüne göre aşağıdaki işlemler gerçekleştirilir:
-> 1. onaylanan dilbilimsel değişiklikler, Makine Çevirisi altyapımızın geliştirilmesine de yardımcı olur
+> 1. Onaylanan dille ilgili değişiklikler, Makine Çevirisi altyapımızın geliştirilmesine de yardımcı olur.
 > 2. Makalenin içeriğini önemli ölçüde değiştiren düzenlemeler şirket içinde değerlendirilerek İngilizce makale için değişiklik önerisi oluşturulur ve onaylanması durumunda bu değişikliğin tüm dillere yansıtılması sağlanır.
 > Geliştirme önerileriniz yalnızca kendi dilinizdeki makaleleri olumlu yönde değiştirmekle kalmaz, diğer tüm dillerdeki içeriğe de katkıda bulunur.
 
@@ -81,4 +81,4 @@ Sorunlar, gerekli şeyler konusunda konuşma başlatır. İçerik ekibi, ekleyeb
 
 ## <a name="get-more-involved"></a>Daha fazla katılım gösterin
 
-Diğer konular, Microsoft Docs’a daha fazla katkıda bulunmaya başlamanıza yardımcı olacaktır. GitHub depoları, Markdown araçları ve Microsoft Docs platformunda kullanılan uzantılar; diğer konularda açıklanır.
+Diğer konular, Microsoft Docs’a daha fazla katkıda bulunmaya başlamanıza yardımcı olacaktır. Bu konularda GitHub depoları, Markdown araçları ve Microsoft Docs platformunda kullanılan uzantılar açıklanır.
